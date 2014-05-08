@@ -1,0 +1,776 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.BaseAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.BaseAdapter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.Constructor">
+            <summary>Sets the shim of BaseAdapter.BaseAdapter()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.SendHttpRequestHttpWebRequest">
+            <summary>Sets the shim of BaseAdapter.SendHttpRequest(HttpWebRequest httpRequest)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimBaseAdapter.AllInstances.SendHttpRequestHttpWebRequest">
+            <summary>Sets the shim of BaseAdapter.SendHttpRequest(HttpWebRequest httpRequest)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.MerritAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.MerritAdapter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.Bind(Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.IRepositoryAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AcceptAllCertificationsObjectX509CertificateX509ChainSslPolicyErrors">
+            <summary>Sets the shim of MerritAdapter.AcceptAllCertifications(Object sender, X509Certificate certification, X509Chain chain, SslPolicyErrors sslPolicyErrors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.CheckIfFileExistsStringStringString">
+            <summary>Sets the shim of MerritAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.Constructor">
+            <summary>Sets the shim of MerritAdapter.MerritAdapter()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.CreateFileMerritConstantsFileCreationTypeStringMerritQueryDataEncodingFileRepositoryIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.CreateFile(FileCreationType fileCreationType, String filePath, MerritQueryData request, Encoding encoding, File file, Repository repository, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.DownloadFileStringByteArrayStringBooleanString">
+            <summary>Sets the shim of MerritAdapter.DownloadFile(String fileName, Byte[] fileContents, String fileExtentsion, Boolean isCompressed, String tempFolder)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.DownloadFileStringStringString">
+            <summary>Sets the shim of MerritAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.GenerateCheckSumByteArray">
+            <summary>Sets the shim of MerritAdapter.GenerateCheckSum(Byte[] byteArray)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.GetIdentifierMerritQueryDataRepositoryModel">
+            <summary>Sets the shim of MerritAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.GetIdentifierRequestBodyMerritQueryData">
+            <summary>Sets the shim of MerritAdapter.GetIdentifierRequestBody(MerritQueryData request)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.GetStandardUnits">
+            <summary>Sets the shim of MerritAdapter.GetStandardUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.IgnoreBadCertificates">
+            <summary>Sets the shim of MerritAdapter.IgnoreBadCertificates()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageAttributeListElementXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageAttributeListElement(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageContactElementXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageContactElement(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageEntityNameElementXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageEntityNameElement(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageGeographicLocationCoordinatesXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageGeographicLocationCoordinates(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageProjectTitleElementXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageProjectTitleElement(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ManageTemporalCoverageXmlDocument">
+            <summary>Sets the shim of MerritAdapter.ManageTemporalCoverage(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.PostFilePublishFileModel">
+            <summary>Sets the shim of MerritAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.RefreshTokenString">
+            <summary>Sets the shim of MerritAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.RemoveEmptyElementsXmlDocument">
+            <summary>Sets the shim of MerritAdapter.RemoveEmptyElements(XmlDocument emlDocument)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.RemoveEmptyElementsXmlNode">
+            <summary>Sets the shim of MerritAdapter.RemoveEmptyElements(XmlNode nodes)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.RemoveEmptyParentNodesXmlNode">
+            <summary>Sets the shim of MerritAdapter.RemoveEmptyParentNodes(XmlNode nodes)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.ReplaceMetadataFileXmlDocumentXmlNamespaceManagerRepositoryMetadata">
+            <summary>Sets the shim of MerritAdapter.ReplaceMetadata(File file, XmlDocument emlDocument, XmlNamespaceManager nsmgr, RepositoryMetadata repositoryMetadata)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.StaticConstructor">
+            <summary>Sets the shim of MerritAdapter.MerritAdapter()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.WriteEMLMerritQueryDataStringFileRepositoryIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.WriteEML(MerritQueryData request, String filePath, File file, Repository repositoryData, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.WriteParamMetadataMerritQueryDataXmlDocumentFileIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.WriteParamMetadata(MerritQueryData request, XmlDocument emlDocument, File file, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter._CheckIfFileExistsb__9ObjectX509CertificateX509ChainSslPolicyErrors">
+            <summary>Sets the shim of MerritAdapter.&lt;CheckIfFileExists&gt;b__9(Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter._DownloadFileb__0ObjectX509CertificateX509ChainSslPolicyErrors">
+            <summary>Sets the shim of MerritAdapter.&lt;DownloadFile&gt;b__0(Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter._GetStandardUnitsb__19String">
+            <summary>Sets the shim of MerritAdapter.&lt;GetStandardUnits&gt;b__19(String p)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.CheckIfFileExistsStringStringString">
+            <summary>Sets the shim of MerritAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.CreateFileMerritConstantsFileCreationTypeStringMerritQueryDataEncodingFileRepositoryIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.CreateFile(FileCreationType fileCreationType, String filePath, MerritQueryData request, Encoding encoding, File file, Repository repository, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.DownloadFileStringStringString">
+            <summary>Sets the shim of MerritAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.GetIdentifierMerritQueryDataRepositoryModel">
+            <summary>Sets the shim of MerritAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.GetIdentifierRequestBodyMerritQueryData">
+            <summary>Sets the shim of MerritAdapter.GetIdentifierRequestBody(MerritQueryData request)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.PostFilePublishFileModel">
+            <summary>Sets the shim of MerritAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.RefreshTokenString">
+            <summary>Sets the shim of MerritAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.WriteEMLMerritQueryDataStringFileRepositoryIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.WriteEML(MerritQueryData request, String filePath, File file, Repository repositoryData, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimMerritAdapter.AllInstances.WriteParamMetadataMerritQueryDataXmlDocumentFileIEnumerableOfFileColumnTypeIEnumerableOfFileColumnUnit">
+            <summary>Sets the shim of MerritAdapter.WriteParamMetadata(MerritQueryData request, XmlDocument emlDocument, File file, IEnumerable`1&lt;FileColumnType&gt; fileColumnTypes, IEnumerable`1&lt;FileColumnUnit&gt; fileColumnUnits)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.RepositoryAdapterFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.RepositoryAdapterFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.Bind(Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.IRepositoryAdapterFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.Constructor">
+            <summary>Sets the shim of RepositoryAdapterFactory.RepositoryAdapterFactory()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.GetRepositoryAdapterString">
+            <summary>Sets the shim of RepositoryAdapterFactory.GetRepositoryAdapter(String baseRepositoryName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.ShimRepositoryAdapterFactory.AllInstances.GetRepositoryAdapterString">
+            <summary>Sets the shim of RepositoryAdapterFactory.GetRepositoryAdapter(String baseRepositoryName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.BaseAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseAdapter</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubBaseAdapter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.MerritAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter.InitializeStub">
+            <summary>Initializes a new instance of type StubMerritAdapter</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubMerritAdapter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.RepositoryAdapterFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryAdapterFactory</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.StubRepositoryAdapterFactory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.IRepositoryAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.#ctor">
+            <summary>Initializes a new instance of type StubIRepositoryAdapter</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.CheckIfFileExistsStringStringString">
+            <summary>Sets the stub of IRepositoryAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.DownloadFileStringStringString">
+            <summary>Sets the stub of IRepositoryAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.GetIdentifierMerritQueryDataRepositoryModel">
+            <summary>Sets the stub of IRepositoryAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapter#CheckIfFileExists(System.String,System.String,System.String)">
+            <summary>Sets the stub of IRepositoryAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapter#DownloadFile(System.String,System.String,System.String)">
+            <summary>Sets the stub of IRepositoryAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapter#GetIdentifier(Microsoft.Research.DataOnboarding.Utilities.Model.MerritQueryData,Microsoft.Research.DataOnboarding.Utilities.Model.RepositoryModel)">
+            <summary>Sets the stub of IRepositoryAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapter#PostFile(Microsoft.Research.DataOnboarding.Utilities.Model.PublishFileModel)">
+            <summary>Sets the stub of IRepositoryAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapter#RefreshToken(System.String)">
+            <summary>Sets the stub of IRepositoryAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.PostFilePublishFileModel">
+            <summary>Sets the stub of IRepositoryAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapter.RefreshTokenString">
+            <summary>Sets the stub of IRepositoryAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapterFactory">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.IRepositoryAdapterFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapterFactory.#ctor">
+            <summary>Initializes a new instance of type StubIRepositoryAdapterFactory</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapterFactory.GetRepositoryAdapterString">
+            <summary>Sets the stub of IRepositoryAdapterFactory.GetRepositoryAdapter(String baseRepositoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.Fakes.StubIRepositoryAdapterFactory.mrdora::Microsoft#Research#DataOnboarding#RepositoryAdapters#Interfaces#IRepositoryAdapterFactory#GetRepositoryAdapter(System.String)">
+            <summary>Sets the stub of IRepositoryAdapterFactory.GetRepositoryAdapter(String baseRepositoryName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Content</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Content)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.Constructor">
+            <summary>Sets the shim of Content.Content()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.IdGet">
+            <summary>Sets the shim of Content.get_Id()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.IdSetString">
+            <summary>Sets the shim of Content.set_Id(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.LinkGet">
+            <summary>Sets the shim of Content.get_Link()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.LinkSetString">
+            <summary>Sets the shim of Content.set_Link(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.LocationGet">
+            <summary>Sets the shim of Content.get_Location()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.LocationSetString">
+            <summary>Sets the shim of Content.set_Location(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.NameGet">
+            <summary>Sets the shim of Content.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.NameSetString">
+            <summary>Sets the shim of Content.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.ParentIdGet">
+            <summary>Sets the shim of Content.get_ParentId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.ParentIdSetString">
+            <summary>Sets the shim of Content.set_ParentId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.SourceGet">
+            <summary>Sets the shim of Content.get_Source()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.SourceSetString">
+            <summary>Sets the shim of Content.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.TypeGet">
+            <summary>Sets the shim of Content.get_Type()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.TypeSetString">
+            <summary>Sets the shim of Content.set_Type(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.IdGet">
+            <summary>Sets the shim of Content.get_Id()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.IdSetString">
+            <summary>Sets the shim of Content.set_Id(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.LinkGet">
+            <summary>Sets the shim of Content.get_Link()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.LinkSetString">
+            <summary>Sets the shim of Content.set_Link(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.LocationGet">
+            <summary>Sets the shim of Content.get_Location()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.LocationSetString">
+            <summary>Sets the shim of Content.set_Location(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.NameGet">
+            <summary>Sets the shim of Content.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.NameSetString">
+            <summary>Sets the shim of Content.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.ParentIdGet">
+            <summary>Sets the shim of Content.get_ParentId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.ParentIdSetString">
+            <summary>Sets the shim of Content.set_ParentId(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.SourceGet">
+            <summary>Sets the shim of Content.get_Source()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.SourceSetString">
+            <summary>Sets the shim of Content.set_Source(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.TypeGet">
+            <summary>Sets the shim of Content.get_Type()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimContent.AllInstances.TypeSetString">
+            <summary>Sets the shim of Content.set_Type(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.OAuthToken</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.OAuthToken)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AccessTokenGet">
+            <summary>Sets the shim of OAuthToken.get_AccessToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AccessTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_AccessToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AuthenticationTokenGet">
+            <summary>Sets the shim of OAuthToken.get_AuthenticationToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AuthenticationTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_AuthenticationToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.Constructor">
+            <summary>Sets the shim of OAuthToken.OAuthToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.ExpiresInGet">
+            <summary>Sets the shim of OAuthToken.get_ExpiresIn()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.ExpiresInSetString">
+            <summary>Sets the shim of OAuthToken.set_ExpiresIn(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.RefreshTokenGet">
+            <summary>Sets the shim of OAuthToken.get_RefreshToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.RefreshTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_RefreshToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.ScopeGet">
+            <summary>Sets the shim of OAuthToken.get_Scope()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.ScopeSetString">
+            <summary>Sets the shim of OAuthToken.set_Scope(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.TokenExpiresOnGet">
+            <summary>Sets the shim of OAuthToken.get_TokenExpiresOn()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.TokenExpiresOnSetDateTime">
+            <summary>Sets the shim of OAuthToken.set_TokenExpiresOn(DateTime value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.AccessTokenGet">
+            <summary>Sets the shim of OAuthToken.get_AccessToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.AccessTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_AccessToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.AuthenticationTokenGet">
+            <summary>Sets the shim of OAuthToken.get_AuthenticationToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.AuthenticationTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_AuthenticationToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.ExpiresInGet">
+            <summary>Sets the shim of OAuthToken.get_ExpiresIn()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.ExpiresInSetString">
+            <summary>Sets the shim of OAuthToken.set_ExpiresIn(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.RefreshTokenGet">
+            <summary>Sets the shim of OAuthToken.get_RefreshToken()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.RefreshTokenSetString">
+            <summary>Sets the shim of OAuthToken.set_RefreshToken(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.ScopeGet">
+            <summary>Sets the shim of OAuthToken.get_Scope()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.ScopeSetString">
+            <summary>Sets the shim of OAuthToken.set_Scope(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.TokenExpiresOnGet">
+            <summary>Sets the shim of OAuthToken.get_TokenExpiresOn()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimOAuthToken.AllInstances.TokenExpiresOnSetDateTime">
+            <summary>Sets the shim of OAuthToken.set_TokenExpiresOn(DateTime value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveAdapter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.Bind(Microsoft.Research.DataOnboarding.RepositoryAdapters.Interfaces.IRepositoryAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.CheckIfFileExistsStringStringString">
+            <summary>Sets the shim of SkyDriveAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.Constructor">
+            <summary>Sets the shim of SkyDriveAdapter.SkyDriveAdapter()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.CreateFolderForFileStringStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.CreateFolderForFile(String repositoryName, String fileId, String fileName, AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.CreateFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.CreateFolder(String folderName, String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.DownloadFileStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String fileId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.DownloadFileStringStringString">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.DownloadFileStringStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String fileId, String fileName, String tempFolderPath, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.GetChildFoldersStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetChildFolders(String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.GetFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetFolder(String folderName, String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.GetIdentifierMerritQueryDataRepositoryModel">
+            <summary>Sets the shim of SkyDriveAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.GetOrCreateFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetOrCreateFolder(String folderName, String parentFolderId, AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.GetRootFolderAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetRootFolder(AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.PostFilePublishFileModel">
+            <summary>Sets the shim of SkyDriveAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.RefreshTokenString">
+            <summary>Sets the shim of SkyDriveAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.UploadFilePublishSkyDriveFileModel">
+            <summary>Sets the shim of SkyDriveAdapter.UploadFile(PublishSkyDriveFileModel publishSkyDriveFileModel)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.CheckIfFileExistsStringStringString">
+            <summary>Sets the shim of SkyDriveAdapter.CheckIfFileExists(String downloadURL, String fileIdentifier, String authorization)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.CreateFolderForFileStringStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.CreateFolderForFile(String repositoryName, String fileId, String fileName, AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.CreateFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.CreateFolder(String folderName, String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.DownloadFileStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String fileId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.DownloadFileStringStringString">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String downloadUrl, String authorization, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.DownloadFileStringStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.DownloadFile(String fileId, String fileName, String tempFolderPath, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.GetChildFoldersStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetChildFolders(String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.GetFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetFolder(String folderName, String parentFolderId, AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.GetIdentifierMerritQueryDataRepositoryModel">
+            <summary>Sets the shim of SkyDriveAdapter.GetIdentifier(MerritQueryData queryData, RepositoryModel repositoryModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.GetOrCreateFolderStringStringAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetOrCreateFolder(String folderName, String parentFolderId, AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.GetRootFolderAuthToken">
+            <summary>Sets the shim of SkyDriveAdapter.GetRootFolder(AuthToken token)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.PostFilePublishFileModel">
+            <summary>Sets the shim of SkyDriveAdapter.PostFile(PublishFileModel publishFileModel)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.RefreshTokenString">
+            <summary>Sets the shim of SkyDriveAdapter.RefreshToken(String refreshToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveAdapter.AllInstances.UploadFilePublishSkyDriveFileModel">
+            <summary>Sets the shim of SkyDriveAdapter.UploadFile(PublishSkyDriveFileModel publishSkyDriveFileModel)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveConstants</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveConstants)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.Constructor">
+            <summary>Sets the shim of SkyDriveConstants.SkyDriveConstants()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimSkyDriveConstants.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Structure</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.#ctor(Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Structure)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.Constructor">
+            <summary>Sets the shim of Structure.Structure()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.ItemsGet">
+            <summary>Sets the shim of Structure.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.ItemsSetListOfContent">
+            <summary>Sets the shim of Structure.set_Items(List`1&lt;Content&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.AllInstances.ItemsGet">
+            <summary>Sets the shim of Structure.get_Items()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.ShimStructure.AllInstances.ItemsSetListOfContent">
+            <summary>Sets the shim of Structure.set_Items(List`1&lt;Content&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Content</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent.InitializeStub">
+            <summary>Initializes a new instance of type StubContent</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubContent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.OAuthToken</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken.InitializeStub">
+            <summary>Initializes a new instance of type StubOAuthToken</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubOAuthToken.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveAdapter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter.InitializeStub">
+            <summary>Initializes a new instance of type StubSkyDriveAdapter</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveAdapter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.SkyDriveConstants</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants.InitializeStub">
+            <summary>Initializes a new instance of type StubSkyDriveConstants</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubSkyDriveConstants.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Structure</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure.InitializeStub">
+            <summary>Initializes a new instance of type StubStructure</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive.Fakes.StubStructure.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

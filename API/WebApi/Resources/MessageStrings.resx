@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Access_Token_Is_Null" xml:space="preserve">
+    <value>Access to SkyDrive is not provided</value>
+  </data>
+  <data name="Argument_Error_Message_Template" xml:space="preserve">
+    <value>Null, empty or whitespace values are not valid for '{0}'.</value>
+  </data>
+  <data name="CitationNotSupportedMessage" xml:space="preserve">
+    <value>Citation is not supported for {0} repositories.</value>
+  </data>
+  <data name="ColumnLevelMetadataNotSupportedErrorMessage" xml:space="preserve">
+    <value>Column level metadata is available only for xlsx and csv files.</value>
+  </data>
+  <data name="Contact_Support" xml:space="preserve">
+    <value>Please contact data onboarding support.</value>
+  </data>
+  <data name="Download_URL_Empty" xml:space="preserve">
+    <value>Download URL is empty</value>
+  </data>
+  <data name="FileDoesNotExistInRepository" xml:space="preserve">
+    <value>File deleted or does not exist in repository</value>
+  </data>
+  <data name="FileDoesntExist" xml:space="preserve">
+    <value>File doesn't exist.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>File not found.</value>
+  </data>
+  <data name="File_Already_Published" xml:space="preserve">
+    <value>File already published</value>
+  </data>
+  <data name="File_Repository_Is_Null" xml:space="preserve">
+    <value>File is not associated with any repository</value>
+  </data>
+  <data name="File_Service_Is_Null" xml:space="preserve">
+    <value>File Service outage. Contact Data Onboarding support.</value>
+  </data>
+  <data name="Input_Data_Unavailable" xml:space="preserve">
+    <value>Download input data is empty</value>
+  </data>
+  <data name="InvalidErrorTypes" xml:space="preserve">
+    <value>Invalid error types.</value>
+  </data>
+  <data name="InvalidRepositoryName" xml:space="preserve">
+    <value>Invalid repository name.</value>
+  </data>
+  <data name="Invalid_File_Id" xml:space="preserve">
+    <value>File does not exist</value>
+  </data>
+  <data name="Invalid_Repository_id" xml:space="preserve">
+    <value>Invalid repository id.</value>
+  </data>
+  <data name="Invalid_User_Data" xml:space="preserve">
+    <value>User data is not valid. </value>
+  </data>
+  <data name="Metadata_Field_Value_Type_Mismatch_Template" xml:space="preserve">
+    <value>Invalid Metadata value for the field {0}.</value>
+  </data>
+  <data name="Metadata_Type_Not_Found_Template" xml:space="preserve">
+    <value>Invalid Metadata Type for the field {0}</value>
+  </data>
+  <data name="NoFileNameError" xml:space="preserve">
+    <value>A non-empty file name is needed</value>
+  </data>
+  <data name="NoMetadataFould" xml:space="preserve">
+    <value>No metadata associated with this repository.</value>
+  </data>
+  <data name="QC_Service_Is_Null" xml:space="preserve">
+    <value>QC service is outage. Contact Data Onboarding support.</value>
+  </data>
+  <data name="QualityCheckNotSupportedErrorMessage" xml:space="preserve">
+    <value>Quality check is available only for xlsx and csv files.</value>
+  </data>
+  <data name="Refresh_Token_Is_Null" xml:space="preserve">
+    <value>Offline Access to SkyDrive must be provided</value>
+  </data>
+  <data name="Repository_Not_Found" xml:space="preserve">
+    <value>Repository Not Found</value>
+  </data>
+  <data name="Repository_Service_Is_Null" xml:space="preserve">
+    <value>Repository service outage. Contact Data Onboarding support.</value>
+  </data>
+  <data name="Required_Field_Metadata_Not_Found_Template" xml:space="preserve">
+    <value>Required Field Metadata is not provided for the field {0}</value>
+  </data>
+  <data name="ServiceCannotPostFileToARepositoryThatIsNotImpersonated" xml:space="preserve">
+    <value>Service cannot post file to a repository that is not impersonated.</value>
+  </data>
+  <data name="Token_Expires_Is_Null" xml:space="preserve">
+    <value>Datetime value for Token Expiry does not exist</value>
+  </data>
+  <data name="UploadFailed" xml:space="preserve">
+    <value>UploadFailed</value>
+  </data>
+  <data name="Upload_Validation_Error_Template" xml:space="preserve">
+    <value>Can not overwrite the file as a file with same name {0}  is already in the process of publishing.</value>
+  </data>
+  <data name="User_Already_Exists" xml:space="preserve">
+    <value>User already exists.</value>
+  </data>
+  <data name="User_Data_Update_Error_Message" xml:space="preserve">
+    <value>User data could not be updated. </value>
+  </data>
+  <data name="User_Not_Found" xml:space="preserve">
+    <value>User not found.</value>
+  </data>
+  <data name="User_Service_Is_Null" xml:space="preserve">
+    <value>User service outage. Contact Data Onboarding support.</value>
+  </data>
+</root>

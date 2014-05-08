@@ -1,0 +1,207 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model  Microsoft.Research.DataOnboarding.WebApplication.ViewModels.ManageReopsitoryViewModel
+@{
+    ViewBag.Title = "Manage Meta data";
+    ViewContext.FormContext = new FormContext();
+    Layout = null;
+}
+<script src="~/Scripts/DragAndDrop.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".addnewmetadata").click(function () {
+            var elem = $(".paramtrTableContainer tr");
+            if (($(elem).length == 1) && ($(elem).is(":visible") == false)) {
+                //only first time if row is 1 set the blank row status as false, required at the time of validation
+                for (var index = 0; index < $(elem).length; index++) {
+                    var row = $(elem).get(index);
+                    $(row).find(".IsBlankRow").val("False");
+                }
+                $(".paramtrTableContainer tr").show();
+                $(".noParameters").hide();
+            }
+            else {
+                $('.paramtrTableContainer tr:last').clone(true).insertAfter('.paramtrTableContainer tr:last');
+                var lastAddedRow = $(".paramtrTableContainer tr:last");
+                var index = $(".paramtrTableContainer tr").length - 1;
+                ClearAdminMetaDataParameterRow(lastAddedRow, index);
+            }
+        });
+
+        $(document).on("change", "#addMetaDataContent", function () {
+            var fileExtension = $(this).val().substr($(this).val().lastIndexOf(".")).toLowerCase();
+            if (fileExtension == ".xml") {
+
+                if (this.files) {
+                    UploadFile.UploadMetaData(this.files);
+                }
+                $(this).replaceWith('<input type="file" id="addMetaDataContent" value=""  accept=".xml" />');
+            }
+            else {
+                dataonBoardingData.hideBusy();
+                alert("Only .xml files can be uploaded");
+                $(".addContent").val("");
+            }
+        });
+
+        $('.deletemetadatarow').click(function () {
+            var rowCount = $(".paramtrTableContainer tr").length;
+            //find the deleted metadata field id and set to model,this is required to delete the fields records from DB
+            var deletedMetaDataField = $("#DeletedMetaDataFieldIds");
+            var currentRow = $(this).closest('tr');
+            var repositoryMetaDataFieldId = currentRow.find('.RepositoryMetaDataFieldId');
+            var repositoryMetaDataFieldValue = repositoryMetaDataFieldId.val();
+            if (repositoryMetaDataFieldValue.length > 0 && repositoryMetaDataFieldValue != 0) {
+                var currentDeletedMetaDataFieldValues = deletedMetaDataField.val();
+                if (currentDeletedMetaDataFieldValues.length > 0) {
+                    currentDeletedMetaDataFieldValues = currentDeletedMetaDataFieldValues + repositoryMetaDataFieldValue + ",";
+                }
+                else {
+                    currentDeletedMetaDataFieldValues = repositoryMetaDataFieldValue + ","
+                }
+                deletedMetaDataField.val(currentDeletedMetaDataFieldValues);
+            }
+
+            // if it is and Add or Edit mode and if its first row ,dont delete the row from the grid ,make as display none required to add the default row when no rows found            
+            var isFirstRow = repositoryMetaDataFieldId.attr('id').indexOf("_0__") > 0;
+            if (isFirstRow) {
+                //set this values to empty,so in case of after deleteig all row in edit and click on Add row, empty row should be created
+                currentRow.find('.RepositoryMetaDataFieldId').val('');
+                currentRow.find('.repMapping').val('');
+                currentRow.find('.repField').val('');
+                currentRow.find('.repDescription').val('');
+                currentRow.find('.repRange').val('');
+                currentRow.find('.IsBlankRow').val('True');
+                $(this).closest('tr').hide();
+            }
+            else if (rowCount > 1) {
+                var row = $(this).closest('tr').remove();
+
+                // After removing reset the metadata index
+                ResetMetaDataColumns();
+            }
+            else {
+                ClearAdminMetaDataParameterRow($(".paramtrTableContainer tr:last"), 0)
+
+                $(this).closest('tr').hide();
+                $(".noParameters").show();
+            }
+        });
+
+        $('.repMetadataype').change(function () {
+            var paramtrContType = $(this);
+            var control = paramtrContType.closest('tr').find('.repRange');
+            var typeTextboxControl = $(this).closest('td').find('.typeText');
+
+            $(typeTextboxControl).val($(this).find(":selected").val());
+            // If it is Range
+            if ($(typeTextboxControl)[0].value !== "4") {
+                $(control).attr('disabled', true);
+                $(control).val('');
+            }
+            else {
+                $(control).attr('disabled', false);
+            }
+        });
+
+    });
+</script>
+<div class="title">
+    <h2>Create Metadata</h2>
+    <nav>
+        <div class="optionLinks">
+            <ul>
+                <li class="add addnewmetadata">
+                    <a title="Add Item">Add Item</a>
+                </li>
+                <li class="upload">
+                    <label>
+                        <a class="button l2 upload getDataLink" title="Get Data from XML">Get Data from XML<input name="addContent" id="addMetaDataContent" type="file" multiple="">
+                        </a>
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    @Html.HiddenFor(m => m.RepositoryMetaDataId)
+    @Html.HiddenFor(m => m.RepositoryMetaDataName)
+    @Html.Hidden("hdnFileUploadStatus", "", new { id = "hdnFileUploadStatus" })
+</div>
+<div class="metaDataMsgHolder" style="display: none">
+    <div id="metaDataMsg" class="errorFound mandatory"></div>
+</div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <thead>
+        <tr>
+            <th width="150" title="Mapping">Mapping</th>
+            <th width="150" title="Field">Field<span class="mandatory">*</span></th>
+            <th title="Description">Description<span class="mandatory">*</span></th>
+            <th width="100" title="IS-Required">IS-Required</th>
+            <th width="150" title="Type">Type<span class="mandatory">*</span></th>
+            <th width="150" title="Range">Range</th>
+            <th></th>
+        </tr>
+    </thead>
+    @if (this.Model != null && Model.RepositoryMetaDataFieldList != null && Model.RepositoryMetaDataFieldList.Count == 1 && Model.RepositoryMetaDataFieldList[0].IsBlankRow)
+    {
+        <div class="noParameters">
+            Click on <b>+Add Item </b>or Get By XML button to provide Meta Data Fields
+        </div>
+    }
+    <tbody class="paramtrTableContainer">
+        @foreach (var repositoryMetadata in this.Model.RepositoryMetaDataFieldList)
+        {
+            int index = this.Model.RepositoryMetaDataFieldList.IndexOf(repositoryMetadata);
+            string repositoryCount = (Model.RepositoryMetaDataFieldList.Count == 1 && Model.RepositoryMetaDataFieldList[0].IsBlankRow) ? "none" : "table-row";
+            string rangeCell = (Model.RepositoryMetaDataFieldList[index].MetaDataTypeId != null && Model.RepositoryMetaDataFieldList[index].MetaDataTypeId.Contains("4")) ? string.Empty : "disabled";
+                
+            <tr class="parameterRows" style="display: @repositoryCount">
+                <td class="mapping">
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].MappedLocation, new { id = "RepositoryMetaDataFieldList_" + @index + "__MappedLocation", @class = "repMapping" })
+                </td>
+                <td class="field">
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].Field, new { id = "RepositoryMetaDataFieldList_" + @index + "__Field", @class = "repField", required = true })
+                </td>
+                <td class="description">
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].Description, new { id = "RepositoryMetaDataFieldList_" + @index + "__Description", @class = "repDescription", required = true })
+                </td>
+                <td class="isRequired">
+                    @Html.CheckBoxFor(m => m.RepositoryMetaDataFieldList[index].IsRequired, new { id = "RepositoryMetaDataFieldList_" + @index + "__IsRequired", @class = "repIsRequired" })
+                </td>
+                <td class="type">
+                    <div class="dropdownCont">
+                        <div class="dropdownElementsHolder">
+                            @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].MetaDataTypeId, new { id = "RepositoryMetaDataFieldList_" + @index + "__MetaDataTypeId", @class = "visibleInputbox typeText", @style = "display:none", @readonly = "true" })
+                        </div>
+                        @Html.DropDownListFor(m => m.RepositoryMetaDataFieldList[index].MetaDataTypeId, Model.RepositoryMetaDataFieldList[index].MetaDataTypes, new { id = "RepositoryMetaDataFieldList_" + @index + "__Types", @class = "paramtrContType typeSelectList repMetadataype" })
+                    </div>
+                </td>
+                <td class="range">
+                    @if (rangeCell.Equals(string.Empty) && !(Model.RepositoryMetaDataFieldList.Count == 1 && Model.RepositoryMetaDataFieldList[0].IsBlankRow))
+                    {
+                        @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].RangeValues, new { id = "RepositoryMetaDataFieldList_" + @index + "__Range", @class = "repRange", maxlength = "20" })
+                    }
+                    else
+                    {
+                        @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].RangeValues, new { id = "RepositoryMetaDataFieldList_" + @index + "__Range", @disabled = "disabled", @class = "repRange", maxlength = "20" })
+                    }
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].RepositoryMetaDataFieldId, new { id = "RepositoryMetaDataFieldList_" + @index + "__RepositoryMetaDataFieldId", @Style = "display:none", @class = "RepositoryMetaDataFieldId" })
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].MetadataNodeName, new { id = "RepositoryMetaDataFieldList_" + @index + "__MetadataNodeName", @Style = "display:none", @class = "metadataNodeName" })
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].IsBlankRow, new { id = "RepositoryMetaDataFieldList_" + @index + "__IsBlankRow", @Style = "display:none", @class = "IsBlankRow" })
+                    @Html.TextBoxFor(m => m.RepositoryMetaDataFieldList[index].RepositoryMetaDataId, new { id = "RepositoryMetaDataFieldList_" + @index + "__RepositoryMetaDataId", @Style = "display:none", @class = "metaDataId" })
+                </td>
+                <td class="paramtrContBtn actions">
+                    <ul>
+                        <li class="delete">
+                            <a title="Delete" class="closeSquareGrayBtn deletemetadatarow"></a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

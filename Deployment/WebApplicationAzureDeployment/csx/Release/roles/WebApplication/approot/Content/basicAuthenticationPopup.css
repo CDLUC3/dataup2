@@ -1,0 +1,73 @@
+﻿
+.basicAuthenticationPopup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.basicAuthenticationPopup .wrapper  {
+    background: rgb(146, 76, 156);
+    padding: 20px;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 250px;
+}
+
+.basicAuthenticationPopup .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 30px;
+    text-indent: -10000px;
+    height: 30px;
+    background: url(../Content/images/delete.png) no-repeat 0 -157px;
+    background-size: 30px auto;
+}
+
+.basicAuthenticationPopup .container {
+    min-height: inherit;
+    width: 422px;
+    margin: 0 auto;
+}
+
+.basicAuthenticationPopup .container .row {
+    padding-bottom: 10px;
+}
+
+.basicAuthenticationPopup .container .labels {
+    color: #fff;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.basicAuthenticationPopup .container .endStripe {
+    padding: 20px 0 10px;
+}
+
+.basicAuthenticationPopup .container .error {
+    color:red;
+    font-size:14px;
+}
+
+.basicAuthenticationPopup .button.l1 {
+    padding: 10px 25px 10px 50px;
+    font-family: SegoeUI;
+    font-size: 24px;
+    background-size: 24px auto;
+    background-position: 15px -111px;
+}
+
+.basicAuthenticationPopup .button.l1.download {
+        background-image: url(images/download.png);
+        background-color: #48b95f;
+ }
+
+.basicAuthenticationPopup  .button.l1.cancel {
+        background-image: url(images/delete.png);
+    }

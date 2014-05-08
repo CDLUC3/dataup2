@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.Services.UserService.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.Services.UserService.UserAlreadyExistsException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.#ctor(Microsoft.Research.DataOnboarding.Services.UserService.UserAlreadyExistsException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.Constructor">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.ConstructorString">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.ConstructorStringException">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.ConstructorStringStringString">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException(String message, String nameIdentifier, String identityProvider)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.ConstructorStringStringStringICollectionOfString">
+            <summary>Sets the shim of UserAlreadyExistsException.UserAlreadyExistsException(String message, String nameIdentifier, String identityProvider, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserAlreadyExistsException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.IdentityProviderGet">
+            <summary>Sets the shim of UserAlreadyExistsException.get_IdentityProvider()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.IdentityProviderSetString">
+            <summary>Sets the shim of UserAlreadyExistsException.set_IdentityProvider(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.NameIdentifierGet">
+            <summary>Sets the shim of UserAlreadyExistsException.get_NameIdentifier()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.NameIdentifierSetString">
+            <summary>Sets the shim of UserAlreadyExistsException.set_NameIdentifier(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserAlreadyExistsException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances.IdentityProviderGet">
+            <summary>Sets the shim of UserAlreadyExistsException.get_IdentityProvider()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances.IdentityProviderSetString">
+            <summary>Sets the shim of UserAlreadyExistsException.set_IdentityProvider(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances.NameIdentifierGet">
+            <summary>Sets the shim of UserAlreadyExistsException.get_NameIdentifier()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserAlreadyExistsException.AllInstances.NameIdentifierSetString">
+            <summary>Sets the shim of UserAlreadyExistsException.set_NameIdentifier(String value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.Services.UserService.UserDataUpdateException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.#ctor(Microsoft.Research.DataOnboarding.Services.UserService.UserDataUpdateException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.Constructor">
+            <summary>Sets the shim of UserDataUpdateException.UserDataUpdateException()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserDataUpdateException.UserDataUpdateException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.ConstructorString">
+            <summary>Sets the shim of UserDataUpdateException.UserDataUpdateException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.ConstructorStringException">
+            <summary>Sets the shim of UserDataUpdateException.UserDataUpdateException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.ConstructorStringUserICollectionOfString">
+            <summary>Sets the shim of UserDataUpdateException.UserDataUpdateException(String message, User user, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserDataUpdateException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.UserDataGet">
+            <summary>Sets the shim of UserDataUpdateException.get_UserData()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.UserDataSetUser">
+            <summary>Sets the shim of UserDataUpdateException.set_UserData(User value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserDataUpdateException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.AllInstances.UserDataGet">
+            <summary>Sets the shim of UserDataUpdateException.get_UserData()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserDataUpdateException.AllInstances.UserDataSetUser">
+            <summary>Sets the shim of UserDataUpdateException.set_UserData(User value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.Services.UserService.UserNotFoundException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.#ctor(Microsoft.Research.DataOnboarding.Services.UserService.UserNotFoundException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.Constructor">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.ConstructorString">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.ConstructorStringException">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.ConstructorStringInt32ICollectionOfString">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException(String message, Int32 userId, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.ConstructorStringStringICollectionOfString">
+            <summary>Sets the shim of UserNotFoundException.UserNotFoundException(String message, String nameIdentifier, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserNotFoundException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.NameIdentifierGet">
+            <summary>Sets the shim of UserNotFoundException.get_NameIdentifier()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.NameIdentifierSetString">
+            <summary>Sets the shim of UserNotFoundException.set_NameIdentifier(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.UserIdGet">
+            <summary>Sets the shim of UserNotFoundException.get_UserId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.UserIdSetInt32">
+            <summary>Sets the shim of UserNotFoundException.set_UserId(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of UserNotFoundException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances.NameIdentifierGet">
+            <summary>Sets the shim of UserNotFoundException.get_NameIdentifier()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances.NameIdentifierSetString">
+            <summary>Sets the shim of UserNotFoundException.set_NameIdentifier(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances.UserIdGet">
+            <summary>Sets the shim of UserNotFoundException.get_UserId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserNotFoundException.AllInstances.UserIdSetInt32">
+            <summary>Sets the shim of UserNotFoundException.set_UserId(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.Services.UserService.UserServiceProvider</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.#ctor(Microsoft.Research.DataOnboarding.Services.UserService.UserServiceProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.Bind(Microsoft.Research.DataOnboarding.Services.UserService.IUserService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AddUpdateAuthTokenAuthToken">
+            <summary>Sets the shim of UserServiceProvider.AddUpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.ConstructorIUserRepositoryIUnitOfWork">
+            <summary>Sets the shim of UserServiceProvider.UserServiceProvider(IUserRepository userRepository, IUnitOfWork unitOfWork)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.ConstructorIUserRepositoryIUnitOfWorkIRepositoryDetails">
+            <summary>Sets the shim of UserServiceProvider.UserServiceProvider(IUserRepository userRepository, IUnitOfWork unitOfWork, IRepositoryDetails repositoryDetails)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.GetAuthTokenStatusInt32Int32">
+            <summary>Sets the shim of UserServiceProvider.GetAuthTokenStatus(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.GetUserAuthTokenInt32Int32">
+            <summary>Sets the shim of UserServiceProvider.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.GetUserByIdInt32">
+            <summary>Sets the shim of UserServiceProvider.GetUserById(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.GetUserWithRolesByNameIdentifierString">
+            <summary>Sets the shim of UserServiceProvider.GetUserWithRolesByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.RegisterUserUser">
+            <summary>Sets the shim of UserServiceProvider.RegisterUser(User user)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.AddUpdateAuthTokenAuthToken">
+            <summary>Sets the shim of UserServiceProvider.AddUpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.GetAuthTokenStatusInt32Int32">
+            <summary>Sets the shim of UserServiceProvider.GetAuthTokenStatus(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.GetUserAuthTokenInt32Int32">
+            <summary>Sets the shim of UserServiceProvider.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.GetUserByIdInt32">
+            <summary>Sets the shim of UserServiceProvider.GetUserById(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.GetUserWithRolesByNameIdentifierString">
+            <summary>Sets the shim of UserServiceProvider.GetUserWithRolesByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.ShimUserServiceProvider.AllInstances.RegisterUserUser">
+            <summary>Sets the shim of UserServiceProvider.RegisterUser(User user)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.Services.UserService.IUserService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.#ctor">
+            <summary>Initializes a new instance of type StubIUserService</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.AddUpdateAuthTokenAuthToken">
+            <summary>Sets the stub of IUserService.AddUpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.GetAuthTokenStatusInt32Int32">
+            <summary>Sets the stub of IUserService.GetAuthTokenStatus(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.GetUserAuthTokenInt32Int32">
+            <summary>Sets the stub of IUserService.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.GetUserByIdInt32">
+            <summary>Sets the stub of IUserService.GetUserById(Int32 userId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.GetUserWithRolesByNameIdentifierString">
+            <summary>Sets the stub of IUserService.GetUserWithRolesByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#AddUpdateAuthToken(Microsoft.Research.DataOnboarding.DomainModel.AuthToken)">
+            <summary>Sets the stub of IUserService.AddUpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#GetAuthTokenStatus(System.Int32,System.Int32)">
+            <summary>Sets the stub of IUserService.GetAuthTokenStatus(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#GetUserAuthToken(System.Int32,System.Int32)">
+            <summary>Sets the stub of IUserService.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#GetUserById(System.Int32)">
+            <summary>Sets the stub of IUserService.GetUserById(Int32 userId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#GetUserWithRolesByNameIdentifier(System.String)">
+            <summary>Sets the stub of IUserService.GetUserWithRolesByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.mrdosus::Microsoft#Research#DataOnboarding#Services#UserService#IUserService#RegisterUser(Microsoft.Research.DataOnboarding.DomainModel.User)">
+            <summary>Sets the stub of IUserService.RegisterUser(User user)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubIUserService.RegisterUserUser">
+            <summary>Sets the stub of IUserService.RegisterUser(User user)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.Services.UserService.UserDataUpdateException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.#ctor(System.String,Microsoft.Research.DataOnboarding.DomainModel.User,System.Collections.Generic.ICollection{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubUserDataUpdateException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubUserDataUpdateException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of UserDataUpdateException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of UserDataUpdateException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.InitializeStub">
+            <summary>Initializes a new instance of type StubUserDataUpdateException</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.Services.UserService.Fakes.StubUserDataUpdateException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+    </members>
+</doc>

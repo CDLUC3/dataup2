@@ -1,0 +1,354 @@
+﻿.button.l1 {
+    padding: 10px 25px 10px 50px;
+    font-family: SegoeUI;
+    font-size: 24px;
+    background-size: 24px auto;
+    background-position: 15px -111px;
+}
+
+    .button.l1.post {
+        background-image: url(images/upload.png);
+    }
+
+.title {
+    overflow: hidden;
+}
+
+.leftPanel {
+    background: #F0F0F0;
+    width: 210px;
+    position: fixed;
+    top: 57px;
+    height: 100%;
+    padding: 40px 30px;
+}
+
+    .leftPanel .or {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    .leftPanel .drop {
+        width: 206px;
+        height: 206px;
+        background: url(images/dragndrop.png) no-repeat center #fff;
+        border: 2px dashed #c6c6c6;
+    }
+
+    .leftPanel nav {
+        padding: 8px;
+    }
+
+        .leftPanel nav ul {
+            border-top: 1px solid #ececec;
+        }
+
+            .leftPanel nav ul li {
+                float: none;
+                margin-bottom: 5px;
+                background: #CCC;
+            }
+
+                .leftPanel nav ul li.active {
+                    background: url(images/active-indicator-arrow.png) no-repeat 280px center #999;
+                }
+
+                .leftPanel nav ul li a {
+                    display: block;
+                    font-size: 20px;
+                    color: #fff;
+                    line-height: 24px;
+                    padding-left: 35px;
+                    background: url(images/folder.png) no-repeat 0 0;
+                    background-size: 35px auto;
+                }
+
+                    .leftPanel nav ul li a span {
+                        display: block;
+                        color: #fff;
+                        font-size: 10px;
+                        margin-left: 5px;
+                        font-family: SegoeUISB;
+                    }
+
+                    .leftPanel nav ul li a .status {
+                        font-size: 10px;
+                        margin-left: 5px;
+                        font-family: SegoeUISB;
+                    }
+
+                    .leftPanel nav ul li a.bestPractices {
+                        background-image: url(images/exclamation.png);
+                    }
+
+                    .leftPanel nav ul li a.qualityCheck {
+                        background-image: url(images/done.png);
+                    }
+
+    .leftPanel .userCredential .row {
+        padding-bottom: 20px;
+    }
+
+    .leftPanel .userCredential label {
+        padding-bottom: 5px;
+        display: block;
+    }
+
+    .leftPanel .userCredential input {
+        width: 280px;
+    }
+
+    .leftPanel .guideline {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+        .leftPanel .guideline p {
+            padding-bottom: 10px;
+            line-height: 24px;
+        }
+
+
+    .leftPanel .endStripe {
+        padding: 0px 10px;
+        overflow: visible;
+        background: #F0F0F0;
+        position: relative;
+        display: block;
+    }
+
+        .leftPanel .endStripe .termsAcceptance {
+            padding-bottom: 20px;
+            font-size: 14px;
+        }
+
+.post .leftPanel {
+    width: 330px;
+    padding: 12px;
+    overflow-y: auto;
+    top: 150px;
+}
+
+
+
+    .post .leftPanel .title {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+        .post .leftPanel .title h2 {
+            padding: 0;
+            font-size: 32px;
+            font-family: SegoeUI;
+        }
+
+            .post .leftPanel .title h2 label {
+                width: 220px;
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+    .post .leftPanel .repository {
+        margin: 0 20px 30px;
+    }
+
+    .post .leftPanel .userCredential {
+        padding: 20px 20px 200px;
+    }
+
+    .post .leftPanel nav ul li a {
+        padding: 20px 20px 20px 70px;
+        background-position: 20px -169px;
+        font-size: 22px;
+        font-family: SegoeUI;
+    }
+
+    .post .leftPanel nav ul li.completed a {
+        color: #00b294;
+        background-position: 20px -81px;
+    }
+
+    .post .leftPanel nav ul li a:hover {
+        background-color: #da832f;
+    }
+
+    .post .leftPanel nav ul li.active a, .post .leftPanel nav ul li.active a {
+        background-position: 20px -169px;
+        color: #fff;
+        padding-left: 70px;
+        background-position-x: 20px;
+        background-color: transparent;
+    }
+
+    .post .leftPanel .endStripe {
+        width: 320px;
+    }
+
+.post .rightPanel {
+    margin-left: 350px;
+    height: 100%;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+    .post .rightPanel nav {
+        margin-bottom: 10px;
+    }
+
+    .post .rightPanel footer nav {
+        border: none;
+        margin: 0;
+    }
+
+.post table td {
+    position: relative;
+}
+
+.post header.global {
+    position: fixed;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.post .global .logo {
+    padding-left: 20px;
+}
+
+.post .global .user-links {
+    padding-right: 20px;
+}
+
+.post footer {
+    bottom: 0;
+    display: block;
+    z-index: 11;
+    padding: 0;
+    margin-left: 380px;
+    border: none;
+    top: inherit;
+}
+
+    .post footer .footerContainer {
+        margin-left: 380px;
+        background: #fff;
+        border-top: 1px solid #dededd;
+        margin-right: 20px;
+    }
+
+        .post footer .footerContainer .footer-links {
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        .post footer .footerContainer .copyright-info {
+            padding-top: 10px;
+        }
+
+.repository {
+}
+
+    .repository .name {
+        float: left;
+    }
+
+    .repository .skyDrive {
+        color: #666;
+        background: url(images/skyDrive-icon.png) no-repeat 0 center;
+        padding-left: 30px;
+    }
+
+    .repository .repositoryList {
+        padding-left: 10px;
+        float: left;
+        position: relative;
+    }
+
+        .repository .repositoryList ul {
+            margin-left: 0px;
+        }
+
+.termsAcceptance label {
+    position: relative;
+    color: #da832f;
+}
+
+    .termsAcceptance label .toolTip {
+        left: 0;
+        bottom: 15px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        background-position: 0 bottom;
+        background-image: url(images/down-arrow.png);
+    }
+
+        .termsAcceptance label .toolTip .container {
+            width: 260px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+    .termsAcceptance label:hover .toolTip {
+        display: block !important;
+    }
+
+.endStripe.left .button.post {
+    margin-right: 0;
+    width: 150px;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+    .popup .wrapper {
+        background: #AAA;
+        padding: 20px;
+        margin-top: 25 0px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 250px;
+    }
+
+    .popup .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 30px;
+        text-indent: -10000px;
+        height: 30px;
+        background: url(../Content/images/delete.png) no-repeat 0 -157px;
+        background-size: 30px auto;
+    }
+
+    .popup .container {
+        min-height: inherit;
+        width: 422px;
+        margin: 0 auto;
+    }
+
+        .popup .container .row {
+            padding-bottom: 10px;
+        }
+
+        .popup .container label {
+            color: #fff;
+            padding-bottom: 5px;
+            display: block;
+        }
+
+        .popup .container .endStripe {
+            padding: 20px 0 10px;
+        }

@@ -1,0 +1,74 @@
+﻿
+
+
+
+@if (Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData != null && Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData.Roles.Contains("Administrator"))
+{
+    <script type="text/javascript">
+    $(function () {
+
+        $("#body").addClass("withLeftSideBarExpanded");
+        $("#leftNavigationPanel").addClass("expanded");
+
+        var pathName = window.location;
+        var urlHashValue = new RegExp("#[^/]+", "g");
+        if (urlHashValue.test(pathName)) {
+            var actionName = RegExp.lastMatch;
+            $(actionName).addClass("selectedAction");
+        }
+        else {
+            $("ul#navigationLinks li:first").addClass("selectedAction");
+        }
+
+
+        $("#navigationLink").click(function () {
+            var navigationLinkIconCtrl = $("#toggleCtrl");
+            if (navigationLinkIconCtrl.hasClass("navigationExpand")) {
+                navigationLinkIconCtrl.removeClass("navigationExpand");
+                navigationLinkIconCtrl.addClass("navigationCollapse");
+                $(this).prop("title", "More");
+
+                $("#leftNavigationPanel").removeClass("expanded");
+                $("#leftNavigationPanel").addClass("collapsed");
+                $("#body").removeClass("withLeftSideBarExpanded");
+                $("#body").addClass("withLeftSideBarCollapsed");
+            }
+            else if (navigationLinkIconCtrl.hasClass("navigationCollapse")) {
+                navigationLinkIconCtrl.removeClass("navigationCollapse");
+                navigationLinkIconCtrl.addClass("navigationExpand");
+                $(this).prop('title', 'Less');
+
+                $("#leftNavigationPanel").removeClass("collapsed");
+                $("#leftNavigationPanel").addClass("expanded");
+                $("#body").removeClass("withLeftSideBarCollapsed");
+                $("#body").addClass("withLeftSideBarExpanded");
+            }
+        });
+
+    });
+    </script>
+    
+    <div id="leftNavigationPanel">
+        <a href="#" role="link" id="navigationLink" title="Less">
+        <span id="toggleCtrl" class="navigationToggle navigationExpand"></span>
+        </a>
+        <ul id="navigationLinks">
+            <li id="files">
+                <a href="@Url.Action("Index", "Home")#files" title="@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageFiles">
+                    <span id="filesAction" class="navigationIcon">Files</span>
+                </a>
+            </li>
+            <li id="repositories">
+                <a href="@Url.Action("Index", "Repository")#repositories" title="@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageRepository">
+                    <span id="repositoryAction" class="navigationIcon">Repositories</span>
+                </a>
+            </li>
+            <li id="qualitychecks">
+                <a href="@Url.Action("Index", "QualityCheck")#qualitychecks" title="@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageQualityCheckRules">
+                    <span id="qualityCheckAction" class="navigationIcon">Quality Checks</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+}

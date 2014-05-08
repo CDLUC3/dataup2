@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DiagnosticMonitorConfiguration configurationChangePollInterval="PT1M" overallQuotaInMB="4096" xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <DiagnosticInfrastructureLogs bufferQuotaInMB="0"
+     scheduledTransferLogLevelFilter="Verbose"
+     scheduledTransferPeriod="PT30M" />
+  <Directories>
+    <IISLogs container="wad-iis-logfiles" />
+    <CrashDumps container="wad-crash-dumps" />
+  </Directories>
+  <Logs bufferQuotaInMB="1024" scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Verbose" />
+  <WindowsEventLog bufferQuotaInMB="0"
+     scheduledTransferLogLevelFilter="Verbose"
+     scheduledTransferPeriod="PT30M">
+    <DataSource name="Application!*" />
+    <DataSource name="System!*" />
+  </WindowsEventLog>
+  <PerformanceCounters bufferQuotaInMB="0" scheduledTransferPeriod="PT30M">
+    <PerformanceCounterConfiguration counterSpecifier="\Memory\Available Bytes" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Process(WaWorkerHost)\% Processor Time" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Process(WaWorkerHost)\Private Bytes" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Process(WaWorkerHost)\Thread Count" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Interop(_Global_)\# of marshalling" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Loading(_Global_)\% Time Loading" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR LocksAndThreads(_Global_)\Contention Rate / sec" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Memory(_Global_)\# Bytes in all Heaps" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Networking(_Global_)\Connections Established" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Remoting(_Global_)\Remote Calls/sec" sampleRate="PT30S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Jit(_Global_)\% Time in Jit" sampleRate="PT30S" />
+  </PerformanceCounters>
+</DiagnosticMonitorConfiguration>

@@ -1,0 +1,269 @@
+﻿a {
+    color: #da832f;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #da832f;
+    }
+
+    a img {
+        border: none;
+    }
+
+.error {
+    color: red;
+    font-size: 11px;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.disabled {
+    background-color: #CCC !important;
+    border: 0px !important;
+    cursor: auto;
+}
+
+.noBorder {
+    border: none !important;
+}
+
+.noPad {
+    padding: 0 !important;
+}
+
+.noTopPad {
+    padding-top: 0 !important;
+}
+
+ul li {
+    list-style: none;
+}
+
+table {
+}
+
+    table th {
+        background: #CCC;
+        padding: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: #333;
+        font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+    }
+
+        table th a:hover {
+            color: #da832f;
+        }
+
+    table td {
+        padding: 10px;
+        text-align: left;
+        line-height: 30px;
+        /*border-bottom: 1px solid #eff2f3;*/
+        vertical-align: top;
+    }
+
+        table td.vBottom {
+            vertical-align: bottom;
+        }
+
+        table td.actions {
+            vertical-align: top;
+        }
+
+            table td.actions ul li {
+                float: left;
+                padding-right: 10px;
+            }
+
+                table td.actions ul li a {
+                    display: block;
+                    width: 26px;
+                    height: 26px;
+                    text-indent: -100000px;
+                    overflow: hidden;
+                    background: url(images/download.png) no-repeat 0 0;
+                    background-size: 25px auto;
+                }
+
+                    table td.actions ul li a:hover {
+                        background-position: 0 -44px;
+                        cursor: pointer;
+                    }
+
+                table td.actions ul li.delete a {
+                    background-image: url(images/delete.png);
+                }
+
+                    table td.actions ul li.delete a:hover {
+                        background-position: 0 -175px;
+                        background-position-y: bottom;
+                    }
+
+        table td ul li {
+            line-height: normal;
+        }
+
+nav .tabNavigation {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+    nav .tabNavigation ul li {
+        padding-right: 5px;
+        display: inline-block;
+        float: none;
+    }
+
+        nav .tabNavigation ul li a {
+            background: #CCC;
+            display: block;
+            padding: 15px 25px 10px 25px;
+            color: #fff;
+            font-size: 20px;
+            font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+            text-transform: capitalize;
+        }
+
+            nav .tabNavigation ul li a:hover {
+                background: #da832f;
+                color: #fff;
+            }
+
+        nav .tabNavigation ul li.active a {
+            background: #AAA;
+            color: #fff;
+        }
+
+.button, button {
+    display: block;
+    border: none;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    background-color: #da832f;
+}
+
+    .button:hover, .endStripe .button:hover {
+        background-color: #da832f;
+        color: #fff;
+    }
+
+    .button.l2 {
+        padding: 10px 15px 10px 44px;
+        background-position: 10px -122px;
+        background-size: 25px auto;
+        font-size: 18px;
+        font-family: SegoeUI;
+    }
+
+        .button.l2.save {
+            background-image: url(images/save.png);
+        }
+
+        .button.l2.cancel {
+            background-image: url(images/delete.png);
+        }
+
+        .button.l2.done {
+            background-image: url(images/done.png);
+        }
+
+        .button.l2.validate {
+            margin: 0 0 3px;
+        }
+
+    .button.done {
+        background-color: #da832f;
+    }
+
+    .button.cancel {
+        background-color: #CCC;
+    }
+
+    .button.left {
+        margin-right: 10px;
+    }
+
+    .button.right {
+        margin-left: 10px;
+    }
+
+.endStripe .button {
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.disable {
+    opacity: 0.3 !important;
+    cursor: default !important;
+}
+
+.container .widgetContainer {
+    background-color: #F0F0F0;
+    padding: 15px;
+    border: 1px solid #CCC;
+    border-top: none;
+    margin-top: -10px;
+}
+
+.widgetContainer td {
+    border: none;
+}
+
+.widgetContainer .container {
+    min-height: 540px;
+}
+
+.widgetContainer .error {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.widgetContainer .list {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0 20px;
+}
+
+.validate {
+    padding-bottom: 20px;
+}
+
+    .validate .collapse {
+        background: url(images/up.png) no-repeat 0 0;
+        width: 16px;
+        background-size: 16px auto;
+        height: 16px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .validate table {
+        border: 1px solid #ddd;
+    }
+
+        .validate table td {
+            border: none;
+        }
+
+            .validate table td select {
+                width: 300px;
+            }

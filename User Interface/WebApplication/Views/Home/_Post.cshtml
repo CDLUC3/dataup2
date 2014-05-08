@@ -1,0 +1,91 @@
+﻿@Styles.Render("~/Content/PostPageStyles")
+@Scripts.Render("~/bundles/PostPageScripts")
+
+<div id="postDiv" class="post">
+    <input type="hidden" id="fileId" value="@Request.QueryString["fileId"]" />
+    <input type="hidden" id="repositoryId" value="@Request.QueryString["repositoryId"]" />
+    <div class="postHeader">
+        <div class="fullWidth">
+           <div class="title">
+                <a href="#" class="button l0 back" data-bind="text: messages.back, attr: { title: messages.back }, click: goToHomePage"></a>
+                <h2 data-bind="text: fileName, attr: { title: fileName }"></h2>
+            </div>
+        </div>
+    </div> 
+    <section class="leftPanel">
+        
+        <div class="repository">
+            <div class="skyDrive name" data-bind="text: (selectedRepository().name.length > 20 ? selectedRepository().name.substring(0, 17) + '...' : selectedRepository().name), attr: { title: selectedRepository().name }"></div>
+            <div class="repositoryList">
+                <a href="#" id="showOtherRepositories" data-bind="text: ko.computed(function () { return '[ ' + messages.change + ' ]' }), attr: { title: messages.changeRepository }"></a>
+                <ul id="otherRepositories" data-bind="foreach: repositoryList">
+                    <li><a href="#" data-bind="text: (name.length > 13 ? name.substring(0, 10) + '...' : name), attr: { title: name }, visible: $data != $root.selectedRepository(), click: $root.selectRepository"></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="postTabs">
+            <ul>
+                <li id="metadataTab" data-bind="css: { active: visibleTab() == messages.metadata }, click: selectVisibleTab.bind($data, messages.metadata)">
+                    <a href="#" class="metadata" data-bind="html: metadataTabTitle, attr: { title: messages.metadata }"></a>
+                </li>
+                <li data-bind="css: { active: visibleTab() == messages.bestPracticesCheck }, click: selectVisibleTab.bind($data, messages.bestPracticesCheck)">
+                    <a href="#" class="bestPractices" data-bind="text: messages.bestPracticesCheck, attr: { title: messages.bestPracticesCheck }"></a>
+                </li>
+                <li data-bind="css: { active: visibleTab() == messages.qualityCheck }, click: selectVisibleTab.bind($data, messages.qualityCheck)">
+                    <a href="#" class="qualityCheck" data-bind="text: messages.qualityCheck, attr: { title: messages.qualityCheck }"></a>
+                </li>
+                <li id="citationTab" data-bind="css: { active: visibleTab() == messages.citation }, click: selectVisibleTab.bind($data, messages.citation)">
+                    <a href="#" class="citation" data-bind="html: citationTabTitle, attr: { title: messages.citation }"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="endStripe left">
+            <div class="termsAcceptance">
+                <input id="chkTerms" type="checkbox" data-bind="checked: agreesUserAgreement, visible: selectedRepository().userAgreement() != null && selectedRepository().userAgreement().length > 0" />
+                <label for="chkTerms" data-bind="visible: selectedRepository().userAgreement() != null && selectedRepository().userAgreement().length > 0, html: userAgreement"></label>
+            </div>
+            <a href="#" class="button l1 cancel" data-bind="text: messages.cancel, attr: { title: messages.cancel }, click: goToHomePage"></a>
+            <input type="button" class="button l1 post" data-bind="value: messages.post, attr: { title: messages.post }, css: { disable: !agreesUserAgreement() }, click: post" />
+        </div>
+    </section>
+
+    <section class="rightPanel">
+        <div>
+            <div id="errPostMessage" data-bind="visible: errorMessage() != null">
+                <span style="color: red;" data-bind="text: errorMessage()"></span>
+            </div>
+            <div id="divMetadata" data-bind="visible: visibleTab() == messages.metadata"></div>
+            <div id="divBestPractives" data-bind="visible: visibleTab() == messages.bestPracticesCheck"></div>
+            <div id="divQualityCheck" data-bind="visible: visibleTab() == messages.qualityCheck"></div>
+            <div id="divCitation" data-bind="visible: visibleTab() == messages.citation"></div>
+        </div>
+
+    </section>
+
+    <div id="divCredPopup" style="display: none;" class="popup">
+        <div class="wrapper">
+            <a id="closeCredPopup" href="#" class="close" data-bind="attr: { title: messages.close }">X</a>
+            <div class="container">
+                <div class="userCredential">
+                    <form id="nonImpersonatedForm">
+                        <div class="row" data-bind="visible: errorMessage() != null">
+                            <span id="errAuthentication" style="color: red; display: none;" data-bind="text: errorMessage()"></span>
+                        </div>
+                        <div class="row">
+                            <label data-bind="text: messages.userName"></label>
+                            <input id="txtUserName" name="txtUserName" type="text" data-bind="value: userName" required />
+                        </div>
+                        <div class="row">
+                            <label data-bind="text: messages.password"></label>
+                            <input id="txtPassword" name="txtPassword" type="password" data-bind="value: password" required />
+                        </div>
+                        <div class="endStripe">
+                            <input type="button" class="button l1 post" data-bind="value: messages.post, attr: { title: messages.post }, click: postToNonImpersonatedRepository" />
+                            <a id="cancelCredPopup" href="#" class="button l1 cancel" data-bind="text: messages.cancel, attr: { title: messages.cancel }"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

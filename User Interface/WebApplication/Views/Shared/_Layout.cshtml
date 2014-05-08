@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>DataUp</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/HomePage")
+    <link rel="stylesheet" media="only screen and (max-height: 900px)" href="~/Content/wide900.css" />
+    <link rel="stylesheet" media="only screen and (max-height: 800px)" href="~/Content/wide800.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 1280px) and (max-height: 1024px)" href="~/Content/wide800.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 1280px) and (max-height: 1024px)" href="~/Content/wide1280.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 1024px)" href="~/Content/standard.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="~/Content/tablet-portrait.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 320px)" href="~/Content/mobile-portrait.css" />
+    <link rel="icon" type="image/png" href="/Content/images/dataup-favicon.png" />
+    @Scripts.Render("~/bundles/GeneralFiles")
+    @Scripts.Render("~/bundles/ApplicationSpecificFiles")
+</head>
+<body>
+    <div class="indicatorContainer" oncontextmenu="return false;">
+        <!--Blank div to disable back portion when indicator is shown-->
+        <div class="disabledBackground">
+        </div>
+        <div id="loadingIndicator">
+            <div>
+                <span class="orangeNotification">Processing...</span>
+                <div class="loadingIcon">
+                    <img src="~/Content/images/Loader.gif" />
+                </div>
+                <div class="pleaseWait">
+                    Please wait
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="headerPanel">
+        @RenderPage("Header.cshtml")
+    </div>
+
+    <div id="leftSidebar">
+        @RenderPage("LeftNavigation.cshtml")
+    </div>
+
+    <div id="contentPanel">
+        @RenderBody()
+    </div>
+        
+    <div id="footerPanel">
+        @{
+            Html.RenderPartial("Footer");
+        }
+    </div>
+            
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserId.ToString()" id="hdnUserId" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiFilePath.ToString()" id="hdnBaseWebFileAPIUrl" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiUserPath.ToString()" id="hdnBaseWebUserAPIUrl" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiQCPath.ToString()" id="hdnBaseWebQCAPIUrl" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiRepositoryPath.ToString()" id="hdnBaseWebRepositoryAPIUrl" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiWindowsLiveAuthPath.ToString()" id="hdnBaseWebApiWindowsLiveAuthPathUrl" />
+    <input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiPublishPath" id="hdnBaseWebApiPublishPath" />
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* Anonymous Homepage */
+
+.anonymous#body {
+    margin-top:10px;
+}
+.anonymous#body h2{
+	padding-bottom:10px;
+}
+.anonymous#body p{
+	padding-bottom:20px;
+}
+.anonymous footer nav{
+	padding-bottom:10px;
+}
+.anonymous footer .powered .by{
+	margin-bottom:10px;
+}
+
+/* Registration */
+
+.registration#body{
+	margin-top:0;
+}
+.registration#body h2{
+	font-size:40px;
+	padding-top:5px;
+	padding-bottom:0px;
+}
+.registration#body p.note{
+	padding-bottom:5px;
+	line-height:18px;
+	font-size:13px;
+}
+.registration#body section.registration .row{
+	padding-top:10px;
+}
+.registration#body section.registration .row label{
+	padding-bottom:1px;
+	font-size:14px;
+}
+.registration#body section.registration{
+	padding-bottom:4px;
+}
+.registration#body section.registration .endStripe button{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.registration#body section.registration .endStripe{
+	padding-top:1px;
+}
+.registration#body .endStripe .button.logout{
+	background-size:36px auto;
+	background-position-y:-191px;
+}
+.registration#body .endStripe .button.next{
+	background-position:30px -270px;
+	background-size:40px auto;
+}
+.registration footer nav{
+	padding-bottom:7px;
+}
+.registration footer nav ul li{
+	line-height:13px;
+}
+.registration footer nav ul li a{
+	font-size:13px;
+}
+.post .rightPanel footer nav ul li a, .post .rightPanel footer .copyright{
+	font-size:12px;
+}
+.registration footer .powered{
+	padding-bottom:0;
+	padding-left:64px;
+}
+.registration footer .powered .copyright{
+	font-size:13px;
+	float:left;
+    padding-top:3px;
+	padding-left:10px;
+}
+.rightPanel footer nav ul li a, .rightPanel footer .copyright {
+    font-size:13px;
+}
+footer .powered {
+    padding-left:0;
+}
+.post .rightPanel .container{
+	min-height:540px;
+}
+.rightPanel nav .tabNavigation ul li a{
+	padding-left:25px;
+	padding-right:25px;
+}
+.post .list{
+	overflow-x:auto;
+}
+.admin table td.description{
+	min-width:170px;
+}
+.admin table td.actions{
+	min-width:80px;
+}

@@ -1,0 +1,315 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts */
+
+@font-face {
+    src: url(../fonts/segoeui.eot);
+    font-family: SegoeUI;
+}
+
+@font-face {
+    src: url(../fonts/segoeui.ttf);
+    font-family: SegoeUI;
+}
+
+@font-face {
+    src: url(../fonts/segoeuib.eot);
+    font-family: SegoeUIB;
+}
+
+@font-face {
+    src: url(../fonts/segoeuib.ttf);
+    font-family: SegoeUIB;
+}
+
+@font-face {
+    src: url(../fonts/segoeuil.eot);
+    font-family: SegoeUIL;
+}
+
+@font-face {
+    src: url(../fonts/segoeuil.ttf);
+    font-family: SegoeUIL;
+}
+
+@font-face {
+    src: url(../fonts/seguisb.eot);
+    font-family: SegoeUISB;
+}
+
+@font-face {
+    src: url(../fonts/seguisb.ttf);
+    font-family: SegoeUISB;
+}
+
+/* Boring Stuff */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 0.9em;
+    color: #333;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+#loginHeader {
+    width: 100%;
+    background-color: #da832f;
+    padding: 10px 30px;
+}
+#wrapper {
+    width: 1024px;
+    margin: 40px auto 0;
+    min-height: 600px;
+    position: relative;
+}
+
+/* Signin */
+
+.signin {
+    overflow: hidden;
+    padding: 0;
+}
+.signInText {
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:18px;
+    display:block;
+    color: #777;
+}
+.panel {
+    width: 40%;
+    min-width: 500px;
+    float: left;
+}
+
+.left.panel {
+    background: url(/content/images/login-2.png) no-repeat 0 0;
+    
+    padding: 30px 0 0 0;
+    height: 370px;
+    position: relative;
+}
+
+    .left.panel h2 {
+        color: #fff;
+        font-family: SegoeUIL, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+        font-size: 32px;
+    }
+
+    .left.panel a {
+        display: block;
+        opacity: 0.95;
+        position: absolute;
+        bottom: 80px;
+        font-size: 15px;
+        *background: url(/content/images/next.png) no-repeat right center;
+        background-size: 15px auto;
+        padding: 5px 25px 5px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .left.panel a:hover {
+            opacity: 1;
+        }
+
+.right.panel {
+    /*float: right;*/
+    padding-top: 15px;
+    width: 40%;
+    left:52%;
+    position: absolute;
+}
+
+    .right.panel h2 {
+        font-size: 24px;
+        font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .right.panel .login-option {
+        background: url(/content/images/windows-logo.png) no-repeat 30px 15px;
+        margin-bottom: 10px;
+        padding: 0;
+        display:block;
+        text-indent: 40px;
+        text-decoration: none;
+        height:23px;
+        padding: 15px 30px;
+        max-width: 180px;
+        border: 1px #FFF solid;
+    }
+
+        .right.panel .login-option:hover, .right.panel .login-option.facebook:hover {
+            background-color: #f0f0f0;
+            border: 1px #CCC solid;
+        }
+
+        .right.panel .login-option.facebook {
+            background: url(/content/images/facebook-logo.png) no-repeat 30px 15px;
+        }
+
+        .right.panel .login-option.google {
+            background: url(/content/images/google-logo.jpg) no-repeat 30px 15px;
+        }
+
+        .right.panel .login-option span {
+            font-size: 16px;
+            color: #da832f;
+            display: block;
+            text-decoration: none;
+        }
+
+        .right.panel .login-option p {
+            font-size: 11px;
+            color: #999;
+        }
+       
+
+.logo {
+    padding-bottom: 10px;
+}
+
+    .logo img {
+    }
+
+.description {
+    display:block;
+    font-weight:800;
+    font-size:medium;
+}
+.descriptionDetails {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 0 15px 30px;
+    line-height: 28px;
+    color: #777;
+
+}
+.descriptionDetails li {
+   list-style-type: disc;
+}
+/* Footer */
+
+/*footer {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 935px;
+    padding: 10px 20px;
+}
+
+    footer .copyright {
+        font-size: 11px;
+        float: right;
+        color: #999;
+        margin-left: 20px;
+        padding-top: 2px;
+    }
+
+    footer .powered {
+        background: #ccc;
+        padding: 0 5px;
+        margin-left: 5px;
+        float: right;
+    }
+
+        footer .powered:hover {
+            background: #999;
+        }
+
+    footer nav {
+        float: left;
+        padding-top: 2px;
+    }
+
+        footer nav ul li {
+            float: left;
+            line-height: 11px;
+            padding-right: 20px;
+        }
+
+            footer nav ul li a {
+                font-size: 11px;
+                color: #000;
+            }*/
+
+
+footer {
+    overflow: hidden;
+    margin: 0 20px;
+    border-top: 1px solid #dededd;
+    padding-top: 15px;
+    position: relative;
+}
+
+    footer ul li {
+        float: left;
+        padding: 0 5px;
+    }
+
+    footer nav {
+        float: left;
+    }
+
+        footer nav.copyright-info {
+            float: right;
+        }
+
+    footer .footer-links li {
+        border-right: 1px solid #333;
+        line-height: 13px;
+    }
+
+        footer .footer-links li:last-child {
+            border: none;
+        }
+
+        footer .footer-links li a {
+            color: #333;
+            font-size: 12px;
+        }
+
+            footer .footer-links li a:hover {
+                text-decoration: underline;
+            }
+
+footer {
+    position:relative;
+    bottom: 0;
+    display:block;
+    padding: 0;
+    top: inherit;
+    margin-top:40px;
+}
+
+footer .footerContainer {
+    margin: 0 20px;
+    background: #fff;
+    padding: 15px 0 10px;
+    min-height: inherit;
+}
+
+   a img {
+        border: none;
+    }

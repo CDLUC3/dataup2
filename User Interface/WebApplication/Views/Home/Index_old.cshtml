@@ -1,0 +1,145 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+@using Microsoft.Research.DataOnboarding.WebApplication.ViewModels;
+
+@model FileListViewModel
+@{
+    ViewBag.Title = Information.Title;
+}
+<div id="body">
+
+    @{
+        Html.RenderPartial("UploadFile");
+        var uploadFileListClass = string.Empty;
+        var postFileListClass = "hide";
+        var filesDeletionAlertListClass = "hide";
+        var uploadTabClass = "active";
+        var postTabClass = string.Empty;
+        var filesDeletionAlertTabClass = string.Empty;
+
+        if (ViewBag.IsAfterPost != null && ViewBag.IsAfterPost == true)
+        {
+            postFileListClass = "";
+            uploadFileListClass = "hide";
+            postTabClass = "active";
+            uploadTabClass = "";
+        }
+    }
+    <section class="rightPanel">
+        <div class="container">
+            <nav>
+                <div class="tabNavigation">
+                    <ul>
+                        <li id="btnUploadedFiles" class="@uploadTabClass"><a href="javascript:void(0)">@Information.UploadedFiles</a></li>
+                        <li id="btnPostedFiles" class="@postTabClass"><a href="javascript:void(0)">@Information.PublishedFiles</a></li>
+                        @if (@Model != null && @Model.FilesToBeDeletedList != null && @Model.FilesToBeDeletedList.Any())
+                        {
+                            <li id="btnFilesDeletionAlert" class="@filesDeletionAlertTabClass"><a href="javascript:void(0)">@Information.FilesDeletionAlert (<span>@Model.FilesToBeDeletedList.Count</span>)</a></li>
+                        }
+                    </ul>
+                </div>
+            </nav>
+            <div class="list @uploadFileListClass" id="divUploadedFiles">
+                <div id="divUploadFilesInnerDiv">
+                    @{ Html.RenderPartial("UploadedFileList", Model);  }
+                </div>
+            </div>
+            <div class="list @postFileListClass" id="divPostedFiles">
+                <div>
+                    @{ Html.RenderPartial("PublishedFileList", Model);  }
+                </div>
+            </div>
+            @if (@Model != null && @Model.FilesToBeDeletedList != null && @Model.FilesToBeDeletedList.Any())
+            {
+                <div class="list @filesDeletionAlertListClass" id="divfilesDeletionAlert">
+                    <div>
+                        @{ Html.RenderPartial("FilesDeletionAlertList", Model);  }
+                    </div>
+                </div>
+            }
+        </div>
+        @{
+            Html.RenderPartial("Footer");
+        }
+    </section>
+</div>
+
+<div id="divCredPopup" class="popup" style="display: none;">
+    <div class="wrapper">
+        <a id="closeCredPopup" href="javascript:void(0)" class="close">X</a>
+        <div class="container">
+            <div class="userCredential">
+                <div class="row">
+                    <label>@Information.UserNameLabel</label>
+                    <input type="text" id="txtUserToDownLoad" />
+                    <span id="errUserReqDownload" style="color: red; display: none;">@Messages.UserNameRequiredMsg</span>
+                </div>
+                <div class="row">
+                    <label>@Information.PasswordLabel</label>
+                    <input type="password" id="pwdToDownLoad" />
+                    <span id="errPwdReqDownload" style="color: red; display: none;">@Messages.PwdRequiredMsg</span>
+                </div>
+            </div>
+
+            <div class="endStripe">
+                @*<input type="button" value="Cancel" class="button l1 cancel" title="Cancel" />*@
+                <input id="btnDownload" type="button" value="Downlaod" class="button l1 download" title="@Information.PostTitle" />
+                <a id="cancelCredPopup" href="javascript:void(0)" class="button l1 cancel" title="@Information.CancelHeader">@Information.CancelHeader</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .popup {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0);
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+    }
+
+        .popup .wrapper {
+            background: rgb(146, 76, 156);
+            padding: 20px;
+            margin-top: 25 0px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 250px;
+        }
+
+        .popup .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: block;
+            width: 30px;
+            text-indent: -10000px;
+            height: 30px;
+            background: url(../Content/images/delete.png) no-repeat 0 -157px;
+            background-size: 30px auto;
+        }
+
+        .popup .container {
+            min-height: inherit;
+            width: 422px;
+            margin: 0 auto;
+        }
+
+            .popup .container .row {
+                padding-bottom: 10px;
+            }
+
+            .popup .container label {
+                color: #fff;
+                padding-bottom: 5px;
+                display: block;
+            }
+
+            .popup .container .endStripe {
+                padding: 20px 0 10px;
+            }
+</style>
+
+

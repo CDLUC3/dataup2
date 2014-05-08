@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="WebApplicationAzureDeployment" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WebRole name="WebApplication" vmsize="ExtraLarge">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="dataup2httpsbinding" endpointName="dataup2httpsin" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="FileDeletionAlertCheckpoints" />
+      <Setting name="FileDeletionAlertDisplayThreshold" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="dataup2httpsin" protocol="https" certificate="--CERT_NAME--" port="443" />
+      <!--<InputEndpoint name="dataup2httpsin" protocol="http" port="80" />-->
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <Certificates>
+      <Certificate name="dataup2cert" storeLocation="LocalMachine" storeName="CA" />
+    </Certificates>
+  </WebRole>
+</ServiceDefinition>

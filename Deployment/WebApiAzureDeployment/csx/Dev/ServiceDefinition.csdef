@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WebApiAzureDeployment" schemaVersion="2013-10.2.2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="WebApi">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+      <LocalStorage name="TransientFileStorage" sizeInMB="32768" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataOnBoardingStorage" />
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService.FileProcesser" />
+      <Setting name="Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Api" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Security" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="PrimaryContainer" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="dataup2httpsin" protocol="http" port="80" localPort="80" />
+    </Endpoints>
+    <Certificates />
+  </WebRole>
+  <WorkerRole name="FilePurgeService">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+      <LocalStorage name="TransientFileStorage" sizeInMB="32768" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataOnBoardingStorage" />
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="Microsoft.Research.DataOnboarding.FilePurgeService" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="PrimaryContainer" />
+      <Setting name="ScheduledTimeInHours" />
+      <Setting name="UploadedFilesExpirationDurationInHours" />
+    </ConfigurationSettings>
+    <Endpoints />
+    <Certificates />
+  </WorkerRole>
+  <WorkerRole name="PublishProcessor">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+      <LocalStorage name="TransientFileStorage" sizeInMB="32768" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="DataOnBoardingStorage" />
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="Microsoft.Research.DataOnboarding.QueueService" />
+      <Setting name="Microsoft.Research.DataOnboarding.Services.PublishProcessor" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="PrimaryContainer" />
+      <Setting name="ScheduledLogTransferInMinutes" />
+      <Setting name="ScheduledTime" />
+    </ConfigurationSettings>
+    <Endpoints />
+    <Certificates />
+  </WorkerRole>
+</ServiceDefinition>

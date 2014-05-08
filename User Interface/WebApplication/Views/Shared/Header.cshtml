@@ -1,0 +1,38 @@
+﻿<!-- Header -->
+<header class="global">
+
+    <!-- Logo -->
+    <div class="logo">
+        <h1><a href="/Home/Index" role="link">
+            <img src="/content/images/dataup-logo.png" title="DataUp" role="img" /></a></h1>
+    </div>
+
+    <!-- User Links -->
+    <div class="user-links">
+        @if (Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData != null)
+        {
+            <div class="welcome"><span>Welcome,</span><span class="username">@string.Concat(Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData.FirstName, " ", Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData.LastName)</span></div>
+            <nav>
+                <ul>
+                    @if (Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData != null && Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserData.Roles.Contains("Administrator"))
+                    {
+                        <li>
+                            <span>Settings</span>
+                            <nav>
+                                <img src="/content/images/active-arrow01.png" height="10" />
+                                <ul>
+                                    <li><a href="@Url.Action("Index", "Repository")" title="@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageRepository">@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageRepository</a></li>
+                                    <li><a href="@Url.Action("Index", "QualityCheck")" title="@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageQualityCheckRules">@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ManageQualityCheckRules</a></li>
+                                    <li><a href="#" title="View Admin Users List">@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ViewAdminUsersList</a></li>
+                                    <li><a href="#" title="View Usage Reports">@Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.ViewUsageReports</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                     }
+
+                    <li><a href="@Url.Action("SignOut", "Authenticate")" class="signout" title="Signout" role="link">Sign Out</a></li>
+                </ul>
+            </nav>
+        }
+    </div>
+</header>

@@ -1,0 +1,2 @@
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\Microsoft.Research.DataOnboarding.QCService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QCService.Interface.IQCService: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\Microsoft.Research.DataOnboarding.QCService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QCService.QCService+<GetQualityCheckIssues>d__4: type is not supported because of internal limitations.

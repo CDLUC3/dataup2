@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AuthenticationFailed" xml:space="preserve">
+    <value>Authentication failed for the repository.</value>
+  </data>
+  <data name="BestPractisesNotSupportedMessage" xml:space="preserve">
+    <value>Best practices check is available only for xlsx files.</value>
+  </data>
+  <data name="BlankCells" xml:space="preserve">
+    <value>Blank cells</value>
+  </data>
+  <data name="BlankCellsDescription" xml:space="preserve">
+    <value>Blank cells within a contiguous data table are potentially problematic for reading files in other programs.</value>
+  </data>
+  <data name="BlankCellsRecommendation" xml:space="preserve">
+    <value>Designate a coding scheme for missing data or other explanations for blank cells.</value>
+  </data>
+  <data name="ColorCodedTextOrCellShading" xml:space="preserve">
+    <value>Color coded text or cell shading</value>
+  </data>
+  <data name="ColorCodedTextOrCellShadingDescription" xml:space="preserve">
+    <value>Formatting will not be visible when data are exported as a .csv file. If formatting is used as a coding scheme, all codes will be lost upon export.</value>
+  </data>
+  <data name="ColorCodedTextOrCellShadingRecommendation" xml:space="preserve">
+    <value>Use descriptions or alphanumeric coding schemes in a new column</value>
+  </data>
+  <data name="ColumnsHaveMixedDataTypes" xml:space="preserve">
+    <value>Columns have mixed data types</value>
+  </data>
+  <data name="ColumnsHaveMixedDataTypesDescription" xml:space="preserve">
+    <value>Some programs cannot handle mixed data types (e.g. numbers and text in the same column).</value>
+  </data>
+  <data name="ColumnsHaveMixedDataTypesRecommendation" xml:space="preserve">
+    <value>Ensure you are using only numbers or only text in a column; split data into multiple columns if necessary.</value>
+  </data>
+  <data name="Commas" xml:space="preserve">
+    <value>Commas</value>
+  </data>
+  <data name="CommasDescription" xml:space="preserve">
+    <value>Commas are often used to separate multiple piece of information/data (e.g. City, State). Cells should have only one piece of information.</value>
+  </data>
+  <data name="CommasRecommendation" xml:space="preserve">
+    <value>Split pieces of information into multiple columns (e.g. City column and State column)</value>
+  </data>
+  <data name="EmbeddedCharts" xml:space="preserve">
+    <value>Embedded charts</value>
+  </data>
+  <data name="EmbeddedChartsDescription" xml:space="preserve">
+    <value>These embedded items will not be visible when data are exported as a .csv file. Also, these elements are visible only if the file is opened with Microsoft Excel.</value>
+  </data>
+  <data name="EmbeddedChartsRecommendation" xml:space="preserve">
+    <value>Move embedded charts, tables, or pictures to other tabs in your file or a completely separate file.</value>
+  </data>
+  <data name="EmbeddedComments" xml:space="preserve">
+    <value>Embedded comments</value>
+  </data>
+  <data name="EmbeddedCommentsDescription" xml:space="preserve">
+    <value>Comments will not be visible when data are exported as a .csv file. Also, these elements are visible only if the file is opened with Microsoft Excel.</value>
+  </data>
+  <data name="EmbeddedCommentsRecommendation" xml:space="preserve">
+    <value>Create a new column titled 'Comments' and add your text there.</value>
+  </data>
+  <data name="EmbeddedPictures" xml:space="preserve">
+    <value>Embedded pictures</value>
+  </data>
+  <data name="EmbeddedPicturesDescription" xml:space="preserve">
+    <value>These embedded items will not be visible when data are exported as a .csv file. Also, these elements are visible only if the file is opened with Microsoft Excel.</value>
+  </data>
+  <data name="EmbeddedPicturesRecommendation" xml:space="preserve">
+    <value>Move embedded charts, tables, or pictures to other tabs in your file or a completely separate file.</value>
+  </data>
+  <data name="EmbeddedShapes" xml:space="preserve">
+    <value>Embedded Shapes</value>
+  </data>
+  <data name="EmbeddedShapesDescription" xml:space="preserve">
+    <value>These embedded items will not be visible when data are exported as a .csv file. Also, these elements are visible only if the file is opened with Microsoft Excel.</value>
+  </data>
+  <data name="EmbeddedShapesRecommendation" xml:space="preserve">
+    <value>Move embedded charts, tables, or pictures to other tabs in your file or a completely separate file.</value>
+  </data>
+  <data name="INVALIDCOLUMNLOCATION" xml:space="preserve">
+    <value>Invalid file ,Column should start from A1 location</value>
+  </data>
+  <data name="MergedCells" xml:space="preserve">
+    <value>Merged cells</value>
+  </data>
+  <data name="MergedCellsDescription" xml:space="preserve">
+    <value>Merged cells will not be maintained when data are exported as a .csv file. Information may be lost when cells are unmerged upon export.</value>
+  </data>
+  <data name="MergedCellsRecommendation" xml:space="preserve">
+    <value>Unmerge cells and annotate appropriately so information is not lost.</value>
+  </data>
+  <data name="MISSINGCOLUMNDATA" xml:space="preserve">
+    <value>Columns values are missing</value>
+  </data>
+  <data name="MISSINGHEADER" xml:space="preserve">
+    <value>Header {0} is missing</value>
+  </data>
+  <data name="MISSINGHEADERORDER" xml:space="preserve">
+    <value>Headers are not in order</value>
+  </data>
+  <data name="NonContiguousData" xml:space="preserve">
+    <value>Non-contiguous data</value>
+  </data>
+  <data name="NonContiguousDataDescription" xml:space="preserve">
+    <value>Empty columns or rows tend to be used to separate multiple data tables on the same tab.</value>
+  </data>
+  <data name="NonContiguousDataRecommendation" xml:space="preserve">
+    <value>Move multiple tables onto separate tabs.</value>
+  </data>
+  <data name="NUMERICDATATYPEMISMATCH" xml:space="preserve">
+    <value>Columns under Header {0} should be of Numeric data</value>
+  </data>
+  <data name="SpecialCharacters" xml:space="preserve">
+    <value>Special characters</value>
+  </data>
+  <data name="SpecialCharactersDescription" xml:space="preserve">
+    <value>Special characters may cause problems for other programs or may be modified upon export</value>
+  </data>
+  <data name="SpecialCharactersRecommendation" xml:space="preserve">
+    <value>Use alpha-numeric characters only. If needed, describe the symbol in a new column</value>
+  </data>
+  <data name="TEXTDATATYPEMISMATCH" xml:space="preserve">
+    <value>Columns under Header {0} should be of text data</value>
+  </data>
+  <data name="TotalCount" xml:space="preserve">
+    <value>Total Count</value>
+  </data>
+  <data name="QualityCheck_ExecutionFailure" xml:space="preserve">
+    <value>Failed to run quality check rules on the data. Possible causes can be invalid and/or corrupt data.</value>
+  </data>
+  <data name="QualityCheck_HeaderMissingMessageTemplate" xml:space="preserve">
+    <value>Header '{0}' is missing.</value>
+  </data>
+  <data name="QualityCheck_HeaderNotInOrderMessageTemplate" xml:space="preserve">
+    <value>Headers are not in order.</value>
+  </data>
+  <data name="QualityCheck_NumericTypeErrorMessageTemplate" xml:space="preserve">
+    <value>Data under header '{0}' should be numeric.</value>
+  </data>
+  <data name="QualityCheck_RangeErrorMessageTemplate" xml:space="preserve">
+    <value>Data under header '{0}' is not in the specified range {1} to {2}.</value>
+  </data>
+</root>

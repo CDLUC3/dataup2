@@ -1,0 +1,9 @@
+﻿.error {
+    font-size: 16px;
+    float: none !important;
+    display: inline;
+}
+
+.paramtrTableContainer .error {
+    display: block;
+}

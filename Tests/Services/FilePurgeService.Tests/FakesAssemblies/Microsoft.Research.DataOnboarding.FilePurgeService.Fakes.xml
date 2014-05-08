@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.FilePurgeService.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.FilePurgeService.FilePurgeService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.#ctor(Microsoft.Research.DataOnboarding.FilePurgeService.FilePurgeService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.Bind(Microsoft.Research.DataOnboarding.FilePurgeService.IFileService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.ConstructorIFileServiceIUnityContainer">
+            <summary>Sets the shim of FilePurgeService.FilePurgeService(IFileService fileService, IUnityContainer container)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.Execute">
+            <summary>Sets the shim of FilePurgeService.Execute()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFilePurgeService.AllInstances.Execute">
+            <summary>Sets the shim of FilePurgeService.Execute()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.FilePurgeService.FileUpdateService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.#ctor(Microsoft.Research.DataOnboarding.FilePurgeService.FileUpdateService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.Bind(Microsoft.Research.DataOnboarding.FilePurgeService.IFileService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.ConstructorIFileService">
+            <summary>Sets the shim of FileUpdateService.FileUpdateService(IFileService fileService)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.Execute">
+            <summary>Sets the shim of FileUpdateService.Execute()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimFileUpdateService.AllInstances.Execute">
+            <summary>Sets the shim of FileUpdateService.Execute()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.FilePurgeService.WorkerRole</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.#ctor(Microsoft.Research.DataOnboarding.FilePurgeService.WorkerRole)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.Constructor">
+            <summary>Sets the shim of WorkerRole.WorkerRole()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.OnStart">
+            <summary>Sets the shim of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.OnStop">
+            <summary>Sets the shim of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterAdaptersUnityContainer">
+            <summary>Sets the shim of WorkerRole.RegisterAdapters(UnityContainer container)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterLocalResources">
+            <summary>Sets the shim of WorkerRole.RegisterLocalResources()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterRepositoriesUnityContainer">
+            <summary>Sets the shim of WorkerRole.RegisterRepositories(UnityContainer container)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterRoleEnvironmentChangeDelegate">
+            <summary>Sets the shim of WorkerRole.RegisterRoleEnvironmentChangeDelegate()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterServicesUnityContainer">
+            <summary>Sets the shim of WorkerRole.RegisterServices(UnityContainer container)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RegisterUnityContainer">
+            <summary>Sets the shim of WorkerRole.RegisterUnityContainer()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.RoleEnvironment_ChangingObjectRoleEnvironmentChangingEventArgs">
+            <summary>Sets the shim of WorkerRole.RoleEnvironment_Changing(Object sender, RoleEnvironmentChangingEventArgs e)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.Run">
+            <summary>Sets the shim of WorkerRole.Run()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.AllInstances.OnStart">
+            <summary>Sets the shim of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.AllInstances.OnStop">
+            <summary>Sets the shim of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.ShimWorkerRole.AllInstances.Run">
+            <summary>Sets the shim of WorkerRole.Run()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.FilePurgeService.FilePurgeService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService.#ctor(Microsoft.Research.DataOnboarding.FileService.Interface.IFileService,Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService.InitializeStub">
+            <summary>Initializes a new instance of type StubFilePurgeService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFilePurgeService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.FilePurgeService.FileUpdateService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService.#ctor(Microsoft.Research.DataOnboarding.FileService.Interface.IFileService)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService.InitializeStub">
+            <summary>Initializes a new instance of type StubFileUpdateService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubFileUpdateService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubIFileService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.FilePurgeService.IFileService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubIFileService.#ctor">
+            <summary>Initializes a new instance of type StubIFileService</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubIFileService.Execute">
+            <summary>Sets the stub of IFileService.Execute()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubIFileService.mrdofps::Microsoft#Research#DataOnboarding#FilePurgeService#IFileService#Execute">
+            <summary>Sets the stub of IFileService.Execute()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.FilePurgeService.WorkerRole</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.InitializeStub">
+            <summary>Initializes a new instance of type StubWorkerRole</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.OnStart">
+            <summary>Sets the stub of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.OnStart01">
+            <summary>Sets the stub of WorkerRole.OnStart()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.OnStop">
+            <summary>Sets the stub of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.OnStop01">
+            <summary>Sets the stub of WorkerRole.OnStop()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.Run">
+            <summary>Sets the stub of WorkerRole.Run()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.Run01">
+            <summary>Sets the stub of WorkerRole.Run()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Fakes.StubWorkerRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Constants</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.ScheduledTimeInHoursGet">
+            <summary>Sets the shim of Constants.get_ScheduledTimeInHours()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Fakes.ShimConstants.UploadedFilesExpirationDurationInHoursGet">
+            <summary>Sets the shim of Constants.get_UploadedFilesExpirationDurationInHours()</summary>
+        </member>
+    </members>
+</doc>

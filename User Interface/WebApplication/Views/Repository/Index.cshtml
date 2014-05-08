@@ -1,0 +1,89 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model IList<Microsoft.Research.DataOnboarding.WebApplication.ViewModels.RepositoryViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="body" class="admin">
+
+    <section class="rightPanel">
+        <div class="container">
+
+            <div class="title">
+                <h2>@Information.ManageRepository</h2>
+
+                <nav>
+                    <div class="optionLinks">
+                        <ul>
+                            <li class="add"><a href="@Url.Action("ManageRepository", new { repositoryId = 0 })" title="@Information.AddRepositoryText">@Information.AddRepositoryText</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            @if (Model == null || !Model.Any())
+            {
+                <div class="list" id="divNoRep">
+                    <h4>@Messages.NoRepositoriesMsg</h4>
+                </div>
+            }
+            else
+            {                
+                <div class="list">
+                    <div class="hide" id="divNoRepository">
+                        <h4>@Messages.NoRepositoriesMsg</h4>
+                    </div>
+                    <div>
+                        <span id="errRepositoryMessage" style="color: red;"></span>
+                    </div>
+                    <input type="hidden" id="hdnRepositoryCount" value="@Model.Count" />
+                    <table id="tabRepositories" cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th title="@Information.RepositoryNameHeader">@Information.RepositoryNameHeader</th>
+                                <th width="100" title="@Information.FileTypeHeader">@Information.FileTypeHeader</th>
+                                <th width="80" title="@Information.VisibilityHeader">@Information.VisibilityHeader</th>
+                                <th width="240" title="@Information.CreatedDateHeader">@Information.CreatedDateHeader</th>
+                                <th width="140" title="@Information.CreatedByHeader">@Information.CreatedByHeader</th>
+                                <th width="80" title="@Information.ActionsHeader">@Information.ActionsHeader</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var repository in Model)
+                            {
+                                <tr id="@repository.RepositoryId">
+                                    <td class="repositoryName">@repository.RepositoryName</td>
+                                    @*     <td class="authType">@repository.AuthenticationMode</td>*@
+                                    <td class="file">@repository.FileTypes</td>
+                                    <td class="visibility">
+                                        @if (@repository.IsVisibleToAll)
+                                        {
+                                            @Html.Raw(@Information.VisibleToAll)
+                                        }
+                                        else
+                                        {
+                                            @Html.Raw(@Information.VisibleToAdmin)
+                                        }
+                                    </td>
+                                    <td class="dateCreates">@repository.CreatedDate</td>
+                                    <td class="createdBy">@repository.CreatedUser</td>
+                                    <td class="actions">
+                                        <ul>
+                                            <li class="edit"><a href="@Url.Action("ManageRepository", new { repositoryId = @repository.RepositoryId })" title="@Information.EditText">@Information.EditText</a></li>
+                                            <li class="delete"><a href="#" id="ancDelRepository" repId="@repository.RepositoryId" title="@Information.DeleteText">@Information.DeleteText</a></li>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    
+    </section>
+
+</div>

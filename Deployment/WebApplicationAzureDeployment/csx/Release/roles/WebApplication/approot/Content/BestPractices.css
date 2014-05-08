@@ -1,0 +1,188 @@
+﻿.bestPractices .container {
+    min-height: inherit !important;
+}
+
+.removeError {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.info {
+    background: #ffc995;
+    padding: 20px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+    .info a {
+        color: #da832f;
+        font-weight: bold;
+    }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+div.st_horizontal {
+    position: relative;
+    float: left;
+    clear: both;
+    color: #666;
+}
+
+    div.st_horizontal a.st_prev, div.st_horizontal a.st_next {
+        position: absolute;
+        display: none !important;
+        top: 0;
+        z-index: 110;
+        display: none;
+        height: 60px;
+        width: 40px;
+        outline: none;
+        background: url(images/next-arrow.png) no-repeat 10px center;
+        line-height: 55px;
+    }
+
+    div.st_horizontal a.st_prev {
+        left: 0;
+        background-image: url(images/prev-arrow.png);
+    }
+
+        div.st_horizontal a.st_prev:hover {
+        }
+
+    div.st_horizontal a.st_next {
+        right: 0;
+    }
+
+        div.st_horizontal a.st_prev.st_btn_disabled, div.st_horizontal a.st_next.st_btn_disabled {
+            cursor: default;
+            background: none;
+        }
+
+    div.st_horizontal div.st_tabs_container {
+        position: relative;
+        z-index: 100;
+        width: 100%!important;
+        margin-bottom: -1px;
+        overflow: hidden;
+    }
+
+    div.st_horizontal div.st_slide_container {
+        position: relative!important;
+    }
+
+    div.st_horizontal div.st_sliding_active div.st_slide_container {
+        margin: 0 0px;
+        overflow: inherit;
+        width: 100%;
+    }
+
+    div.st_horizontal ul.st_tabs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+        div.st_horizontal ul.st_tabs a:hover {
+            color: #333;
+        }
+
+        div.st_horizontal ul.st_tabs li a.st_first_tab {
+            border-left: 1px solid #CCC;
+        }
+
+        div.st_horizontal ul.st_tabs a.st_tab_active {
+            padding: 0 25px 0 13px;
+            text-decoration: none;
+            font: normal 13px/25px "Segoe UI";
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            height: 25px;
+            border-bottom: solid 2px #fff;
+            background: #ccc;
+        }
+
+    div.st_horizontal div.st_view_container {
+        position: relative;
+        z-index: 5;
+        height: 277px;
+        border: 1px solid #CCC;
+        background-color: #fff;
+        overflow: hidden;
+        padding: 20px 20px 23px;
+    }
+
+    div.st_horizontal div.st_view {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    div.st_horizontal div.st_tab_view {
+        display: none;
+        width: 100%;
+    }
+
+    div.st_horizontal div.st_first_tab_view {
+        display: block;
+    }
+
+    div.st_horizontal div.st_view h2 {
+        font-size: 16px;
+        color: #666;
+        margin: 0 0 16px;
+        padding: 0;
+    }
+
+    div.st_horizontal div.st_view p {
+        margin: 14px 0 0;
+        padding: 0;
+    }
+
+    div.st_horizontal div.st_view blockquote {
+        float: left;
+        width: 315px;
+        border-left: 2px solid #666;
+        font: italic 17px/21px Georgia, "Times New Roman", Times, serif;
+        color: #AAA;
+        margin: 18px 14px 0 0;
+        padding: 0 0 0 14px;
+    }
+
+        div.st_horizontal div.st_view blockquote p {
+            margin: 0;
+        }
+
+    div.st_horizontal.align_bottom a.st_prev, div.st_horizontal.align_bottom a.st_next {
+        border-bottom: 1px solid #CCC;
+    }
+
+    div.st_horizontal.align_bottom div.st_tabs_container {
+        position: absolute;
+        bottom: -39px;
+        left: 0;
+        margin-bottom: 0;
+    }
+
+    div.st_horizontal.align_bottom ul.st_tabs a.st_tab_active {
+        border-top-color: #fff;
+        border-bottom-color: #CCC;
+    }
+
+table.report-pane {
+    margin-top: 10px;
+}
+
+.scroll-grid {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+td.location {
+    word-break: break-all;
+}

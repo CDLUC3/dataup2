@@ -1,0 +1,2 @@
+C:\DataOnboarding\Tests\Services\FilePurgeService.Tests\Fakes\Microsoft.Research.DataOnboarding.FilePurgeService.fakes : warning : Cannot generate stub for Microsoft.Research.DataOnboarding.FilePurgeService.Helpers.Constants: type is sealed.
+C:\DataOnboarding\Tests\Services\FilePurgeService.Tests\Fakes\Microsoft.Research.DataOnboarding.FilePurgeService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.FilePurgeService.IFileService: type is an interface.

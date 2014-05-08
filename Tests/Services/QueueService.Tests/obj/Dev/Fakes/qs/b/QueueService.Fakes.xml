@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QueueService.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.BaseQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.#ctor(Microsoft.Research.DataOnboarding.QueueService.BaseQueueService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.Constructor">
+            <summary>Sets the shim of BaseQueueService.BaseQueueService()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.DiagnosticsGet">
+            <summary>Sets the shim of BaseQueueService.get_Diagnostics()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.DiagnosticsSetDiagnosticsProvider">
+            <summary>Sets the shim of BaseQueueService.set_Diagnostics(DiagnosticsProvider value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.FileServiceGet">
+            <summary>Sets the shim of BaseQueueService.get_FileService()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.FileServiceSetIFileService">
+            <summary>Sets the shim of BaseQueueService.set_FileService(IFileService value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.MaxRetryCountGet">
+            <summary>Sets the shim of BaseQueueService.get_MaxRetryCount()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.MaxRetryCountSetInt32">
+            <summary>Sets the shim of BaseQueueService.set_MaxRetryCount(Int32 value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.QueueRepositoryGet">
+            <summary>Sets the shim of BaseQueueService.get_QueueRepository()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.QueueRepositorySetIQueueRepository">
+            <summary>Sets the shim of BaseQueueService.set_QueueRepository(IQueueRepository value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.RepositoryServiceGet">
+            <summary>Sets the shim of BaseQueueService.get_RepositoryService()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.RepositoryServiceSetIRepositoryService">
+            <summary>Sets the shim of BaseQueueService.set_RepositoryService(IRepositoryService value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.UpdateFileStatusAsErrorBaseMessage">
+            <summary>Sets the shim of BaseQueueService.UpdateFileStatusAsError(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.UpdateMessageInQueueBaseMessageInt32">
+            <summary>Sets the shim of BaseQueueService.UpdateMessageInQueue(BaseMessage message, Int32 interval)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.VerifyFileIntervalGet">
+            <summary>Sets the shim of BaseQueueService.get_VerifyFileInterval()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.VerifyFileIntervalSetInt32">
+            <summary>Sets the shim of BaseQueueService.set_VerifyFileInterval(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.DiagnosticsGet">
+            <summary>Sets the shim of BaseQueueService.get_Diagnostics()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.DiagnosticsSetDiagnosticsProvider">
+            <summary>Sets the shim of BaseQueueService.set_Diagnostics(DiagnosticsProvider value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.FileServiceGet">
+            <summary>Sets the shim of BaseQueueService.get_FileService()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.FileServiceSetIFileService">
+            <summary>Sets the shim of BaseQueueService.set_FileService(IFileService value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.MaxRetryCountGet">
+            <summary>Sets the shim of BaseQueueService.get_MaxRetryCount()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.MaxRetryCountSetInt32">
+            <summary>Sets the shim of BaseQueueService.set_MaxRetryCount(Int32 value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.QueueRepositoryGet">
+            <summary>Sets the shim of BaseQueueService.get_QueueRepository()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.QueueRepositorySetIQueueRepository">
+            <summary>Sets the shim of BaseQueueService.set_QueueRepository(IQueueRepository value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.RepositoryServiceGet">
+            <summary>Sets the shim of BaseQueueService.get_RepositoryService()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.RepositoryServiceSetIRepositoryService">
+            <summary>Sets the shim of BaseQueueService.set_RepositoryService(IRepositoryService value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.UpdateFileStatusAsErrorBaseMessage">
+            <summary>Sets the shim of BaseQueueService.UpdateFileStatusAsError(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.UpdateMessageInQueueBaseMessageInt32">
+            <summary>Sets the shim of BaseQueueService.UpdateMessageInQueue(BaseMessage message, Int32 interval)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.VerifyFileIntervalGet">
+            <summary>Sets the shim of BaseQueueService.get_VerifyFileInterval()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimBaseQueueService.AllInstances.VerifyFileIntervalSetInt32">
+            <summary>Sets the shim of BaseQueueService.set_VerifyFileInterval(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.MessageHandlerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.#ctor(Microsoft.Research.DataOnboarding.QueueService.MessageHandlerFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.Bind(Microsoft.Research.DataOnboarding.QueueService.IMessageHandlerFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.ConstructorIFileServiceFactoryIRepositoryServiceIQueueRepositoryIBlobDataRepository">
+            <summary>Sets the shim of MessageHandlerFactory.MessageHandlerFactory(IFileServiceFactory fileServiceFactory, IRepositoryService repositoryService, IQueueRepository queueRepository, IBlobDataRepository blobRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.GetMessageHandlerMessageHandlerEnum">
+            <summary>Sets the shim of MessageHandlerFactory.GetMessageHandler(MessageHandlerEnum handlerName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageHandlerFactory.AllInstances.GetMessageHandlerMessageHandlerEnum">
+            <summary>Sets the shim of MessageHandlerFactory.GetMessageHandler(MessageHandlerEnum handlerName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.MessageRouter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.#ctor(Microsoft.Research.DataOnboarding.QueueService.MessageRouter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.Bind(Microsoft.Research.DataOnboarding.QueueService.IMessageRouter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.ConstructorIMessageHandlerFactoryIQueueRepository">
+            <summary>Sets the shim of MessageRouter.MessageRouter(IMessageHandlerFactory messageHandlerFactory, IQueueRepository queueRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.ConstructorIQueueRepository">
+            <summary>Sets the shim of MessageRouter.MessageRouter(IQueueRepository queueRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.ProcessQueue">
+            <summary>Sets the shim of MessageRouter.ProcessQueue()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.RouteMessageBaseMessage">
+            <summary>Sets the shim of MessageRouter.RouteMessage(BaseMessage baseMessage)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.AllInstances.ProcessQueue">
+            <summary>Sets the shim of MessageRouter.ProcessQueue()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimMessageRouter.AllInstances.RouteMessageBaseMessage">
+            <summary>Sets the shim of MessageRouter.RouteMessage(BaseMessage baseMessage)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.PublishQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.#ctor(Microsoft.Research.DataOnboarding.QueueService.PublishQueueService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.Bind(Microsoft.Research.DataOnboarding.QueueService.IMessageHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.Bind(Microsoft.Research.DataOnboarding.QueueService.IPublishQueueService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AddVerifyFileMessageToQueuePublishMessage">
+            <summary>Sets the shim of PublishQueueService.AddVerifyFileMessageToQueue(PublishMessage publishMessage)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.ConstructorIFileServiceFactoryIRepositoryServiceIQueueRepository">
+            <summary>Sets the shim of PublishQueueService.PublishQueueService(IFileServiceFactory fileServiceFactory, IRepositoryService repositoryService, IQueueRepository queueRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.PostFileToQueueBaseMessage">
+            <summary>Sets the shim of PublishQueueService.PostFileToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.ProcessMessageBaseMessage">
+            <summary>Sets the shim of PublishQueueService.ProcessMessage(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.UpdateFileStatusAndDeleteFromQueuePublishMessageString">
+            <summary>Sets the shim of PublishQueueService.UpdateFileStatusAndDeleteFromQueue(PublishMessage publishMessage, String fileIdentifier)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AllInstances.AddVerifyFileMessageToQueuePublishMessage">
+            <summary>Sets the shim of PublishQueueService.AddVerifyFileMessageToQueue(PublishMessage publishMessage)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AllInstances.PostFileToQueueBaseMessage">
+            <summary>Sets the shim of PublishQueueService.PostFileToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AllInstances.ProcessMessageBaseMessage">
+            <summary>Sets the shim of PublishQueueService.ProcessMessage(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimPublishQueueService.AllInstances.UpdateFileStatusAndDeleteFromQueuePublishMessageString">
+            <summary>Sets the shim of PublishQueueService.UpdateFileStatusAndDeleteFromQueue(PublishMessage publishMessage, String fileIdentifier)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.QueueRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.#ctor(Microsoft.Research.DataOnboarding.QueueService.QueueRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.Bind(Microsoft.Research.DataOnboarding.QueueService.IQueueRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AddMessageToQueueAsyncBaseMessage">
+            <summary>Sets the shim of QueueRepository.AddMessageToQueueAsync(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AddMessageToQueueBaseMessage">
+            <summary>Sets the shim of QueueRepository.AddMessageToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.Constructor">
+            <summary>Sets the shim of QueueRepository.QueueRepository()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.DeleteFromQueueBaseMessage">
+            <summary>Sets the shim of QueueRepository.DeleteFromQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.DeserializeCloudQueueMessage">
+            <summary>Sets the shim of QueueRepository.Deserialize(CloudQueueMessage cloudMessage)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.GetKnownTypes">
+            <summary>Sets the shim of QueueRepository.GetKnownTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.GetQueuedMessagesInt32Int32">
+            <summary>Sets the shim of QueueRepository.GetQueuedMessages(Int32 numberOfMessages, Int32 visibiltiyPeriodInSeconds)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.SerializeBaseMessage">
+            <summary>Sets the shim of QueueRepository.Serialize(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.UpdateMessageBaseMessage">
+            <summary>Sets the shim of QueueRepository.UpdateMessage(BaseMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.AddMessageToQueueAsyncBaseMessage">
+            <summary>Sets the shim of QueueRepository.AddMessageToQueueAsync(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.AddMessageToQueueBaseMessage">
+            <summary>Sets the shim of QueueRepository.AddMessageToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.DeleteFromQueueBaseMessage">
+            <summary>Sets the shim of QueueRepository.DeleteFromQueue(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.DeserializeCloudQueueMessage">
+            <summary>Sets the shim of QueueRepository.Deserialize(CloudQueueMessage cloudMessage)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.GetQueuedMessagesInt32Int32">
+            <summary>Sets the shim of QueueRepository.GetQueuedMessages(Int32 numberOfMessages, Int32 visibiltiyPeriodInSeconds)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.SerializeBaseMessage">
+            <summary>Sets the shim of QueueRepository.Serialize(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimQueueRepository.AllInstances.UpdateMessageBaseMessage">
+            <summary>Sets the shim of QueueRepository.UpdateMessage(BaseMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QueueService.VerifyFileQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.#ctor(Microsoft.Research.DataOnboarding.QueueService.VerifyFileQueueService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.Bind(Microsoft.Research.DataOnboarding.QueueService.IMessageHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.ConstructorIFileServiceFactoryIRepositoryServiceIQueueRepositoryIBlobDataRepository">
+            <summary>Sets the shim of VerifyFileQueueService.VerifyFileQueueService(IFileServiceFactory fileServiceFactory, IRepositoryService repositoryService, IQueueRepository queueRepository, IBlobDataRepository blobDataRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.ProcessMessageBaseMessage">
+            <summary>Sets the shim of VerifyFileQueueService.ProcessMessage(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.UpdateFileAndDeleteFromQueueVerifyFileMessage">
+            <summary>Sets the shim of VerifyFileQueueService.UpdateFileAndDeleteFromQueue(VerifyFileMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.AllInstances.ProcessMessageBaseMessage">
+            <summary>Sets the shim of VerifyFileQueueService.ProcessMessage(BaseMessage message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.ShimVerifyFileQueueService.AllInstances.UpdateFileAndDeleteFromQueueVerifyFileMessage">
+            <summary>Sets the shim of VerifyFileQueueService.UpdateFileAndDeleteFromQueue(VerifyFileMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.BaseQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseQueueService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubBaseQueueService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandler">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.IMessageHandler</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandler.#ctor">
+            <summary>Initializes a new instance of type StubIMessageHandler</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandler.qs::Microsoft#Research#DataOnboarding#QueueService#IMessageHandler#ProcessMessage(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IMessageHandler.ProcessMessage(BaseMessage baseMessage)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandler.ProcessMessageBaseMessage">
+            <summary>Sets the stub of IMessageHandler.ProcessMessage(BaseMessage baseMessage)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandlerFactory">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.IMessageHandlerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandlerFactory.#ctor">
+            <summary>Initializes a new instance of type StubIMessageHandlerFactory</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandlerFactory.GetMessageHandlerMessageHandlerEnum">
+            <summary>Sets the stub of IMessageHandlerFactory.GetMessageHandler(MessageHandlerEnum handlerName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageHandlerFactory.qs::Microsoft#Research#DataOnboarding#QueueService#IMessageHandlerFactory#GetMessageHandler(Microsoft.Research.DataOnboarding.Utilities.Enums.MessageHandlerEnum)">
+            <summary>Sets the stub of IMessageHandlerFactory.GetMessageHandler(MessageHandlerEnum handlerName)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageRouter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.IMessageRouter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageRouter.#ctor">
+            <summary>Initializes a new instance of type StubIMessageRouter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageRouter.qs::Microsoft#Research#DataOnboarding#QueueService#IMessageRouter#ProcessQueue">
+            <summary>Sets the stub of IMessageRouter.ProcessQueue()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIMessageRouter.ProcessQueue">
+            <summary>Sets the stub of IMessageRouter.ProcessQueue()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIPublishQueueService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.IPublishQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIPublishQueueService.#ctor">
+            <summary>Initializes a new instance of type StubIPublishQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIPublishQueueService.qs::Microsoft#Research#DataOnboarding#QueueService#IPublishQueueService#PostFileToQueue(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IPublishQueueService.PostFileToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIPublishQueueService.PostFileToQueueBaseMessage">
+            <summary>Sets the stub of IPublishQueueService.PostFileToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.IQueueRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.#ctor">
+            <summary>Initializes a new instance of type StubIQueueRepository</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.AddMessageToQueueAsyncBaseMessage">
+            <summary>Sets the stub of IQueueRepository.AddMessageToQueueAsync(BaseMessage message)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.AddMessageToQueueBaseMessage">
+            <summary>Sets the stub of IQueueRepository.AddMessageToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.DeleteFromQueueBaseMessage">
+            <summary>Sets the stub of IQueueRepository.DeleteFromQueue(BaseMessage message)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.GetQueuedMessagesInt32Int32">
+            <summary>Sets the stub of IQueueRepository.GetQueuedMessages(Int32 numberOfMessages, Int32 visibiltiyPeriodInSeconds)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.qs::Microsoft#Research#DataOnboarding#QueueService#IQueueRepository#AddMessageToQueue(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IQueueRepository.AddMessageToQueue(BaseMessage message)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.qs::Microsoft#Research#DataOnboarding#QueueService#IQueueRepository#AddMessageToQueueAsync(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IQueueRepository.AddMessageToQueueAsync(BaseMessage message)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.qs::Microsoft#Research#DataOnboarding#QueueService#IQueueRepository#DeleteFromQueue(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IQueueRepository.DeleteFromQueue(BaseMessage message)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.qs::Microsoft#Research#DataOnboarding#QueueService#IQueueRepository#GetQueuedMessages(System.Int32,System.Int32)">
+            <summary>Sets the stub of IQueueRepository.GetQueuedMessages(Int32 numberOfMessages, Int32 visibiltiyPeriodInSeconds)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.qs::Microsoft#Research#DataOnboarding#QueueService#IQueueRepository#UpdateMessage(Microsoft.Research.DataOnboarding.Utilities.Model.BaseMessage)">
+            <summary>Sets the stub of IQueueRepository.UpdateMessage(BaseMessage message)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubIQueueRepository.UpdateMessageBaseMessage">
+            <summary>Sets the stub of IQueueRepository.UpdateMessage(BaseMessage message)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.MessageHandlerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory.#ctor(Microsoft.Research.DataOnboarding.FileService.Interface.IFileServiceFactory,Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService,Microsoft.Research.DataOnboarding.QueueService.IQueueRepository,Microsoft.Research.DataOnboarding.FileService.Interface.IBlobDataRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory.InitializeStub">
+            <summary>Initializes a new instance of type StubMessageHandlerFactory</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageHandlerFactory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.MessageRouter</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.#ctor(Microsoft.Research.DataOnboarding.QueueService.IQueueRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.#ctor(Microsoft.Research.DataOnboarding.QueueService.IMessageHandlerFactory,Microsoft.Research.DataOnboarding.QueueService.IQueueRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.InitializeStub">
+            <summary>Initializes a new instance of type StubMessageRouter</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubMessageRouter.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.PublishQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService.#ctor(Microsoft.Research.DataOnboarding.FileService.Interface.IFileServiceFactory,Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService,Microsoft.Research.DataOnboarding.QueueService.IQueueRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService.InitializeStub">
+            <summary>Initializes a new instance of type StubPublishQueueService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubPublishQueueService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.QueueRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubQueueRepository</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubQueueRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QueueService.VerifyFileQueueService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService.#ctor(Microsoft.Research.DataOnboarding.FileService.Interface.IFileServiceFactory,Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService,Microsoft.Research.DataOnboarding.QueueService.IQueueRepository,Microsoft.Research.DataOnboarding.FileService.Interface.IBlobDataRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService.InitializeStub">
+            <summary>Initializes a new instance of type StubVerifyFileQueueService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QueueService.Fakes.StubVerifyFileQueueService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

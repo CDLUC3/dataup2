@@ -1,0 +1,1 @@
+C:\DataOnboarding\Tests\Services\QueueService.Tests\Fakes\Microsoft.Research.DataOnboarding.RepositoriesService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService: type is an interface.

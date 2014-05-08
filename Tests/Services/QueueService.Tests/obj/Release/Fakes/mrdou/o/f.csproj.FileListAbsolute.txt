@@ -1,0 +1,17 @@
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.Utilities.Fakes.xml
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.Utilities.Fakes.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.Utilities.Fakes.pdb
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.DomainModel.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.Utilities.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.WindowsAzure.Storage.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Ionic.Zip.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\EntityFramework.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.Utilities.pdb
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.Research.DataOnboarding.DomainModel.pdb
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Microsoft.WindowsAzure.Storage.xml
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\Ionic.Zip.xml
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\b\EntityFramework.xml
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\o\f.csprojResolveAssemblyReference.cache
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\o\Microsoft.Research.DataOnboarding.Utilities.Fakes.dll
+C:\DataOnboarding\Tests\Services\QueueService.Tests\obj\Release\Fakes\mrdou\o\Microsoft.Research.DataOnboarding.Utilities.Fakes.pdb

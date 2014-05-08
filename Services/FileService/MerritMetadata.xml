@@ -1,0 +1,103 @@
+﻿<eml:eml packageId=""doi:10.5072=""/12345?"" system=""DCXL"" xmlns:eml=""eml://ecoinformatics.org/eml2.1.0"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:schemaLocation=""eml://ecoinformatics.org/eml-2.1.0 eml.xsd"">    <dataset id=""doi:10.5072=""/12345"">        <creator>
+  <!-- http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-resource.html#creator -->
+  <!-- multiple creators allowed -->
+  <individualName>
+    <givenName></givenName>
+    <surName></surName>
+  </individualName>
+  <address>
+    <deliveryPoint></deliveryPoint>
+    <city></city>
+    <administrativeArea></administrativeArea>
+    <postalCode></postalCode>
+    <country></country>
+  </address>
+  <phone></phone>
+  <electronicMailAddress></electronicMailAddress>
+  <organizationName></organizationName>
+</creator><title></title><pubDate></pubDate><abstract>
+  <para></para>
+</abstract><publisher>
+  <para></para>
+</publisher><url></url><contact>
+  <individualName>
+    <givenName></givenName>
+    <surName></surName>
+  </individualName>
+  <address>
+    <deliveryPoint></deliveryPoint>
+    <city></city>
+    <administrativeArea></administrativeArea>
+    <postalCode></postalCode>
+    <country></country>
+  </address>
+  <phone></phone>
+  <electronicMailAddress></electronicMailAddress>
+  <organizationName></organizationName>
+</contact><keywordSet>
+  <keyword></keyword>
+  <keywordThesaurus></keywordThesaurus>
+</keywordSet><coverage>
+  <!-- http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-resource.html#coverage -->
+  <geographicCoverage>
+    <geographicDescription></geographicDescription>
+    <boundingCoordinates>
+      <westBoundingCoordinate></westBoundingCoordinate>
+      <eastBoundingCoordinate></eastBoundingCoordinate>
+      <northBoundingCoordinate></northBoundingCoordinate>
+      <southBoundingCoordinate></southBoundingCoordinate>
+    </boundingCoordinates>
+  </geographicCoverage>
+  <temporalCoverage id=""tempcov="""">
+    <rangeOfDates>
+      <beginDate>
+        <calendarDate></calendarDate>
+      </beginDate>
+      <endDate>
+        <calendarDate></calendarDate>
+      </endDate>
+    </rangeOfDates>
+  </temporalCoverage>
+</coverage><project>
+  <!-- http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-dataset.html#project -->
+  <title></title>
+  <abstract>
+    <para></para>
+  </abstract>
+  <funding>
+    <para></para>
+  </funding>
+</project>        <intellectualRights>
+  <para></para>
+</intellectualRights>        <dataTable>
+  <!-- http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-dataTable.html#dataTable -->
+  <!-- dataTable is equivalent to a single tab in the excel spreadsheet.         One can have multiple data tables within the document. -->
+  <entityName></entityName>
+  <entityDescription></entityDescription>
+  <attributeList>
+    <!-- http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-dataTable.html#attributeList -->
+    <!-- attribute list is equivalent to the parameter table from the requirements document.         One can have many attributes in a single table. -->
+    <attribute>
+      <attributeName>
+        <!-- non-empty string -->
+      </attributeName>
+      <attributeDefinition>
+        <!-- non-empty string -->
+      </attributeDefinition>
+    </attribute>
+  </attributeList>
+</dataTable>
+</dataset>    <additionalMetadata>
+  <describes>tempcov</describes>
+  <metadata>
+    <description>
+      <!-- non-empty string describing temporal coverage -->
+    </description>
+  </metadata>
+</additionalMetadata>    <additionalMetadata>
+  <metadata>
+    <formattedCitation>
+      <!-- non-empty string -->
+    </formattedCitation>
+  </metadata>
+</additionalMetadata></eml:eml>

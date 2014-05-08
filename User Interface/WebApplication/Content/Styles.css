@@ -1,0 +1,200 @@
+﻿
+.disable {
+    opacity: 0.3 !important;
+    cursor: default !important;
+}
+
+
+.indicatorContainer {
+    display: none;
+}
+
+.busy .indicatorContainer {
+    display: block;
+}
+
+.disabledBackground {
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    z-index: 2001;
+}
+
+#loadingIndicator {
+    bottom: 50%;
+    display: block;
+    position: fixed;
+    z-index: 2002;
+    right: 40%;
+    padding: 10px 35px;
+    background-color: #e9e9ea;
+    box-shadow: 5px 5px 10px #535556;
+}
+
+    #loadingIndicator img {
+        vertical-align: middle;
+    }
+
+    #loadingIndicator > div {
+        left: 50%;
+        top: 50%;
+        z-index: 100;
+        text-align: center;
+    }
+
+    #loadingIndicator span, div.innerLoadIndicator span {
+        text-align: center;
+        font: bold 17px "Segoe UI";
+        color: #da832f;
+        /*text-transform: uppercase;*/
+        display: inline-block;
+    }
+
+.hide {
+    display: none;
+}
+
+.tTipQ {
+    color: #3c74b2;
+    cursor: pointer;
+    color: #666;
+    background: url(images/Quest.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 5px;
+    background-size: 16px auto;
+    vertical-align: middle;
+}
+
+    .tTipQ:hover {
+        background-position: 0 bottom;
+    }
+
+span.field-validation-error {
+    display: inline;
+}
+
+span.field-validation-valid {
+    display: none;
+}
+/* Unique Alignment*/
+
+.paramtrTableContainer td .dropdownCont {
+    position: relative;
+}
+
+.paramtrTableContainer td .dropdownElementsHolder {
+    position: absolute;
+    z-index: 2px;
+}
+
+.mandtrField {
+    margin-left: 90px;
+    color: #F00;
+    font-size: 10px;
+    height: auto;
+    white-space: nowrap;
+    line-height: 10px;
+    padding-top: 5px;
+}
+
+.gridName {
+    display: block;
+    margin-left: 5px !important;
+    font-weight: bold;
+}
+
+
+.docRemovBtnHoldr {
+    padding: 30px 0 10px;
+    overflow: hidden;
+}
+
+.paramtrTableContainer td input[type="text"] {
+    width: 100px;
+    margin-right: 0;
+    padding: 6px;
+}
+
+.paramtrTableContainer td .dropdownElementsHolder input[type="text"] {
+    border-right: none;
+}
+
+    .paramtrTableContainer td .dropdownElementsHolder input[type="text"], .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.enabled, .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.valid {
+        visibility: hidden;
+        margin: 0;
+        height: 22px;
+    }
+
+        .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText {
+            visibility: visible;
+        }
+
+            .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.disable {
+                visibility: hidden;
+            }
+
+
+.paramtrTableContainer td select {
+    width: 140px;
+    padding: 5px;
+    margin: 0;
+}
+
+
+.repMapping {
+    width: 185px !important;
+}
+
+.repField {
+    width: 200px !important;
+}
+
+.repDescription {
+    width: 220px !important;
+}
+
+.repIsRequired {
+    width: 80px !important;
+}
+
+.typeSelectList {
+    width: 120px !important;
+}
+
+.repRange {
+    width: 100px !important;
+}
+
+
+
+
+
+.disabled {
+    background-color: #dadada !important;
+    border: 0px !important;
+    cursor: auto;
+}
+
+span.field-validation-error {
+    display: inline;
+}
+
+span.field-validation-valid {
+    display: none;
+}
+
+.gridName {
+    display: block;
+    margin-left: 5px !important;
+    font-weight: bold;
+}
+
+.mandtrField {
+    color: red;
+}

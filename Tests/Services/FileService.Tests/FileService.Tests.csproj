@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E23DFC9C-024D-4C13-8159-F3E7A2C71B3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileService.Tests</RootNamespace>
+    <AssemblyName>FileService.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\Solution Items\FxCop_Code_Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <OutputPath>bin\Dev\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libs\OpenXml\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Research.DataOnboarding.DataAccessService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.DataAccessService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.DataAccessService.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.DataAccessService.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.FileService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.FileService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.FileService.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.FileService.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoriesService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.RepositoriesService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoriesService.1.0.0.0.Fakes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ae41878053f6703, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.RepositoriesService.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.Services.UserService.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.Services.UserService.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.Utilities.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.Utilities.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileServiceProviderTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SkyDriveFileServiceTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Core\Core.csproj">
+      <Project>{eeb7fd65-0eeb-4dd6-bdc0-658a9729edca}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Utilities\Utilities.csproj">
+      <Project>{8c279b38-ec17-4d70-8978-0f1ff8fea308}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Models\DomainModel\DomainModel.csproj">
+      <Project>{9bc3bc63-4e32-4dee-b5a9-37f06b6a49b7}</Project>
+      <Name>DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Repository Adapters\RepositoryAdapters\RepositoryAdapters.csproj">
+      <Project>{bbeccc9d-274a-4d00-9cf8-c1b0fb7d0348}</Project>
+      <Name>RepositoryAdapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\DataAccessService\DataAccessService.csproj">
+      <Project>{02e013e2-d27b-44d6-8173-1c2fbe8fe260}</Project>
+      <Name>DataAccessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\FileService\FileService.csproj">
+      <Project>{5a78e823-d27f-4853-937c-4040b9506200}</Project>
+      <Name>FileService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\UserService\UserService.csproj">
+      <Project>{972987a1-f023-4241-a35a-13ed44b0fba3}</Project>
+      <Name>UserService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TestUtilities\TestUtilities.csproj">
+      <Project>{bb7f0370-2b54-4340-9c78-10813bc4cf7d}</Project>
+      <Name>TestUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.DataAccessService01.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.RepositoriesService01.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.FileService.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.RepositoriesService.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.RepositoryAdapters.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.Services.UserService.fakes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.Utilities.fakes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.QCService.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.QCService.QCService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.#ctor(Microsoft.Research.DataOnboarding.QCService.QCService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.Bind(Microsoft.Research.DataOnboarding.QCService.Interface.IQCService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AddUpdateQualityCheckQualityCheck">
+            <summary>Sets the shim of QCService.AddUpdateQualityCheck(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.CheckRuleExistsString">
+            <summary>Sets the shim of QCService.CheckRuleExists(String ruleName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.ConstructorIQualityCheckRepositoryIUnitOfWorkIUserRepositoryIFileServiceIBlobDataRepository">
+            <summary>Sets the shim of QCService.QCService(IQualityCheckRepository qualityCheckRepository, IUnitOfWork unitOfWork, IUserRepository userRepository, IFileService fileService, IBlobDataRepository blobRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.DeleteQualityCheckRuleInt32">
+            <summary>Sets the shim of QCService.DeleteQualityCheckRule(Int32 qualityCheckRuleId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.GetQualityCheckByIdInt32">
+            <summary>Sets the shim of QCService.GetQualityCheckById(Int32 qcId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.GetQualityCheckIssuesInt32Int32String">
+            <summary>Sets the shim of QCService.GetQualityCheckIssues(Int32 fileId, Int32 qualityCheckId, String sheetIds)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.GetQualityCheckRulesBoolean">
+            <summary>Sets the shim of QCService.GetQualityCheckRules(Boolean includeAdminRules)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.RetrieveQCColumnTypes">
+            <summary>Sets the shim of QCService.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService._GetQualityCheckByIdb__2QualityCheckColumnRule">
+            <summary>Sets the shim of QCService.&lt;GetQualityCheckById&gt;b__2(QualityCheckColumnRule qc)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService._GetQualityCheckRulesb__0QualityCheckColumnRule">
+            <summary>Sets the shim of QCService.&lt;GetQualityCheckRules&gt;b__0(QualityCheckColumnRule qc)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.AddUpdateQualityCheckQualityCheck">
+            <summary>Sets the shim of QCService.AddUpdateQualityCheck(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.CheckRuleExistsString">
+            <summary>Sets the shim of QCService.CheckRuleExists(String ruleName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.DeleteQualityCheckRuleInt32">
+            <summary>Sets the shim of QCService.DeleteQualityCheckRule(Int32 qualityCheckRuleId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.GetQualityCheckByIdInt32">
+            <summary>Sets the shim of QCService.GetQualityCheckById(Int32 qcId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.GetQualityCheckIssuesInt32Int32String">
+            <summary>Sets the shim of QCService.GetQualityCheckIssues(Int32 fileId, Int32 qualityCheckId, String sheetIds)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.GetQualityCheckRulesBoolean">
+            <summary>Sets the shim of QCService.GetQualityCheckRules(Boolean includeAdminRules)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.ShimQCService.AllInstances.RetrieveQCColumnTypes">
+            <summary>Sets the shim of QCService.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QCService.QCService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IQualityCheckRepository,Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork,Microsoft.Research.DataOnboarding.DataAccessService.IUserRepository,Microsoft.Research.DataOnboarding.FileService.Interface.IFileService,Microsoft.Research.DataOnboarding.FileService.Interface.IBlobDataRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService.InitializeStub">
+            <summary>Initializes a new instance of type StubQCService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.QCService.Fakes.StubQCService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.QCService.Interface.IQCService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.#ctor">
+            <summary>Initializes a new instance of type StubIQCService</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.AddUpdateQualityCheckQualityCheck">
+            <summary>Sets the stub of IQCService.AddUpdateQualityCheck(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.CheckRuleExistsString">
+            <summary>Sets the stub of IQCService.CheckRuleExists(String ruleName)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.DeleteQualityCheckRuleInt32">
+            <summary>Sets the stub of IQCService.DeleteQualityCheckRule(Int32 qualityCheckRuleId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.GetQualityCheckByIdInt32">
+            <summary>Sets the stub of IQCService.GetQualityCheckById(Int32 qcId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.GetQualityCheckIssuesInt32Int32String">
+            <summary>Sets the stub of IQCService.GetQualityCheckIssues(Int32 fileId, Int32 ruleId, String sheetIds)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.GetQualityCheckRulesBoolean">
+            <summary>Sets the stub of IQCService.GetQualityCheckRules(Boolean includeAdminRules)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#AddUpdateQualityCheck(Microsoft.Research.DataOnboarding.DomainModel.QualityCheck)">
+            <summary>Sets the stub of IQCService.AddUpdateQualityCheck(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#CheckRuleExists(System.String)">
+            <summary>Sets the stub of IQCService.CheckRuleExists(String ruleName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#DeleteQualityCheckRule(System.Int32)">
+            <summary>Sets the stub of IQCService.DeleteQualityCheckRule(Int32 qualityCheckRuleId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#GetQualityCheckById(System.Int32)">
+            <summary>Sets the stub of IQCService.GetQualityCheckById(Int32 qcId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#GetQualityCheckIssues(System.Int32,System.Int32,System.String)">
+            <summary>Sets the stub of IQCService.GetQualityCheckIssues(Int32 fileId, Int32 ruleId, String sheetIds)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#GetQualityCheckRules(System.Boolean)">
+            <summary>Sets the stub of IQCService.GetQualityCheckRules(Boolean includeAdminRules)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.mrdoqcs::Microsoft#Research#DataOnboarding#QCService#Interface#IQCService#RetrieveQCColumnTypes">
+            <summary>Sets the stub of IQCService.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.QCService.Interface.Fakes.StubIQCService.RetrieveQCColumnTypes">
+            <summary>Sets the stub of IQCService.RetrieveQCColumnTypes()</summary>
+        </member>
+    </members>
+</doc>

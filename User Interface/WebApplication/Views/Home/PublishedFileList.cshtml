@@ -1,0 +1,66 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model  Microsoft.Research.DataOnboarding.WebApplication.ViewModels.FileListViewModel
+@{
+    ViewBag.Title = Information.PublishedFileListViewName;
+}
+
+@if (Model == null || Model.PostedFiles == null || !Model.PostedFiles.Any())
+{
+    <div>
+        <div>
+            <div style="color: #7a7a7a; margin: 10px; padding-top: 20px;">
+                @Information.NoPublishedFilesInfo
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <input type="hidden" id="hdnUserId" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.UserId" />
+    <input type="hidden" id="hdnBaseWebAPIUrl" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiFilePath" />
+    <input type="hidden" id="hdnAccessToken" value="" />
+    <input type="hidden" id="hdnRefreshToken" value="" />
+    <input type="hidden" id="hdnTokenExpiresOn" value="" />
+    <span id="errDownLoad" style="color: red;">@ViewBag.DownloadErrorMsg</span>
+    <table id="publishedFileTable" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <thead>
+            <tr>
+                <th><a href="#" title="@Information.FileNameHeader">@Information.FileNameHeader</a></th>
+                <th width="70"><a href="#" title="@Information.ExtensionHeader">@Information.ExtensionHeader</a></th>
+                <th width="70"><a href="#" title="@Information.SizeHeader">@Information.SizeHeader</a></th>
+                <th width="170"><a href="#" title="@Information.PublishedDateHeader">@Information.PublishedDateHeader</a></th>
+                <th width="160"><a href="#" title="@Information.RepositoryHeader">@Information.RepositoryHeader</a></th>
+                <th width="190"><a href="#" title="@Information.IdentifierHeader">@Information.IdentifierHeader</a></th>
+                <th width="190"><a href="#" title="@Information.CitationHeader">@Information.CitationHeader</a></th>
+                <th width="100" title="@Information.ActionsHeader">@Information.ActionsHeader</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.PostedFiles)
+            {
+                <tr id="@file.FileId">
+                    <td class="fileName"><span>@file.FileName</span></td>
+                    <td class="fileType">@file.FileType</td>
+                    <td class="fileSize">@file.Size</td>
+                    <td class="dateandtime">@file.PublishedDateTime</td>
+                    <td class="repository fileName"><span>@file.Repository</span></td>
+                    <td class="identifier fileName"><span>@file.Identifier</span></td>
+                    <td class="citation fileName"><span>@file.Citation</span></td>
+
+                    <td class="actions">
+                        <ul>
+                            @*<li class="download" fileId="@file.FileId"><a href="@Url.Action("DownloadFileFromRepository", "Home", new {fileId = @file.FileId, mimeType=@file.FileName, fileName = @file.FileName })" title="Download">Download</a></li>*@
+                            <li id="liDownload" class="download" fileName="@file.FileName" fileId="@file.FileId" identifier="@file.Identifier" baseRepositoryId="@file.BaseRepositoryId" isImpersonating ="@file.IsImpersonating" repositoryId="@file.RepositoryId"><a href="javascript:void(0);" title="Download">Download</a></li>
+
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <iframe id="fileDownloadFrame" style="display: none" onload="var iframedocument = $('#fileDownloadFrame').contents().find('body').html();if(iframedocument == 'Error') { alert ('Error in downloading the file, reason can be object does not exist at repository or authentication failure or it was queued to push into repository.');}"></iframe>
+}
+<script>
+    PublishedFileList_Onload();
+</script>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="WebApiAzureDeployment" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WebRole name="WebApi" vmsize="Large">
+    <Runtime executionContext="elevated" />
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="dataup2httpsbinding" endpointName="dataup2httpsin" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Security" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Api" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService.FileProcesser" />
+      <Setting name="Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive" />
+      <Setting name="PrimaryContainer" />
+      <Setting name="DataOnBoardingStorage" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="dataup2httpsin" protocol="https" certificate="dataup2cert" port="443" />
+      <!--<InputEndpoint name="dataup2httpsin" protocol="http" port="80" />-->
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="TransientFileStorage" cleanOnRoleRecycle="true" sizeInMB="32768" />
+    </LocalResources>
+    <Certificates>
+      <Certificate name="dataup2cert" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
+  </WebRole>
+  <WorkerRole name="FilePurgeService" vmsize="Large">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="ScheduledTimeInHours" />
+      <Setting name="UploadedFilesExpirationDurationInHours" />
+      <Setting name="Microsoft.Research.DataOnboarding.FilePurgeService" />
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="PrimaryContainer" />
+      <Setting name="DataOnBoardingStorage" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="TransientFileStorage" cleanOnRoleRecycle="true" sizeInMB="32768" />
+    </LocalResources>
+  </WorkerRole>
+  <WorkerRole name="PublishProcessor" vmsize="Large">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="ScheduledTime" />
+      <Setting name="ScheduledLogTransferInMinutes" />
+      <Setting name="Microsoft.Research.DataOnboarding.Services.PublishProcessor" />
+      <Setting name="Microsoft.Research.DataOnboarding.QueueService" />
+      <Setting name="Microsoft.Research.DataOnboarding" />
+      <Setting name="PrimaryContainer" />
+      <Setting name="DataOnBoardingStorage" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="TransientFileStorage" cleanOnRoleRecycle="true" sizeInMB="32768" />
+    </LocalResources>
+  </WorkerRole>
+</ServiceDefinition>

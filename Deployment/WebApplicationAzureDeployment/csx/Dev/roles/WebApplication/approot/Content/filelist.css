@@ -1,0 +1,525 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts */
+
+@font-face{
+	src:url(fonts/segoeui.eot);
+	font-family:SegoeUI;
+}
+@font-face{
+	src:url(fonts/segoeui.ttf);
+	font-family:SegoeUI;
+}
+@font-face{
+	src:url(fonts/segoeuib.eot);
+	font-family:SegoeUIB;
+}
+@font-face{
+	src:url(fonts/segoeuib.ttf);
+	font-family:SegoeUIB;
+}
+@font-face{
+	src:url(fonts/segoeuil.eot);
+	font-family:SegoeUIL;
+}
+@font-face{
+	src:url(fonts/segoeuil.ttf);
+	font-family:SegoeUIL;
+}
+@font-face{
+	src:url(fonts/seguisb.eot);
+	font-family:SegoeUISB;
+}
+@font-face{
+	src:url(fonts/seguisb.ttf);
+	font-family:SegoeUISB;
+}
+
+.filelist{
+	padding: 100px 20px 0 4px;
+    font-family: SegoeUI, 'Segoe UI', Helvetica, Arial, Verdana, sans-serif;
+	font-size:14px;
+	color:black;
+	width:100%;
+}
+.filelist .action-bar{
+	overflow:hidden;
+	border-bottom:1px solid #CCC;
+    padding:15px;
+    top: 46px;
+    width: 100%;
+    margin:0;
+    background: rgba(255, 255, 255, 0.9);
+    position:fixed;
+    display: block;
+    z-index:990;
+    font-size:16px;
+    overflow-x:auto;
+}
+.filelist .action-bar.bottom{
+	border:none;
+}
+.filelist .action-bar .upload-placeholder{
+	float:left;
+	padding-right:10px;
+}
+.filelist .action-bar .title {
+	float:left;
+    color:#333;
+}
+
+.filelist .action-bar .title h2 {
+	margin: 0;
+    padding: 0;
+}
+
+.filelist #userMessagesPanel{
+	float:left;
+	padding-right:10px;
+    display:inline;
+}
+
+.filelist .action-bar nav.action-links{
+	padding: 15px 0 0 7%;
+    display: inline-block;
+}
+.filelist .action-bar nav.action-links ul li{
+	float:left;
+	margin:0;
+}
+.filelist .action-bar nav.action-links ul li ul li{
+	float:none;
+}
+.filelist .action-bar nav.action-links ul li:hover ul{
+	display:block;
+}
+.filelist .action-bar nav.action-links ul li a{
+	display:block;
+	background:url(images/download-icon.png) no-repeat 10px center;
+	padding-left:35px;
+	color:#da832f;
+}
+.filelist .action-bar nav.action-links ul li a:hover{
+	text-decoration:underline;
+}
+.filelist .action-bar nav.action-links ul li.post a{
+	background-image:url(images/post-icon.png);
+}
+.filelist .action-bar nav.action-links ul li.post li a{
+	background:#fff;
+	padding:5px 10px;
+	color:#666;
+	min-width:150px;
+}
+.filelist .action-bar nav.action-links ul li.post li a:hover{
+	background:#da832f;
+	color:#fff;
+	text-decoration:none;
+}
+
+.filelist .action-bar nav.action-links ul li.delete a{
+	background-image:url(images/delete-icon.png);
+}
+
+.filelist .action-bar nav.action-links ul li.disabledDownload a{
+	background-image:url(images/disabled-download-icon.png);
+    color: #CCC;
+    cursor: not-allowed;
+}
+
+.filelist .action-bar nav.action-links ul li.disabledPost a{
+	background-image:url(images/disabled-post-icon.png);
+    color: #CCC;
+    cursor: not-allowed;
+}
+
+.filelist .action-bar nav.action-links ul li.disabledDelete a{
+	background-image:url(images/disabled-delete-icon.png);
+    color: #CCC;
+    cursor: not-allowed;
+}
+
+.filelist .action-bar .upload-placeholder div{
+	float:left;
+	padding-right:8px;
+	padding-top:5px;
+}
+.filelist .select-file a, .filelist .add-repository a{
+	display:block;
+	color: #da832f;
+    text-decoration: underline;
+    text-align: center;
+	background:url(images/add-icon.png) no-repeat 26px center;
+	padding:2px 0 2px 25px;
+	cursor:pointer;
+    font-weight:normal;
+    font-size: 16px;
+}
+.filelist .add-repository a{
+	background-image:url(images/add-icon.png);
+}
+.filelist .select-file a input{
+    opacity: 0;
+    position: absolute;
+    height: 35px;
+    margin-left: -125px;
+    margin-top: -2px;
+    width: 125px;
+    cursor:pointer;
+}
+.filelist .select-file a {
+    cursor:pointer;
+}
+
+.filelist .action-bar .upload-placeholder .dragndrop{
+	background:#FFF;
+	padding:5px 15px;
+	border:1px dashed #999;
+}
+.filelist .view-options{
+	padding-top: 15px;
+    padding-left: 7%;
+    color: #333;
+    display: inline-block;
+}
+.filelist .view-options div ul li span, .filelist .action-links ul li a.label{
+	cursor:pointer;
+	z-index:2;
+	position:relative;
+	display:block;
+	padding:5px 23px 5px 10px;
+	border:1px solid #fff;
+	border-bottom:none;
+	background:url(images/dropdown-arrow.png) no-repeat right center;
+}
+.filelist .action-links ul li a.label{
+	padding-right:10px;
+}
+.filelist .action-links ul li:hover a.label.dropdown{
+	border:1px solid #d2d3d5;
+	border-bottom:none;
+	background-color:#fff;
+}
+
+.filelist .view-options div ul li:hover span {
+   
+}
+
+.filelist .view-options div ul li ul, .filelist .action-links ul li ul{
+	display:none;
+	border:1px solid #d2d3d5;
+	background:#fff;
+	margin-top:-1px;
+    max-height:50%;
+    overflow-y:auto;
+    position: fixed;
+    z-index: 1000;
+    max-width:200px;
+    font-size:18px;
+   
+}
+
+.filelist .view-options div ul li ul li a{
+	display:block;
+	padding:5px 10px;
+	min-width:150px;
+	color:#666;
+}
+.filelist .view-options div ul li ul li a:hover{
+	background:#666;
+	color:#fff;
+}
+.filelist .view-options .view-by, .filelist .view-options .sort-by, .filelist .view-options .view-mode{
+	float:left;
+	margin-left:10px;
+}
+.filelist .view-options .view-by{
+	margin-left:5px;
+}
+.filelist .view-options .view-mode ul li{
+	float:left;
+	margin-top:8px;
+	margin-left:10px;
+}
+.filelist .view-options .view-mode ul li a{
+	display:block;
+	text-indent:-100000px;
+	overflow:hidden;
+	background:url(images/tile-view-icon.png) no-repeat center 0;
+	width:20px;
+	height:14px;
+	cursor:pointer;
+}
+.filelist .view-options .view-mode ul li a:hover, .filelist .view-options .view-mode ul li.active a{
+	background-position:center bottom;
+}
+.filelist .view-options .view-mode ul li:first-child a{
+	background-image:url(images/side-list-view-icon.png);
+}
+.filelist .view-options .view-mode ul li:last-child a{
+	background-image:url(images/accordion-view-icon.png);
+}
+
+#fileListWrapper{
+	padding:40px 10px 55px 10px;
+	min-height:500px;
+    overflow:auto;
+    z-index:-1;
+    margin-bottom: 300px;
+}
+.filelist .file-list ul li{
+	float:left;
+	position:relative;
+	margin:0 10px 10px 0;
+	min-width:235px;
+	max-width:235px;
+}
+.filelist .file-list ul li .tile {
+	color:#fff;
+	padding:11px 20px;
+	font-size:18px;
+	font-family: SegoeUIL, Segoe UI, Tahoma, Arial, Verdana, sans-serif;
+	background-color:#C0C0C0;
+	margin:4px;
+	border-top: 6px #AAA solid;
+	height:64px;
+}
+.filelist .file-list ul li .tile:hover, .filelist .file-list ul li.active .tile {
+	border-top: 6px #da832f solid;
+	background-color:#e29d5a !important;
+	cursor:pointer;
+}
+.filelist .file-list ul li.published .tile {
+	background-color:#C0C0C0;
+}
+.filelist .file-list ul li .addFileTile {
+	color:black;
+	padding:11px 20px;
+	font-size:1em;
+	font-family: SegoeUIL, Segoe UI, Tahoma, Arial, Verdana, sans-serif;
+	background-color:#FFF;
+	margin:4px;
+	border:1px dashed #999;
+	height:68px;
+}
+
+.filelist .file-list ul li.published .tile img.status{
+	position:absolute;
+	right:15px;
+	bottom:15px;
+}
+.filelist .file-list ul li .tile .file-name{
+	overflow:hidden;
+	padding-bottom:5px;
+   
+}
+.filelist .file-list ul li .tile .file-name span{
+	display:block;
+	float:left;
+	max-width:80%;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+    color:#FFF;
+}
+
+.filelist .file-list ul li .tile .file-name span.extension{
+	max-width:none;
+	padding-top:4px;
+	text-overflow:clip;
+	text-transform:lowercase;
+	font-size:14px;
+}
+.filelist .file-list ul li .tile .file-name span.extension:before{
+	content:".";
+}
+
+.filelist .lifeline-indicator span, .filelist .repository-name {
+    color:#666;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+
+.filelist .file-list ul li .active-indicator{
+	width:19px;
+	height:11px;
+	background:url(images/active-arrow.png) no-repeat;
+	background-size:19px auto;
+	margin-left:44%;
+	display:none;
+	position:absolute;
+}
+.filelist .file-list ul li.active .active-indicator{
+	display:block;
+}
+.filelist .file-list .details{
+	border:1px solid #CCC;
+	clear:both;
+	margin-bottom:10px;
+	padding:10px 10px;
+    background-color: #FFF;
+}
+.filelist .file-list .details table td{
+	padding:10px;
+}
+.filelist .file-list .details table td label{
+	font-size:14px;
+	color:GrayText;
+	display:block;
+}
+.filelist .file-list .details table td div{
+	font-size:20px;
+	word-break:break-all;
+}
+.filelist .file-list .details table td .repository-name{
+	padding-left:30px;
+	background:url(images/sky-drive-icon.png) no-repeat 0 center;
+}
+.repository .file-list .details table td .repository-name{
+	padding:0;
+	background:none;
+}
+.filelist .file-list .details table td .merritt{
+	background:url(images/merritt-icon.png) no-repeat 0 center;
+}
+.filelist .file-list .details table td div img{
+	margin-right:5px;
+}
+.filelist .details table td div input[type="text"], .filelist .details table td div textarea{
+	width:70%;
+	padding:10px;
+	border:1px solid #ccc;
+	margin-top:5px;
+}
+.filelist .details table td div textarea{
+	height:100px;
+	resize:none;
+}
+.filelist .details table td div select{
+	width:50%;
+	padding:10px;
+	float:left;
+	margin-top:5px;
+}
+.filelist .details table td div .option{
+	float:left;
+}
+.filelist .details table td div .option input, .filelist .details table td div .option label{
+	float:left;
+	margin-left:5px;
+	margin-top:5px;
+}
+.filelist .details table td div .option input{
+	margin-top:8px;
+	margin-left:10px;
+}
+.filelist .details h2{
+	font-weight:normal;
+	font-family:SegoeUIL;
+	color:#333;
+	padding-bottom:10px;
+	font-size:30px;
+}
+.filelist .details .title{
+	overflow:hidden;
+	padding-bottom:10px;
+}
+.filelist .details .title h2{
+	float:left;
+	padding:0;
+}
+.filelist .details .title .option{
+	float:right;
+	padding-top:15px;
+}
+.filelist .details .title .option ul li{
+	max-width:none;
+	min-width:inherit;
+	position:static;
+	margin:0;
+	padding:0 10px;
+	border-right:1px solid #CCC;
+}
+.filelist .details .title .option ul li:last-child{
+	padding-right:0;
+	border:none;
+}
+.filelist .details .title .option ul li a:hover{
+	text-decoration:underline;
+}
+.filelist .details input[type="text"]{
+	width:92%;
+	border:1px solid #ccc;
+	padding:10px;
+}
+.filelist .details select{
+	width:100%;
+}
+.filelist .details .checkbox{
+	text-align:center;
+}
+.filelist .details table th{
+	padding:5px 10px;
+	text-align:left;
+	background:#eee;
+	border-top:1px solid #ccc;
+	color:#555;
+}
+.filelist .details .metadata table tbody tr td{
+	border-bottom:1px solid #eee;
+}
+.filelist .details .metadata table tbody tr:last-child td{
+	border:none;
+}
+.filelist .details .metadata .action{
+	overflow:hidden;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.filelist .details .metadata .action *{
+	float:right;
+	margin-left:10px;
+}
+
+
+.filelist .file-list ul li .tile .repository-name{
+	overflow:hidden;
+	padding-bottom:5px;
+    display:block;
+	float:left;
+	max-width:86%;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.actionButtonDisable{
+	display:none !important;
+}
+
+.repositoryList {
+    overflow:hidden;
+	max-width:200px;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.filelist .view-mode{
+    display:none
+
+}
+
+.or {
+    text-align: center;
+    font-size: 10px;
+    padding:5px;
+    color: #999;
+}
+
+.drag-drop-text, .drag-drop-icon {
+    display: inline-block;
+    text-align: center;
+    padding: 0 0 10px 10px;
+    color: #999;
+}

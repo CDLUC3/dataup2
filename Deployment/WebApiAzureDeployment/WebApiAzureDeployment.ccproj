@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>2.2</ProductVersion>
+    <ProjectGuid>26615d0b-8889-42a3-addb-7627e22ca481</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApiAzureDeployment</RootNamespace>
+    <AssemblyName>WebApiAzureDeployment</AssemblyName>
+    <StartDevelopmentStorage>True</StartDevelopmentStorage>
+    <Name>WebApiAzureDeployment</Name>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Items for the project -->
+  <ItemGroup>
+    <ServiceConfiguration Include="ServiceConfiguration.Release.cscfg" />
+    <ServiceConfiguration Include="ServiceConfiguration.Dev.cscfg" />
+    <ServiceDefinition Include="ServiceDefinition.csdef" />
+    <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\API\WebApi\WebApi.csproj">
+      <Name>WebApi</Name>
+      <Project>{1dba5d99-3eea-493d-87ef-70eebc09b20a}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>WebApi</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\FilePurgeService\FilePurgeService.csproj">
+      <Name>FilePurgeService</Name>
+      <Project>{3ac2e2b8-39eb-41d5-8143-1ec157250ec5}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>FilePurgeService</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\PublishProcessor\PublishProcessor.csproj">
+      <Name>PublishProcessor</Name>
+      <Project>{a27ab714-5425-4ead-b6d8-7b9a2c512e59}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>PublishProcessor</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FilePurgeServiceContent\" />
+    <Folder Include="Profiles" />
+    <Folder Include="PublishProcessorContent\" />
+    <Folder Include="WebApiContent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FilePurgeServiceContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PublishProcessorContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WebApiContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\dataup2apiProduction.azurePubxml" />
+    <PublishProfile Include="Profiles\dataup2apiDev.azurePubxml" />
+  </ItemGroup>
+  <!-- Import the target files for this project template -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <CloudExtensionsDir Condition=" '$(CloudExtensionsDir)' == '' ">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\2.2\</CloudExtensionsDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Dev' ">
+    <OutputPath>bin\Dev\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(CloudExtensionsDir)Microsoft.WindowsAzure.targets" />
+</Project>

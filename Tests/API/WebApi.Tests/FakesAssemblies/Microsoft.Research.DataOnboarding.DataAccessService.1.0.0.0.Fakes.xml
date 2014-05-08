@@ -1,0 +1,1517 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.DataAccessService.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.UnitOfWorkCommitException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.UnitOfWorkCommitException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.Constructor">
+            <summary>Sets the shim of UnitOfWorkCommitException.UnitOfWorkCommitException()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of UnitOfWorkCommitException.UnitOfWorkCommitException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.ConstructorString">
+            <summary>Sets the shim of UnitOfWorkCommitException.UnitOfWorkCommitException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.ConstructorStringException">
+            <summary>Sets the shim of UnitOfWorkCommitException.UnitOfWorkCommitException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.ConstructorStringICollectionOfString">
+            <summary>Sets the shim of UnitOfWorkCommitException.UnitOfWorkCommitException(String message, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.ShimUnitOfWorkCommitException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.IFileRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.#ctor">
+            <summary>Initializes a new instance of type StubIFileRepository</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.AddFileFile">
+            <summary>Sets the stub of IFileRepository.AddFile(File newFile)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.DeleteFileInt32StringBooleanBoolean">
+            <summary>Sets the stub of IFileRepository.DeleteFile(Int32 fileId, String status, Boolean isFileData, Boolean isHardDelete)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.GetFilesByRepositoryInt32">
+            <summary>Sets the stub of IFileRepository.GetFilesByRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.GetFilesFuncOfFileBoolean">
+            <summary>Sets the stub of IFileRepository.GetFiles(Func`2&lt;File,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.GetItemInt32Int32">
+            <summary>Sets the stub of IFileRepository.GetItem(Int32 userId, Int32 fileId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.GetItemInt32String">
+            <summary>Sets the stub of IFileRepository.GetItem(Int32 userId, String fileName)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.GetItemStringInt32">
+            <summary>Sets the stub of IFileRepository.GetItem(String nameIdentifier, Int32 fileId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#AddFile(Microsoft.Research.DataOnboarding.DomainModel.File)">
+            <summary>Sets the stub of IFileRepository.AddFile(File newFile)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#DeleteFile(System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>Sets the stub of IFileRepository.DeleteFile(Int32 fileId, String status, Boolean isFileData, Boolean isHardDelete)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#GetFiles(System.Func{Microsoft.Research.DataOnboarding.DomainModel.File,System.Boolean})">
+            <summary>Sets the stub of IFileRepository.GetFiles(Func`2&lt;File,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#GetFilesByRepository(System.Int32)">
+            <summary>Sets the stub of IFileRepository.GetFilesByRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#GetItem(System.String,System.Int32)">
+            <summary>Sets the stub of IFileRepository.GetItem(String nameIdentifier, Int32 fileId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#GetItem(System.Int32,System.String)">
+            <summary>Sets the stub of IFileRepository.GetItem(Int32 userId, String fileName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#GetItem(System.Int32,System.Int32)">
+            <summary>Sets the stub of IFileRepository.GetItem(Int32 userId, Int32 fileId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#RetrieveFileColumnTypes">
+            <summary>Sets the stub of IFileRepository.RetrieveFileColumnTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#RetrieveFileColumnUnits">
+            <summary>Sets the stub of IFileRepository.RetrieveFileColumnUnits()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#RetrieveMetaDataTypes">
+            <summary>Sets the stub of IFileRepository.RetrieveMetaDataTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IFileRepository#UpdateFile(Microsoft.Research.DataOnboarding.DomainModel.File)">
+            <summary>Sets the stub of IFileRepository.UpdateFile(File modifiedFile)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.RetrieveFileColumnTypes">
+            <summary>Sets the stub of IFileRepository.RetrieveFileColumnTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.RetrieveFileColumnUnits">
+            <summary>Sets the stub of IFileRepository.RetrieveFileColumnUnits()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.RetrieveMetaDataTypes">
+            <summary>Sets the stub of IFileRepository.RetrieveMetaDataTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIFileRepository.UpdateFileFile">
+            <summary>Sets the stub of IFileRepository.UpdateFile(File modifiedFile)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.IQualityCheckRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.#ctor">
+            <summary>Initializes a new instance of type StubIQualityCheckRepository</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.AddFileQualityCheckFileQualityCheck">
+            <summary>Sets the stub of IQualityCheckRepository.AddFileQualityCheck(FileQualityCheck fileQualityCheck)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.AddQualityCheckRuleQualityCheck">
+            <summary>Sets the stub of IQualityCheckRepository.AddQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.DeleteColumnRulesInt32">
+            <summary>Sets the stub of IQualityCheckRepository.DeleteColumnRules(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.DeleteQualityCheckRuleInt32">
+            <summary>Sets the stub of IQualityCheckRepository.DeleteQualityCheckRule(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.GetQualityCheckByIDInt32">
+            <summary>Sets the stub of IQualityCheckRepository.GetQualityCheckByID(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.GetQualityCheckByNameString">
+            <summary>Sets the stub of IQualityCheckRepository.GetQualityCheckByName(String ruleName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#AddFileQualityCheck(Microsoft.Research.DataOnboarding.DomainModel.FileQualityCheck)">
+            <summary>Sets the stub of IQualityCheckRepository.AddFileQualityCheck(FileQualityCheck fileQualityCheck)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#AddQualityCheckRule(Microsoft.Research.DataOnboarding.DomainModel.QualityCheck)">
+            <summary>Sets the stub of IQualityCheckRepository.AddQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#DeleteColumnRules(System.Int32)">
+            <summary>Sets the stub of IQualityCheckRepository.DeleteColumnRules(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#DeleteQualityCheckRule(System.Int32)">
+            <summary>Sets the stub of IQualityCheckRepository.DeleteQualityCheckRule(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#GetQualityCheckByID(System.Int32)">
+            <summary>Sets the stub of IQualityCheckRepository.GetQualityCheckByID(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#GetQualityCheckByName(System.String)">
+            <summary>Sets the stub of IQualityCheckRepository.GetQualityCheckByName(String ruleName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#RetrieveQCColumnTypes">
+            <summary>Sets the stub of IQualityCheckRepository.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#RetrieveQualityCheckRules">
+            <summary>Sets the stub of IQualityCheckRepository.RetrieveQualityCheckRules()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IQualityCheckRepository#UpdateQualityCheckRule(Microsoft.Research.DataOnboarding.DomainModel.QualityCheck)">
+            <summary>Sets the stub of IQualityCheckRepository.UpdateQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.RetrieveQCColumnTypes">
+            <summary>Sets the stub of IQualityCheckRepository.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.RetrieveQualityCheckRules">
+            <summary>Sets the stub of IQualityCheckRepository.RetrieveQualityCheckRules()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIQualityCheckRepository.UpdateQualityCheckRuleQualityCheck">
+            <summary>Sets the stub of IQualityCheckRepository.UpdateQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.IRepositoryDetails</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.#ctor">
+            <summary>Initializes a new instance of type StubIRepositoryDetails</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.AddRepositoryRepository">
+            <summary>Sets the stub of IRepositoryDetails.AddRepository(Repository repository)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.DeleteRepositoryInt32">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.DeleteRepositoryMetaDataFieldInt32">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepositoryMetaDataField(Int32 repositoryMetaDataField)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.DeleteRepositoryMetaDataInt32">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepositoryMetaData(Int32 repositoryMetaDataId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.GetBaseRepositoryNameInt32">
+            <summary>Sets the stub of IRepositoryDetails.GetBaseRepositoryName(Int32 baseRepositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.GetMetadataTypes">
+            <summary>Sets the stub of IRepositoryDetails.GetMetadataTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.GetRepositoryByIdInt32">
+            <summary>Sets the stub of IRepositoryDetails.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.GetRepositoryByNameString">
+            <summary>Sets the stub of IRepositoryDetails.GetRepositoryByName(String repositoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#AddRepository(Microsoft.Research.DataOnboarding.DomainModel.Repository)">
+            <summary>Sets the stub of IRepositoryDetails.AddRepository(Repository repository)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#DeleteRepository(System.Int32)">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#DeleteRepositoryMetaData(System.Int32)">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepositoryMetaData(Int32 repositoryMetaDataId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#DeleteRepositoryMetaDataField(System.Int32)">
+            <summary>Sets the stub of IRepositoryDetails.DeleteRepositoryMetaDataField(Int32 repositoryMetaDataField)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#GetBaseRepositoryName(System.Int32)">
+            <summary>Sets the stub of IRepositoryDetails.GetBaseRepositoryName(Int32 baseRepositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#GetMetadataTypes">
+            <summary>Sets the stub of IRepositoryDetails.GetMetadataTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#GetRepositoryById(System.Int32)">
+            <summary>Sets the stub of IRepositoryDetails.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#GetRepositoryByName(System.String)">
+            <summary>Sets the stub of IRepositoryDetails.GetRepositoryByName(String repositoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#RetrieveRepositories">
+            <summary>Sets the stub of IRepositoryDetails.RetrieveRepositories()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#RetrieveRepositoryTypes">
+            <summary>Sets the stub of IRepositoryDetails.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#SaveRepositoryMetaData(Microsoft.Research.DataOnboarding.DomainModel.RepositoryMetadata)">
+            <summary>Sets the stub of IRepositoryDetails.SaveRepositoryMetaData(RepositoryMetadata repositoryMetadata)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#SaveRepositoryMetaDataField(Microsoft.Research.DataOnboarding.DomainModel.RepositoryMetadataField)">
+            <summary>Sets the stub of IRepositoryDetails.SaveRepositoryMetaDataField(RepositoryMetadataField repositoryMetadataField)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IRepositoryDetails#UpdateRepository(Microsoft.Research.DataOnboarding.DomainModel.Repository)">
+            <summary>Sets the stub of IRepositoryDetails.UpdateRepository(Repository repository)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.RetrieveRepositories">
+            <summary>Sets the stub of IRepositoryDetails.RetrieveRepositories()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.RetrieveRepositoryTypes">
+            <summary>Sets the stub of IRepositoryDetails.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.SaveRepositoryMetaDataFieldRepositoryMetadataField">
+            <summary>Sets the stub of IRepositoryDetails.SaveRepositoryMetaDataField(RepositoryMetadataField repositoryMetadataField)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.SaveRepositoryMetaDataRepositoryMetadata">
+            <summary>Sets the stub of IRepositoryDetails.SaveRepositoryMetaData(RepositoryMetadata repositoryMetadata)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIRepositoryDetails.UpdateRepositoryRepository">
+            <summary>Sets the stub of IRepositoryDetails.UpdateRepository(Repository repository)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUnitOfWork">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUnitOfWork.#ctor">
+            <summary>Initializes a new instance of type StubIUnitOfWork</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUnitOfWork.Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUnitOfWork.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUnitOfWork#Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.IUserRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.#ctor">
+            <summary>Initializes a new instance of type StubIUserRepository</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.AddAuthTokenAuthToken">
+            <summary>Sets the stub of IUserRepository.AddAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.AddUserAttributeUserAttribute">
+            <summary>Sets the stub of IUserRepository.AddUserAttribute(UserAttribute attribute)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.AddUserRoleUserRole">
+            <summary>Sets the stub of IUserRepository.AddUserRole(UserRole userRole)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.AddUserUser">
+            <summary>Sets the stub of IUserRepository.AddUser(User newUser)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.GetUserAttributesByUserIdInt32">
+            <summary>Sets the stub of IUserRepository.GetUserAttributesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.GetUserAuthTokenInt32Int32">
+            <summary>Sets the stub of IUserRepository.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.GetUserByNameIdentifierString">
+            <summary>Sets the stub of IUserRepository.GetUserByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.GetUserRolesByUserIdInt32">
+            <summary>Sets the stub of IUserRepository.GetUserRolesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.GetUserbyUserIdInt32">
+            <summary>Sets the stub of IUserRepository.GetUserbyUserId(Int32 userId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#AddAuthToken(Microsoft.Research.DataOnboarding.DomainModel.AuthToken)">
+            <summary>Sets the stub of IUserRepository.AddAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#AddUser(Microsoft.Research.DataOnboarding.DomainModel.User)">
+            <summary>Sets the stub of IUserRepository.AddUser(User newUser)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#AddUserAttribute(Microsoft.Research.DataOnboarding.DomainModel.UserAttribute)">
+            <summary>Sets the stub of IUserRepository.AddUserAttribute(UserAttribute attribute)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#AddUserRole(Microsoft.Research.DataOnboarding.DomainModel.UserRole)">
+            <summary>Sets the stub of IUserRepository.AddUserRole(UserRole userRole)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#GetUserAttributesByUserId(System.Int32)">
+            <summary>Sets the stub of IUserRepository.GetUserAttributesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#GetUserAuthToken(System.Int32,System.Int32)">
+            <summary>Sets the stub of IUserRepository.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#GetUserByNameIdentifier(System.String)">
+            <summary>Sets the stub of IUserRepository.GetUserByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#GetUserRolesByUserId(System.Int32)">
+            <summary>Sets the stub of IUserRepository.GetUserRolesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#GetUserbyUserId(System.Int32)">
+            <summary>Sets the stub of IUserRepository.GetUserbyUserId(Int32 userId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#UpdateAuthToken(Microsoft.Research.DataOnboarding.DomainModel.AuthToken)">
+            <summary>Sets the stub of IUserRepository.UpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUserRepository#UpdateUser(Microsoft.Research.DataOnboarding.DomainModel.User)">
+            <summary>Sets the stub of IUserRepository.UpdateUser(User modifiedUser)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.UpdateAuthTokenAuthToken">
+            <summary>Sets the stub of IUserRepository.UpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubIUserRepository.UpdateUserUser">
+            <summary>Sets the stub of IUserRepository.UpdateUser(User modifiedUser)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.UnitOfWorkCommitException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.#ctor(System.String,System.Collections.Generic.ICollection{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubUnitOfWorkCommitException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubUnitOfWorkCommitException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of BaseException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of BaseException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.InitializeStub">
+            <summary>Initializes a new instance of type StubUnitOfWorkCommitException</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Fakes.StubUnitOfWorkCommitException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Bind(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Bind(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.IDataOnboardingContext)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.GetEntityStateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Data.EntityState})">
+            <summary>Sets the shim of DataOnboardingContext.GetEntityState(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.GetEntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Data.Entity.Infrastructure.DbEntityEntry{``0}})">
+            <summary>Sets the shim of DataOnboardingContext.GetEntry(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.SetEntityStateOf1M0EntityState``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Data.EntityState})">
+            <summary>Sets the shim of DataOnboardingContext.SetEntityState(!!0 entity, EntityState state)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AuthTokensGet">
+            <summary>Sets the shim of DataOnboardingContext.get_AuthTokens()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AuthTokensSetIDbSetOfAuthToken">
+            <summary>Sets the shim of DataOnboardingContext.set_AuthTokens(IDbSet`1&lt;AuthToken&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.BaseRepositoriesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_BaseRepositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.BaseRepositoriesSetIDbSetOfBaseRepository">
+            <summary>Sets the shim of DataOnboardingContext.set_BaseRepositories(IDbSet`1&lt;BaseRepository&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Commit">
+            <summary>Sets the shim of DataOnboardingContext.Commit()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.Constructor">
+            <summary>Sets the shim of DataOnboardingContext.DataOnboardingContext()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.ConstructorString">
+            <summary>Sets the shim of DataOnboardingContext.DataOnboardingContext(String name)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileAttributesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileAttributesSetIDbSetOfFileAttribute">
+            <summary>Sets the shim of DataOnboardingContext.set_FileAttributes(IDbSet`1&lt;FileAttribute&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnTypesSetIDbSetOfFileColumnType">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumnTypes(IDbSet`1&lt;FileColumnType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnUnitsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumnUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnUnitsSetIDbSetOfFileColumnUnit">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumnUnits(IDbSet`1&lt;FileColumnUnit&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumns()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileColumnsSetIDbSetOfFileColumn">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumns(IDbSet`1&lt;FileColumn&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileMetadataFieldsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileMetadataFieldsSetIDbSetOfFileMetadataField">
+            <summary>Sets the shim of DataOnboardingContext.set_FileMetadataFields(IDbSet`1&lt;FileMetadataField&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileQualityChecksGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileQualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FileQualityChecksSetIDbSetOfFileQualityCheck">
+            <summary>Sets the shim of DataOnboardingContext.set_FileQualityChecks(IDbSet`1&lt;FileQualityCheck&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FilesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Files()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.FilesSetIDbSetOfFile">
+            <summary>Sets the shim of DataOnboardingContext.set_Files(IDbSet`1&lt;File&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.GetEntityStateObject">
+            <summary>Sets the shim of DataOnboardingContext.GetEntityState(Object entry)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.MetadataTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_MetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.MetadataTypesSetIDbSetOfMetadataType">
+            <summary>Sets the shim of DataOnboardingContext.set_MetadataTypes(IDbSet`1&lt;MetadataType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of DataOnboardingContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityCheckColumnRulesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityCheckColumnRules()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityCheckColumnRulesSetIDbSetOfQualityCheckColumnRule">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityCheckColumnRules(IDbSet`1&lt;QualityCheckColumnRule&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityCheckColumnTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityCheckColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityCheckColumnTypesSetIDbSetOfQualityCheckColumnType">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityCheckColumnTypes(IDbSet`1&lt;QualityCheckColumnType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityChecksGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.QualityChecksSetIDbSetOfQualityCheck">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityChecks(IDbSet`1&lt;QualityCheck&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoriesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Repositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoriesSetIDbSetOfRepository">
+            <summary>Sets the shim of DataOnboardingContext.set_Repositories(IDbSet`1&lt;Repository&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoryMetadataFieldsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_RepositoryMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoryMetadataFieldsSetIDbSetOfRepositoryMetadataField">
+            <summary>Sets the shim of DataOnboardingContext.set_RepositoryMetadataFields(IDbSet`1&lt;RepositoryMetadataField&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoryMetadataGet">
+            <summary>Sets the shim of DataOnboardingContext.get_RepositoryMetadata()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RepositoryMetadataSetIDbSetOfRepositoryMetadata">
+            <summary>Sets the shim of DataOnboardingContext.set_RepositoryMetadata(IDbSet`1&lt;RepositoryMetadata&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RolesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Roles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.RolesSetIDbSetOfRole">
+            <summary>Sets the shim of DataOnboardingContext.set_Roles(IDbSet`1&lt;Role&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.SetEntityStateObjectEntityState">
+            <summary>Sets the shim of DataOnboardingContext.SetEntityState(Object entry, EntityState state)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UserAttributesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_UserAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UserAttributesSetIDbSetOfUserAttribute">
+            <summary>Sets the shim of DataOnboardingContext.set_UserAttributes(IDbSet`1&lt;UserAttribute&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UserRolesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_UserRoles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UserRolesSetIDbSetOfUserRole">
+            <summary>Sets the shim of DataOnboardingContext.set_UserRoles(IDbSet`1&lt;UserRole&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UsersGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Users()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.UsersSetIDbSetOfUser">
+            <summary>Sets the shim of DataOnboardingContext.set_Users(IDbSet`1&lt;User&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.GetEntityStateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext,``0,System.Data.EntityState})">
+            <summary>Sets the shim of DataOnboardingContext.GetEntityState(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.GetEntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext,``0,System.Data.Entity.Infrastructure.DbEntityEntry{``0}})">
+            <summary>Sets the shim of DataOnboardingContext.GetEntry(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.SetEntityStateOf1M0EntityState``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext,``0,System.Data.EntityState})">
+            <summary>Sets the shim of DataOnboardingContext.SetEntityState(!!0 entity, EntityState state)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.AuthTokensGet">
+            <summary>Sets the shim of DataOnboardingContext.get_AuthTokens()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.AuthTokensSetIDbSetOfAuthToken">
+            <summary>Sets the shim of DataOnboardingContext.set_AuthTokens(IDbSet`1&lt;AuthToken&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.BaseRepositoriesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_BaseRepositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.BaseRepositoriesSetIDbSetOfBaseRepository">
+            <summary>Sets the shim of DataOnboardingContext.set_BaseRepositories(IDbSet`1&lt;BaseRepository&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.Commit">
+            <summary>Sets the shim of DataOnboardingContext.Commit()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileAttributesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileAttributesSetIDbSetOfFileAttribute">
+            <summary>Sets the shim of DataOnboardingContext.set_FileAttributes(IDbSet`1&lt;FileAttribute&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnTypesSetIDbSetOfFileColumnType">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumnTypes(IDbSet`1&lt;FileColumnType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnUnitsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumnUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnUnitsSetIDbSetOfFileColumnUnit">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumnUnits(IDbSet`1&lt;FileColumnUnit&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileColumns()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileColumnsSetIDbSetOfFileColumn">
+            <summary>Sets the shim of DataOnboardingContext.set_FileColumns(IDbSet`1&lt;FileColumn&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileMetadataFieldsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileMetadataFieldsSetIDbSetOfFileMetadataField">
+            <summary>Sets the shim of DataOnboardingContext.set_FileMetadataFields(IDbSet`1&lt;FileMetadataField&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileQualityChecksGet">
+            <summary>Sets the shim of DataOnboardingContext.get_FileQualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FileQualityChecksSetIDbSetOfFileQualityCheck">
+            <summary>Sets the shim of DataOnboardingContext.set_FileQualityChecks(IDbSet`1&lt;FileQualityCheck&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FilesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Files()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.FilesSetIDbSetOfFile">
+            <summary>Sets the shim of DataOnboardingContext.set_Files(IDbSet`1&lt;File&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.GetEntityStateObject">
+            <summary>Sets the shim of DataOnboardingContext.GetEntityState(Object entry)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.MetadataTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_MetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.MetadataTypesSetIDbSetOfMetadataType">
+            <summary>Sets the shim of DataOnboardingContext.set_MetadataTypes(IDbSet`1&lt;MetadataType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of DataOnboardingContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityCheckColumnRulesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityCheckColumnRules()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityCheckColumnRulesSetIDbSetOfQualityCheckColumnRule">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityCheckColumnRules(IDbSet`1&lt;QualityCheckColumnRule&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityCheckColumnTypesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityCheckColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityCheckColumnTypesSetIDbSetOfQualityCheckColumnType">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityCheckColumnTypes(IDbSet`1&lt;QualityCheckColumnType&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityChecksGet">
+            <summary>Sets the shim of DataOnboardingContext.get_QualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.QualityChecksSetIDbSetOfQualityCheck">
+            <summary>Sets the shim of DataOnboardingContext.set_QualityChecks(IDbSet`1&lt;QualityCheck&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoriesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Repositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoriesSetIDbSetOfRepository">
+            <summary>Sets the shim of DataOnboardingContext.set_Repositories(IDbSet`1&lt;Repository&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoryMetadataFieldsGet">
+            <summary>Sets the shim of DataOnboardingContext.get_RepositoryMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoryMetadataFieldsSetIDbSetOfRepositoryMetadataField">
+            <summary>Sets the shim of DataOnboardingContext.set_RepositoryMetadataFields(IDbSet`1&lt;RepositoryMetadataField&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoryMetadataGet">
+            <summary>Sets the shim of DataOnboardingContext.get_RepositoryMetadata()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RepositoryMetadataSetIDbSetOfRepositoryMetadata">
+            <summary>Sets the shim of DataOnboardingContext.set_RepositoryMetadata(IDbSet`1&lt;RepositoryMetadata&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RolesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Roles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.RolesSetIDbSetOfRole">
+            <summary>Sets the shim of DataOnboardingContext.set_Roles(IDbSet`1&lt;Role&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.SetEntityStateObjectEntityState">
+            <summary>Sets the shim of DataOnboardingContext.SetEntityState(Object entry, EntityState state)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UserAttributesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_UserAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UserAttributesSetIDbSetOfUserAttribute">
+            <summary>Sets the shim of DataOnboardingContext.set_UserAttributes(IDbSet`1&lt;UserAttribute&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UserRolesGet">
+            <summary>Sets the shim of DataOnboardingContext.get_UserRoles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UserRolesSetIDbSetOfUserRole">
+            <summary>Sets the shim of DataOnboardingContext.set_UserRoles(IDbSet`1&lt;UserRole&gt; value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UsersGet">
+            <summary>Sets the shim of DataOnboardingContext.get_Users()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimDataOnboardingContext.AllInstances.UsersSetIDbSetOfUser">
+            <summary>Sets the shim of DataOnboardingContext.set_Users(IDbSet`1&lt;User&gt; value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.FileRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.FileRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.Bind(Microsoft.Research.DataOnboarding.DataAccessService.IFileRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AddFileFile">
+            <summary>Sets the shim of FileRepository.AddFile(File newFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.ConstructorIUnitOfWork">
+            <summary>Sets the shim of FileRepository.FileRepository(IUnitOfWork dataContext)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.DeleteFileInt32StringBooleanBoolean">
+            <summary>Sets the shim of FileRepository.DeleteFile(Int32 fileId, String status, Boolean isFileData, Boolean isHardDelete)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.GetFilesByRepositoryInt32">
+            <summary>Sets the shim of FileRepository.GetFilesByRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.GetFilesFuncOfFileBoolean">
+            <summary>Sets the shim of FileRepository.GetFiles(Func`2&lt;File,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.GetItemInt32Int32">
+            <summary>Sets the shim of FileRepository.GetItem(Int32 userId, Int32 fileId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.GetItemInt32String">
+            <summary>Sets the shim of FileRepository.GetItem(Int32 userId, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.GetItemStringInt32">
+            <summary>Sets the shim of FileRepository.GetItem(String nameIdentifier, Int32 fileId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.RetrieveFileColumnTypes">
+            <summary>Sets the shim of FileRepository.RetrieveFileColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.RetrieveFileColumnUnits">
+            <summary>Sets the shim of FileRepository.RetrieveFileColumnUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.RetrieveMetaDataTypes">
+            <summary>Sets the shim of FileRepository.RetrieveMetaDataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.UpdateColumnLevelMetadataFile">
+            <summary>Sets the shim of FileRepository.UpdateColumnLevelMetadata(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.UpdateFileFile">
+            <summary>Sets the shim of FileRepository.UpdateFile(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.UpdateFileLevelMetadataFile">
+            <summary>Sets the shim of FileRepository.UpdateFileLevelMetadata(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository._DeleteFileb__8FileAttribute">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__8(FileAttribute fa)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository._DeleteFileb__9FileColumn">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__9(FileColumn fc)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository._DeleteFileb__aFileMetadataField">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__a(FileMetadataField fmf)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository._DeleteFileb__bFileQualityCheck">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__b(FileQualityCheck fqc)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.AddFileFile">
+            <summary>Sets the shim of FileRepository.AddFile(File newFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.DeleteFileInt32StringBooleanBoolean">
+            <summary>Sets the shim of FileRepository.DeleteFile(Int32 fileId, String status, Boolean isFileData, Boolean isHardDelete)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.GetFilesByRepositoryInt32">
+            <summary>Sets the shim of FileRepository.GetFilesByRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.GetFilesFuncOfFileBoolean">
+            <summary>Sets the shim of FileRepository.GetFiles(Func`2&lt;File,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.GetItemInt32Int32">
+            <summary>Sets the shim of FileRepository.GetItem(Int32 userId, Int32 fileId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.GetItemInt32String">
+            <summary>Sets the shim of FileRepository.GetItem(Int32 userId, String fileName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.GetItemStringInt32">
+            <summary>Sets the shim of FileRepository.GetItem(String nameIdentifier, Int32 fileId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.RetrieveFileColumnTypes">
+            <summary>Sets the shim of FileRepository.RetrieveFileColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.RetrieveFileColumnUnits">
+            <summary>Sets the shim of FileRepository.RetrieveFileColumnUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.RetrieveMetaDataTypes">
+            <summary>Sets the shim of FileRepository.RetrieveMetaDataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.UpdateColumnLevelMetadataFile">
+            <summary>Sets the shim of FileRepository.UpdateColumnLevelMetadata(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.UpdateFileFile">
+            <summary>Sets the shim of FileRepository.UpdateFile(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances.UpdateFileLevelMetadataFile">
+            <summary>Sets the shim of FileRepository.UpdateFileLevelMetadata(File modifiedFile)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances._DeleteFileb__8FileAttribute">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__8(FileAttribute fa)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances._DeleteFileb__9FileColumn">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__9(FileColumn fc)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances._DeleteFileb__aFileMetadataField">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__a(FileMetadataField fmf)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimFileRepository.AllInstances._DeleteFileb__bFileQualityCheck">
+            <summary>Sets the shim of FileRepository.&lt;DeleteFile&gt;b__b(FileQualityCheck fqc)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.QualityCheckRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.QualityCheckRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.Bind(Microsoft.Research.DataOnboarding.DataAccessService.IQualityCheckRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AddFileQualityCheckFileQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.AddFileQualityCheck(FileQualityCheck fileQualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AddQualityCheckRuleQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.AddQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.ConstructorIUnitOfWork">
+            <summary>Sets the shim of QualityCheckRepository.QualityCheckRepository(IUnitOfWork dataContext)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.DeleteColumnRulesInt32">
+            <summary>Sets the shim of QualityCheckRepository.DeleteColumnRules(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.DeleteQualityCheckRuleInt32">
+            <summary>Sets the shim of QualityCheckRepository.DeleteQualityCheckRule(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.GetQualityCheckByIDInt32">
+            <summary>Sets the shim of QualityCheckRepository.GetQualityCheckByID(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.GetQualityCheckByNameString">
+            <summary>Sets the shim of QualityCheckRepository.GetQualityCheckByName(String ruleName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.RetrieveQCColumnTypes">
+            <summary>Sets the shim of QualityCheckRepository.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.RetrieveQualityCheckRules">
+            <summary>Sets the shim of QualityCheckRepository.RetrieveQualityCheckRules()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.UpdateQualityCheckRuleQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.UpdateQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.AddFileQualityCheckFileQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.AddFileQualityCheck(FileQualityCheck fileQualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.AddQualityCheckRuleQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.AddQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.DeleteColumnRulesInt32">
+            <summary>Sets the shim of QualityCheckRepository.DeleteColumnRules(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.DeleteQualityCheckRuleInt32">
+            <summary>Sets the shim of QualityCheckRepository.DeleteQualityCheckRule(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.GetQualityCheckByIDInt32">
+            <summary>Sets the shim of QualityCheckRepository.GetQualityCheckByID(Int32 qualityCheckId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.GetQualityCheckByNameString">
+            <summary>Sets the shim of QualityCheckRepository.GetQualityCheckByName(String ruleName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.RetrieveQCColumnTypes">
+            <summary>Sets the shim of QualityCheckRepository.RetrieveQCColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.RetrieveQualityCheckRules">
+            <summary>Sets the shim of QualityCheckRepository.RetrieveQualityCheckRules()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimQualityCheckRepository.AllInstances.UpdateQualityCheckRuleQualityCheck">
+            <summary>Sets the shim of QualityCheckRepository.UpdateQualityCheckRule(QualityCheck qualityCheck)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryBase</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryBase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.ConstructorIUnitOfWork">
+            <summary>Sets the shim of RepositoryBase.RepositoryBase(IUnitOfWork onboardingContext)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.ContextGet">
+            <summary>Sets the shim of RepositoryBase.get_Context()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryBase.AllInstances.ContextGet">
+            <summary>Sets the shim of RepositoryBase.get_Context()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryDetails</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryDetails)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.Bind(Microsoft.Research.DataOnboarding.DataAccessService.IRepositoryDetails)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AddRepositoryRepository">
+            <summary>Sets the shim of RepositoryDetails.AddRepository(Repository repository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.ConstructorIUnitOfWork">
+            <summary>Sets the shim of RepositoryDetails.RepositoryDetails(IUnitOfWork dataContext)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.DeleteRepositoryInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.DeleteRepositoryMetaDataFieldInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepositoryMetaDataField(Int32 repositoryMetaDataField)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.DeleteRepositoryMetaDataInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepositoryMetaData(Int32 repositoryMetaDataId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.GetBaseRepositoryNameInt32">
+            <summary>Sets the shim of RepositoryDetails.GetBaseRepositoryName(Int32 baseRepositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.GetMetadataTypes">
+            <summary>Sets the shim of RepositoryDetails.GetMetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.GetRepositoryByIdInt32">
+            <summary>Sets the shim of RepositoryDetails.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.GetRepositoryByNameString">
+            <summary>Sets the shim of RepositoryDetails.GetRepositoryByName(String repositoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.RetrieveRepositories">
+            <summary>Sets the shim of RepositoryDetails.RetrieveRepositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.RetrieveRepositoryTypes">
+            <summary>Sets the shim of RepositoryDetails.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.SaveRepositoryMetaDataFieldRepositoryMetadataField">
+            <summary>Sets the shim of RepositoryDetails.SaveRepositoryMetaDataField(RepositoryMetadataField repositoryMetadataField)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.SaveRepositoryMetaDataRepositoryMetadata">
+            <summary>Sets the shim of RepositoryDetails.SaveRepositoryMetaData(RepositoryMetadata repositoryMetadata)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.UpdateRepositoryRepository">
+            <summary>Sets the shim of RepositoryDetails.UpdateRepository(Repository repository)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.AddRepositoryRepository">
+            <summary>Sets the shim of RepositoryDetails.AddRepository(Repository repository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.DeleteRepositoryInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.DeleteRepositoryMetaDataFieldInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepositoryMetaDataField(Int32 repositoryMetaDataField)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.DeleteRepositoryMetaDataInt32">
+            <summary>Sets the shim of RepositoryDetails.DeleteRepositoryMetaData(Int32 repositoryMetaDataId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.GetBaseRepositoryNameInt32">
+            <summary>Sets the shim of RepositoryDetails.GetBaseRepositoryName(Int32 baseRepositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.GetMetadataTypes">
+            <summary>Sets the shim of RepositoryDetails.GetMetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.GetRepositoryByIdInt32">
+            <summary>Sets the shim of RepositoryDetails.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.GetRepositoryByNameString">
+            <summary>Sets the shim of RepositoryDetails.GetRepositoryByName(String repositoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.RetrieveRepositories">
+            <summary>Sets the shim of RepositoryDetails.RetrieveRepositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.RetrieveRepositoryTypes">
+            <summary>Sets the shim of RepositoryDetails.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.SaveRepositoryMetaDataFieldRepositoryMetadataField">
+            <summary>Sets the shim of RepositoryDetails.SaveRepositoryMetaDataField(RepositoryMetadataField repositoryMetadataField)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.SaveRepositoryMetaDataRepositoryMetadata">
+            <summary>Sets the shim of RepositoryDetails.SaveRepositoryMetaData(RepositoryMetadata repositoryMetadata)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimRepositoryDetails.AllInstances.UpdateRepositoryRepository">
+            <summary>Sets the shim of RepositoryDetails.UpdateRepository(Repository repository)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.UserRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.UserRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.Bind(Microsoft.Research.DataOnboarding.DataAccessService.IUserRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AddAuthTokenAuthToken">
+            <summary>Sets the shim of UserRepository.AddAuthToken(AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AddUserAttributeUserAttribute">
+            <summary>Sets the shim of UserRepository.AddUserAttribute(UserAttribute attribute)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AddUserRoleUserRole">
+            <summary>Sets the shim of UserRepository.AddUserRole(UserRole userRole)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AddUserUser">
+            <summary>Sets the shim of UserRepository.AddUser(User newUser)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.ConstructorIUnitOfWork">
+            <summary>Sets the shim of UserRepository.UserRepository(IUnitOfWork dataContext)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.GetUserAttributesByUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserAttributesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.GetUserAuthTokenInt32Int32">
+            <summary>Sets the shim of UserRepository.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.GetUserByNameIdentifierString">
+            <summary>Sets the shim of UserRepository.GetUserByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.GetUserRolesByUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserRolesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.GetUserbyUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserbyUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.UpdateAuthTokenAuthToken">
+            <summary>Sets the shim of UserRepository.UpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.UpdateUserUser">
+            <summary>Sets the shim of UserRepository.UpdateUser(User modifiedUser)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.AddAuthTokenAuthToken">
+            <summary>Sets the shim of UserRepository.AddAuthToken(AuthToken authToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.AddUserAttributeUserAttribute">
+            <summary>Sets the shim of UserRepository.AddUserAttribute(UserAttribute attribute)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.AddUserRoleUserRole">
+            <summary>Sets the shim of UserRepository.AddUserRole(UserRole userRole)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.AddUserUser">
+            <summary>Sets the shim of UserRepository.AddUser(User newUser)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.GetUserAttributesByUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserAttributesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.GetUserAuthTokenInt32Int32">
+            <summary>Sets the shim of UserRepository.GetUserAuthToken(Int32 userId, Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.GetUserByNameIdentifierString">
+            <summary>Sets the shim of UserRepository.GetUserByNameIdentifier(String nameIdentifier)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.GetUserRolesByUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserRolesByUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.GetUserbyUserIdInt32">
+            <summary>Sets the shim of UserRepository.GetUserbyUserId(Int32 userId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.UpdateAuthTokenAuthToken">
+            <summary>Sets the shim of UserRepository.UpdateAuthToken(AuthToken userAuthToken)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.ShimUserRepository.AllInstances.UpdateUserUser">
+            <summary>Sets the shim of UserRepository.UpdateUser(User modifiedUser)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.DataOnboardingContext</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.InitializeStub">
+            <summary>Initializes a new instance of type StubDataOnboardingContext</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of DataOnboardingContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of DataOnboardingContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubDataOnboardingContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.FileRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubFileRepository</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubFileRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.IDataOnboardingContext</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.#ctor">
+            <summary>Initializes a new instance of type StubIDataOnboardingContext</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.AttachBackingFieldToAuthTokens">
+            <summary>Attaches delegates to emulate StubIDataOnboardingContext.AuthTokens as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.AuthTokensGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_AuthTokens()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.AuthTokensSetIDbSetOfAuthToken">
+            <summary>Sets the stub of IDataOnboardingContext.set_AuthTokens(IDbSet`1&lt;AuthToken&gt; value)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.BaseRepositoriesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_BaseRepositories()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileAttributesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileAttributes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileColumnTypesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumnTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileColumnUnitsGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumnUnits()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileColumnsGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumns()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileMetadataFieldsGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileMetadataFields()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FileQualityChecksGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileQualityChecks()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.FilesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_Files()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.GetEntityStateObject">
+            <summary>Sets the stub of IDataOnboardingContext.GetEntityState(Object entry)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.GetEntityStateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Data.EntityState})">
+            <summary>Sets stubs of GetEntityState(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.GetEntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Data.Entity.Infrastructure.DbEntityEntry{``0}})">
+            <summary>Sets stubs of GetEntry(!!0 entity)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.MetadataTypesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_MetadataTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#IUnitOfWork#Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#GetEntityState``1(``0)">
+            <summary>Sets the stub of IDataOnboardingContext.GetEntityState(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#GetEntityState(System.Object)">
+            <summary>Sets the stub of IDataOnboardingContext.GetEntityState(Object entry)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#GetEntry``1(``0)">
+            <summary>Sets the stub of IDataOnboardingContext.GetEntry(!!0 entity)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#SetEntityState``1(``0,System.Data.EntityState)">
+            <summary>Sets the stub of IDataOnboardingContext.SetEntityState(!!0 entity, EntityState state)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#SetEntityState(System.Object,System.Data.EntityState)">
+            <summary>Sets the stub of IDataOnboardingContext.SetEntityState(Object entry, EntityState state)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.QualityCheckColumnRulesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityCheckColumnRules()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.QualityCheckColumnTypesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityCheckColumnTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.QualityChecksGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityChecks()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.RepositoriesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_Repositories()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.RepositoryMetadataFieldsGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_RepositoryMetadataFields()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.RepositoryMetadataGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_RepositoryMetadata()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.RolesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_Roles()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.SetEntityStateObjectEntityState">
+            <summary>Sets the stub of IDataOnboardingContext.SetEntityState(Object entry, EntityState state)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.SetEntityStateOf1M0EntityState``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Data.EntityState})">
+            <summary>Sets stubs of SetEntityState(!!0 entity, EntityState state)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.UserAttributesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_UserAttributes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.UserRolesGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_UserRoles()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.UsersGet">
+            <summary>Sets the stub of IDataOnboardingContext.get_Users()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#AuthTokens">
+            <summary>Sets the stub of IDataOnboardingContext.get_AuthTokens()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#BaseRepositories">
+            <summary>Sets the stub of IDataOnboardingContext.get_BaseRepositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileAttributes">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileColumnTypes">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileColumnUnits">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumnUnits()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileColumns">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileColumns()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileMetadataFields">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#FileQualityChecks">
+            <summary>Sets the stub of IDataOnboardingContext.get_FileQualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#Files">
+            <summary>Sets the stub of IDataOnboardingContext.get_Files()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#MetadataTypes">
+            <summary>Sets the stub of IDataOnboardingContext.get_MetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#QualityCheckColumnRules">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityCheckColumnRules()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#QualityCheckColumnTypes">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityCheckColumnTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#QualityChecks">
+            <summary>Sets the stub of IDataOnboardingContext.get_QualityChecks()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#Repositories">
+            <summary>Sets the stub of IDataOnboardingContext.get_Repositories()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#RepositoryMetadata">
+            <summary>Sets the stub of IDataOnboardingContext.get_RepositoryMetadata()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#RepositoryMetadataFields">
+            <summary>Sets the stub of IDataOnboardingContext.get_RepositoryMetadataFields()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#Roles">
+            <summary>Sets the stub of IDataOnboardingContext.get_Roles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#UserAttributes">
+            <summary>Sets the stub of IDataOnboardingContext.get_UserAttributes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#UserRoles">
+            <summary>Sets the stub of IDataOnboardingContext.get_UserRoles()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubIDataOnboardingContext.mrdodas::Microsoft#Research#DataOnboarding#DataAccessService#Providers#EntityFramework#IDataOnboardingContext#Users">
+            <summary>Sets the stub of IDataOnboardingContext.get_Users()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.QualityCheckRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubQualityCheckRepository</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubQualityCheckRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryBase</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryBase</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryBase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.RepositoryDetails</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryDetails</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubRepositoryDetails.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.UserRepository</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubUserRepository</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.DataAccessService.Providers.EntityFramework.Fakes.StubUserRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

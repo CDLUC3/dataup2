@@ -1,0 +1,70 @@
+﻿@Styles.Render("~/Content/LoginStyles")
+<link rel="stylesheet" media="only screen and (max-height: 900px)" href="~/Content/wide900.css" />
+<link rel="stylesheet" media="only screen and (max-height: 800px)" href="~/Content/wide800.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1280px) and (max-height: 1024px)" href="~/Content/wide800.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1280px) and (max-height: 1024px)" href="~/Content/wide1280.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="~/Content/standard.css" />
+<link rel="stylesheet" media="only screen and (max-width: 320px)" href="~/Content/mobile-portrait.css" />
+@Scripts.Render("~/bundles/GeneralFiles")
+@Scripts.Render("~/bundles/LoginScripts")
+
+@{
+    Layout = null;
+    ViewBag.Title = @Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.Title;
+}
+
+<div id="loginHeader">
+    <a href="/"><img src="/content/images/datauplogo.png" alt="Home" /></a>
+</div>
+
+<div id="wrapper">
+
+    <div class="signin">
+
+        <div class="left panel">
+           
+        </div>
+
+        <div class="right panel">
+            
+            <div id="descriptionPanel">
+                <h2>DataUp is a data documenting, archiving and sharing tool that allows you to:</h2>
+
+                <ul class="descriptionDetails">
+                    <li>Upload tabular data to your own repository in the cloud</li>
+                    <li>Perform a best practices check on your data</li>
+                    <li>Add metadata and descriptions to your data</li>
+                    <li>Share your data with others</li>
+                </ul>
+            </div>
+            <div id="inProgress">Loading...</div>
+            <div id="loginButtons" style="display:none">
+                <div class="signInText">Sign in with...</div>
+                <a href="#" title="Microsoft Account" role="link" class="microsoft login-option" id="msLogin">
+                    <span>Microsoft Account</span>
+                </a>
+                <a href="#" title="Facebook Account" role="link" class="facebook login-option" id="fbLogin">
+                    <span>Facebook Account</span>
+                </a>
+                <a href="#" title="Google Account" role="link" class="google login-option" id="googleLogin">
+                    <span>Google Account</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+@{
+    Html.RenderPartial("Footer");
+    }
+
+<input type="hidden" value="@Microsoft.Research.DataOnboarding.WebApplication.Helpers.BaseController.BaseWebApiGetSupportedIdentityProvidersPath.ToString()" id="hdnGetSupportedIdentityProvidersPath" />
+
+
+
+
+
+
+

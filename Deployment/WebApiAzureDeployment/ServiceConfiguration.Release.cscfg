@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WebApiAzureDeployment" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WebApi">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="--AZURE_DIAGNOSTICS_CONNECTION_STRING--" />
+      <Setting name="Microsoft.Research.DataOnboarding" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Security" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.WebApi.Api" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.FileService.FileProcesser" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.RepositoryAdapters.SkyDrive" value="Error" />
+      <Setting name="PrimaryContainer" value="dataup2filecontainer" />
+      <Setting name="DataOnBoardingStorage" value="--DATA_ONBOARDING_STORAGE_CONNECTION_STRING--"/>
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="--CERT_NAME--" thumbprint="--THUMBPRINT--" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="FilePurgeService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="--AZURE_DIAGNOSTICS_CONNECTION_STRING--" />
+      <Setting name="ScheduledTimeInHours" value="24" />
+      <Setting name="UploadedFilesExpirationDurationInHours" value="72" />
+      <Setting name="Microsoft.Research.DataOnboarding.FilePurgeService" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding" value="Error" />
+      <Setting name="PrimaryContainer" value="dataup2filecontainer" />
+      <Setting name="DataOnBoardingStorage" value="--DATA_ONBOARDING_STORAGE_CONNECTION_STRING--"/>
+    </ConfigurationSettings>
+    <Certificates>
+    </Certificates>
+  </Role>
+  <Role name="PublishProcessor">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="--AZURE_DIAGNOSTICS_CONNECTION_STRING--" />
+      <Setting name="ScheduledTime" value="5" />
+      <Setting name="ScheduledLogTransferInMinutes" value="1" />
+      <Setting name="Microsoft.Research.DataOnboarding.Services.PublishProcessor" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding.QueueService" value="Error" />
+      <Setting name="Microsoft.Research.DataOnboarding" value="Error" />
+      <Setting name="PrimaryContainer" value="dataup2filecontainer" />
+      <Setting name="DataOnBoardingStorage" value="--DATA_ONBOARDING_STORAGE_CONNECTION_STRING--"/>
+    </ConfigurationSettings>
+    <Certificates>
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

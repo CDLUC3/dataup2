@@ -1,0 +1,125 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Helpers;
+@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+@using Microsoft.Research.DataOnboarding.WebApplication.ViewModels;
+@using Microsoft.Research.DataOnboarding.Utilities.Enums;
+
+@model  FileListViewModel
+@{
+    ViewBag.Title = Information.UploadedFileListViewName;
+    var noFilesClass = "hide";
+
+    if (Model == null || Model.UploadedFiles == null || !Model.UploadedFiles.Any())
+    {
+        noFilesClass = "";
+    }
+
+    var fileDeletionAlertCheckpoints = Constants.FileDeletionAlertCheckpoints;
+}
+
+<div id="divNoFiles" class="@noFilesClass">
+    <div>
+        <div style="color: #7a7a7a; margin: 10px; padding-top: 20px;">
+            @Information.NoUploadedFilesInfo
+        </div>
+    </div>
+</div>
+
+@if (Model != null && Model.UploadedFiles != null && Model.UploadedFiles.Any())
+{
+    <table id="uploadFileTable" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <thead>
+            <tr>
+                <th><a href="javascript:void(0)" title="@Information.FileNameHeader"></a>@Information.FileNameHeader</th>
+                <th width="70"><a href="javascript:void(0)" title="@Information.LifelineStatusHeader">@Information.LifelineStatusHeader</a></th>
+                <th width="60"><a href="javascript:void(0)" title="@Information.FileTypeHeader">@Information.FileTypeHeader</a></th>
+                <th width="180"><a href="javascript:void(0)" title="@Information.UploadedDateHeader">@Information.UploadedDateHeader</a></th>
+                <th width="80"><a href="javascript:void(0)" title="@Information.SizeHeader">@Information.SizeHeader</a></th>
+                <th width="80"><a href="javascript:void(0)" title="@Information.StatusHeader">@Information.StatusHeader</a></th>
+                <th width="130">@Information.ActionsHeader</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.UploadedFiles)
+            {
+                FileStatus fileStatus = (FileStatus)Enum.Parse(typeof(FileStatus), file.FileStatus) ;          
+                <tr fileId="@file.FileId">
+                    <td class="fileName"><span>@file.FileName</span></td>
+                    <td class="lifelineStatus">
+                        @if (@file.LifelineInHours.HasValue && @file.LifelineInHours.Value > 0)
+                        {
+                            if (file.LifelineInHours <= fileDeletionAlertCheckpoints[0])
+                            {
+                            <span style="font-weight: bold; color: red">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                            }
+                            else if (file.LifelineInHours <= fileDeletionAlertCheckpoints[1])
+                            {
+                            <span style="font-weight: bold; color: orange">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                            }
+                            else if (file.LifelineInHours <= fileDeletionAlertCheckpoints[2])
+                            {
+                            <span style="color: black">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                            }
+                            else
+                            {
+                            <span>@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                            }
+                        }
+                    </td>
+                    <td class="fileType">@file.FileType</td>
+                    <td class="dateandtime">@file.UploadedDateTime</td>
+                    <td class="fileSize">@file.Size</td>
+                    <td class="fileSize">@file.FileStatus</td>
+                    <td class="actions">
+                        <ul>
+                               @if (fileStatus == FileStatus.Inqueue || fileStatus == FileStatus.Verifying || fileStatus == FileStatus.Posted)
+                               {
+                                   <li class="download disable" fileId="@file.FileId"><a href="#" class="disable" title="@Information.DownloadTitle">@Information.DownloadTitle</a></li>
+                                   <li class="upload disable" fileId="@file.FileId" title="@Information.PostTitle"><a href="#" class="disable" title="@Information.PostTitle" >@Information.PostTitle</a> </li>
+                                   <li class="delete disable" fileId="@file.FileId"><a href="#" class="disable" title="@Information.DeleteTitle">@Information.DeleteTitle</a></li>
+                               }
+                               else{
+                                    <li id="liDownLoadUpload" class="download"  fileId="@file.FileId"><a href="@Url.Action("DownloadFile", "Home", new { fileId = @file.FileId, mimeType = @file.MimeType, fileName = @file.FileName })" title="@Information.DownloadTitle">@Information.DownloadTitle</a></li>
+
+                                    if (file.RepositoryList != null && file.RepositoryList.Any())
+                                    {
+                                        <li class="upload" id="btnPostFile" fileId="@file.FileId">
+                                            <a id="ancPost" title="@Information.PostTitle" >@Information.PostTitle</a>
+                                            <ul id="ulRepositories"  fileId="@file.FileId">
+                                                @foreach (var repository in file.RepositoryList)
+                                                {
+                                                    var repName = string.Empty;
+
+                                                    if (repository.RepositoryName.Length > 13)
+                                                    {
+                                                        repName = repository.RepositoryName.Substring(0, 10) + "...";
+                                                    }
+                                                    else
+                                                    {
+                                                        repName = repository.RepositoryName;
+                                                    }    
+                                                    
+                                                    <li><a href="javascript:postFileHandler(@file.FileId, @repository.RepositoryId, '@repository.RepositoryName')" title="@repository.RepositoryName">@repName</a></li>
+                                                }
+                                            </ul>
+                                    
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="upload disable"><a href="javascript:void(0)" title="@Information.NoRepositoryMessage">Post</a></li>
+                                    }
+                                    
+                                   <li class="delete" id="delDocument" fileId="@file.FileId"><a href="javascript:void(0)" title="@Information.DeleteTitle">@Information.DeleteTitle</a></li>
+                            
+                               }
+                           
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+

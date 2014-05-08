@@ -1,0 +1,146 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model Microsoft.Research.DataOnboarding.WebApplication.ViewModels.QCRuleViewModel
+@{
+    ViewBag.Title = "AddEditRule";
+}
+
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/QualityCheckRule.css")" />
+<script type="text/javascript">
+    $(function () {
+        var addEditQCRule = $("#addEditQCRule");
+        addEditQCRule.removeData("validator")
+        addEditQCRule.removeData("unobtrusiveValidation");
+        addEditQCRule.validate({});
+    });
+</script>
+
+<div id="body" class="admin addRepository addRule">
+
+    @using (Html.BeginForm("SaveRule", "QualityCheck", FormMethod.Post, new { id = "addEditQCRule", postUrl = Url.Action("SaveRule", "QualityCheck") }))
+    {   
+        <section class="rightPanel">
+            <div style="padding-top: 20px;">
+                <span id="errQCSaveMessage" style="color: red;">@ViewBag.ErrorMessage</span>
+                <span id="errduplicateRule" style="color: red;"></span>
+            </div>
+            <div class="title">
+                @if (Model.QCRuleId > 0)
+                {
+                    <a href="@Url.Action("Index")" class="button l0 back" title="@Information.BackTitle">@Information.BackTitle</a><h2>@Information.EditQCRuleText</h2>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index")" class="button l0 back" title="@Information.BackTitle">@Information.BackTitle</a><h2>@Information.AddQCRuleText</h2>
+                }
+            </div>
+
+            <div class="list">
+                <div class="row">
+                    <label class="label">@Information.RuleNameLabel<span class="mandatory">*</span></label>
+                    @Html.TextBoxFor(m => m.QCRuleName, new { id = "qcRuleName", maxlength = 100, required = true })
+                    @Html.HiddenFor(m => m.QCRuleId, new { id = "qcRuleId" })
+                    @Html.HiddenFor(m => m.CreatedDate, new { id = "qcCreatedDate" })
+                    @Html.HiddenFor(m => m.CreatedBy, new { id = "qcCreatedBy" })
+                </div>
+                <div class="row">
+                    <label class="label">@Information.DescriptionLabel</label>
+                    @Html.TextAreaFor(m => m.QCRuleDescription, new { id = "qcRuleDesc", maxlength = 1000 })
+                    <div class="notification">@Information.Max300CharNotification</div>
+                </div>
+                <div class="row">
+                    <label class="label">@Information.HeaderNamesLabel</label>
+                    <div class="col">
+                        <div class="ordered">
+                            @*<input type="checkbox" id="oredred" /><span name="ordered">@Information.ConsiderheadersorderText</span>*@
+                            @Html.CheckBoxFor(m => m.IsOrderRequired, new { id = "qcIsOrderRequired" })<span name="ordered">@Information.ConsiderheadersorderText</span>
+                        </div>
+                        <table cellpadding="0" cellspacing="0" border="0" id="tabHeaders">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th title="@Information.HeaderNameHeader">@Information.HeaderNameHeader<span class="mandatory">*</span></th>
+                                    @*   <th>@Information.MandatoryHeader</th>*@
+                                    <th title="@Information.TypeHeader">@Information.TypeHeader</th>
+                                    <th title="@Information.RangeStartHeader">@Information.RangeStartHeader</th>
+                                    <th title="@Information.RangeEndHeader">@Information.RangeEndHeader</th>
+                                    <th title="@Information.ActionsHeader">@Information.ActionsHeader</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyHeaders">
+
+                                @if (Model != null && Model.LstHeaderNames != null && Model.LstHeaderNames.Any())
+                                {
+                                    foreach (var headerName in Model.LstHeaderNames)
+                                    {
+                                        int index = Model.LstHeaderNames.IndexOf(headerName);
+                                        var rowNumber = index + 1;
+                                        var rangeClass = "hide";
+                                        var spanValue = 3;
+                                        if (Model.LstHeaderNames[index].ColumnTypeId == 1)
+                                        {
+                                            rangeClass = "";
+                                            spanValue = 0;
+                                        }                               
+                                 
+                                    @Html.HiddenFor(m => m.LstHeaderNames[index].QCColumnRuleId, new { id = "LstHeaderNames" + @index + "__QCColumnRuleId", @class = "hdnColumnRuleId" })
+                                    <tr id="@headerName.QCColumnRuleId" rowNumber ="@rowNumber">
+                                        @Html.HiddenFor(m => m.LstHeaderNames[index].Order, new { id = "LstHeaderNames" + @index + "__Order", @class = "hdnOrder" })
+                                        <td><a href="#" class="up" title="@Information.UpText">@Information.UpText</a>
+                                            <a href="#" class="down" title="@Information.DownText">Down</a>
+                                        </td>
+                                        <td class="headerName">
+                                            @* @Html.TextBoxFor(m => m.LstHeaderNames[index].HeaderName, new { id = "qcHeaderName" })*@
+                                            @Html.TextBoxFor(m => m.LstHeaderNames[index].HeaderName, new { id = "LstHeaderNames" + @index + "__HeaderName", @class = "txtHeaderName", maxlength = 250, required = true })
+                                        </td>
+                                        <td class="mandatory hide">
+                                            @*@Html.CheckBoxFor(m => m.LstHeaderNames[index].IsRequired, new { id = "qcChkRequired" })*@
+                                            @Html.CheckBoxFor(m => m.LstHeaderNames[index].IsRequired, new { id = "LstHeaderNames" + @index + "__IsRequired", @class = "chkIsRequired" })
+                                        </td>
+                                        @*<td class="errorMessage ">                                          
+                                            @Html.TextBoxFor(m => m.LstHeaderNames[index].ErrorMessage, new { id = "LstHeaderNames" + @index + "__ErrorMessage", @class = "txtErrorMessage", maxlength = 500 })
+                                        </td>*@
+                                        <td class="columnType">
+                                            @Html.DropDownListFor(m => m.LstHeaderNames[index].ColumnTypeId, headerName.QCColumnTypes, new { id = "LstHeaderNames" + @index + "__ColumnTypeId", @class = "ddlColumnType", @ruleId = headerName.QCColumnRuleId })
+                                        </td>
+                                        <td class="range @rangeClass">
+                                            @Html.TextBoxFor(m => m.LstHeaderNames[index].RangeStart, new { id = "LstHeaderNames" + @index + "__RangeStart", @class = "txtRangeStart", maxlength = 10 })
+                                        </td>
+                                        <td class="range @rangeClass">
+                                            @Html.TextBoxFor(m => m.LstHeaderNames[index].RangeEnd, new { id = "LstHeaderNames" + @index + "__RangeEnd", @class = "txtRangeEnd", maxlength = 10 })
+                                        </td>
+                                        <td class="actions">
+                                            <ul>
+                                                <li class="delete"><a href="#" id="ancDeleteHeader" title="@Information.DeleteTitle" rowNumber="@rowNumber">@Information.DeleteTitle</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    }
+                                }
+                            </tbody>
+                            <tr>
+                                <td colspan="5" class="noBorder">
+                                    <span id="duplicateHeaderError" style="color: red; display: none;">@Messages.DuplicateHeaderMsg</span>
+                                    <span id="invalidRangeValues" style="color: red; display: none;">@Messages.ErrInvalidRange</span>
+                                    <span id="rangeEndSmallErr" style="color: red; display: none;">@Messages.ErrRangeEndSmall</span>
+                                    <br />
+                                    <a id="ancAddHeader" href="#" title="Add Header Name">Add Header Name</a>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label">@Information.VisibilityHeader</label>
+                    @Html.DropDownListFor(m => m.VisibilityOption, Model.VisibilityOptions, new { id = "qcVisibilityOption", maxlength = 1000 })
+                </div>
+                <div class="endStripe">
+                    <input type="button" id="btnAddQcRule" value="Submit" class="button l2 next" title="Submit" />
+                    <a href="@Url.Action("Index")" class="button l2 cancel" title="Cancel">Cancel</a>
+                </div>
+            </div>
+        </section>        
+    }
+
+</div>

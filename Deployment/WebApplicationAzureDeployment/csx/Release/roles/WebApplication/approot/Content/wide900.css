@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* Anonymous Homepage */
+
+.anonymous#body {
+    margin-top: 40px;
+}
+
+/* Registration */
+
+.registration#body {
+    margin-top: 0;
+}
+
+    .registration#body h2 {
+        font-size: 44px;
+    }
+
+    .registration#body p.note {
+        padding-bottom: 17px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .registration#body section.registration .row {
+    }
+
+        .registration#body section.registration .row label {
+            padding-bottom: 2px;
+            font-size: 16px;
+            font-family: SegoeUI;
+        }
+
+    .registration#body section.registration {
+        padding-bottom: 10px;
+    }
+
+.rightPanel .container {
+    min-height: 750px;
+}
+
+.post .rightPanel .container {
+    min-height: 670px;
+}
+
+.registration footer nav {
+    padding-bottom: 15px;
+}
+
+    .registration footer nav ul li {
+    }
+
+        .registration footer nav ul li a {
+            font-size: 16px;
+        }
+
+.registration footer .powered {
+    padding-bottom: 0;
+    padding-left: 34px;
+}
+
+    .registration footer .powered .copyright {
+        font-size: 16px;
+        float: left;
+        padding-left: 10px;
+    }
+
+.rightPanel footer nav {
+    padding-right: 0;
+}
+
+    .rightPanel footer nav ul li a, .rightPanel footer .copyright {
+        font-size: 16px;
+    }
+
+.post .rightPanel footer nav ul li a, .post .rightPanel footer .copyright {
+    font-size: 14px;
+}
+
+.rightPanel footer .copyright {
+    padding-top: 8px;
+}
+
+footer .powered {
+    padding-left: 0;
+}
+
+.post .list {
+    overflow-x: auto;
+}
+
+.admin table td.description {
+    min-width: 200px;
+}
+
+.rightPanel .container .container {
+    min-height: inherit;
+}
+
+.rightPanel .container .list td.fileName {
+    width: 350px;
+}
+
+.rightPanel .container .list td.lifelineStatus {
+    width: 70px;
+}

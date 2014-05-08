@@ -1,0 +1,55 @@
+﻿ul.dropDown {
+    width: 300px;
+}
+
+    ul.dropDown li span {
+        color: #333;
+        border: 1px solid #ddd;
+        padding: 10px;
+        display: block;
+        background: url(images/drop-down-icon.png) no-repeat 270px center;
+    }
+
+    ul.dropDown li {
+        position: relative;
+    }
+
+        ul.dropDown li ul {
+            background: #fff;
+            border: 1px solid #7f9db8;
+            width: 298px;
+            top: 45px;
+            position: absolute;
+            display: none;
+        }
+
+        ul.dropDown li:hover ul {
+            display: block;
+        }
+
+        ul.dropDown li ul li {
+            padding: 0 10px;
+        }
+
+            ul.dropDown li ul li:hover {
+                background: #3297fc;
+                color: #fff;
+            }
+
+table td.status {
+    vertical-align: top;
+}
+
+    table td.status span {
+        display: block;
+        height: 20px;
+        background: url(images/exclamation.png) no-repeat center bottom;
+        background-size: 20px auto;
+        text-indent: -100000px;
+        overflow: hidden;
+    }
+
+        table td.status span.passed {
+            background-image: url(images/done.png);
+            background-position-y: -70px;
+        }

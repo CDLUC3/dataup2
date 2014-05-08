@@ -1,0 +1,7 @@
+C:\DataOnboarding\Tests\TestUtilities\bin\Release\Microsoft.Research.DataOnboarding.TestUtilities.dll
+C:\DataOnboarding\Tests\TestUtilities\bin\Release\Microsoft.Research.DataOnboarding.TestUtilities.pdb
+C:\DataOnboarding\Tests\TestUtilities\bin\Release\EntityFramework.dll
+C:\DataOnboarding\Tests\TestUtilities\bin\Release\EntityFramework.xml
+C:\DataOnboarding\Tests\TestUtilities\obj\Release\TestUtilities.csprojResolveAssemblyReference.cache
+C:\DataOnboarding\Tests\TestUtilities\obj\Release\Microsoft.Research.DataOnboarding.TestUtilities.dll
+C:\DataOnboarding\Tests\TestUtilities\obj\Release\Microsoft.Research.DataOnboarding.TestUtilities.pdb

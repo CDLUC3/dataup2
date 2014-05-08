@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3218297A-90F1-4EBC-8831-1B595F82253E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Research.DataOnboarding.WebApi.Tests</RootNamespace>
+    <AssemblyName>Microsoft.Research.DataOnboarding.WebApi.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\Solution Items\FxCop_Code_Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\..\Solution Items\FxCop_Code_Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <OutputPath>bin\Dev\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityModel.Tokens.JWT, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Microsoft.IdentityModel.Tokens.JWT.0.1.0\lib\net45\Microsoft.IdentityModel.Tokens.JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Research.DataOnboarding.DataAccessService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.DataAccessService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.DataAccessService.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.DataAccessService.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.DomainModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.DomainModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.DomainModel.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.DomainModel.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.FileService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.FileService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.FileService.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.FileService.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.QCService.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.QCService.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoriesService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.RepositoriesService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoriesService.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.RepositoriesService.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.RepositoryAdapters.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.Services.UserService.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.Services.UserService.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f2e16f3e6666d637, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Services\FileService\bin\Debug\Microsoft.Research.DataOnboarding.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.Utilities.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.Utilities.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Research.DataOnboarding.WebApi.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Research.DataOnboarding.WebApi.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\mscorlib.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QueueService.Fakes">
+      <HintPath>FakesAssemblies\QueueService.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.IdentityModel.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.identitymodel.services" />
+    <Reference Include="System.identitymodel.services.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.identitymodel.services.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.Net.Http.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.Web.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.4.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\System.Web.Http.4.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="MediaFormatterTestHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTests\AuthenticationControllerUnitTests.cs" />
+    <Compile Include="UnitTests\BlobControllerUnitTests.cs" />
+    <Compile Include="UnitTests\FileControllerTests.cs" />
+    <Compile Include="UnitTests\PublishControllerTest.cs" />
+    <Compile Include="UnitTests\QCControllerTests.cs" />
+    <Compile Include="UnitTests\RepositoryControllerTest.cs" />
+    <Compile Include="UnitTests\RepositoryTypesControllerTest.cs" />
+    <Compile Include="UnitTests\SystemExceptionFilterAttributeUnitTests.cs" />
+    <Compile Include="UnitTests\DefaultFileHandlerTests.cs" />
+    <Compile Include="UnitTests\ZipFileHandlerTests.cs" />
+    <Compile Include="UnitTests\UsersControllerTests.cs" />
+    <Compile Include="UnitTests\WindowsLiveAuthorizationControllerTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\API\WebApi\WebApi.csproj">
+      <Project>{1dba5d99-3eea-493d-87ef-70eebc09b20a}</Project>
+      <Name>WebApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Core\Core.csproj">
+      <Project>{eeb7fd65-0eeb-4dd6-bdc0-658a9729edca}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Models\DomainModel\DomainModel.csproj">
+      <Project>{9bc3bc63-4e32-4dee-b5a9-37f06b6a49b7}</Project>
+      <Name>DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Repository Adapters\RepositoryAdapters\RepositoryAdapters.csproj">
+      <Project>{bbeccc9d-274a-4d00-9cf8-c1b0fb7d0348}</Project>
+      <Name>RepositoryAdapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\QCService\QCService.csproj">
+      <Project>{b1c7d21f-1d8d-4452-95d8-7d8e73d8fc71}</Project>
+      <Name>QCService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\QueueService\QueueService.csproj">
+      <Project>{7ed95cb9-711c-484b-8a7c-d02ee2456336}</Project>
+      <Name>QueueService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\UserService\UserService.csproj">
+      <Project>{972987a1-f023-4241-a35a-13ed44b0fba3}</Project>
+      <Name>UserService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TestUtilities\TestUtilities.csproj">
+      <Project>{bb7f0370-2b54-4340-9c78-10813bc4cf7d}</Project>
+      <Name>TestUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\mscorlib.fakes" />
+    <Fakes Include="Fakes\System.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.Services.UserService.fakes" />
+    <None Include="app.config" />
+    <Fakes Include="Fakes\System.Web.fakes" />
+    <Fakes Include="Fakes\System.Web.Http.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.WebApi.fakes" />
+    <Fakes Include="Fakes\System.identitymodel.services.fakes" />
+    <Fakes Include="Fakes\System.Net.Http.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.RepositoryAdapters.fakes" />
+    <Fakes Include="Fakes\QueueService.fakes" />
+    <Fakes Include="Fakes\System.IdentityModel.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.QCService.fakes" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.DataAccessService01.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.DomainModel01.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.FileService01.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.RepositoriesService01.fakes" />
+    <Fakes Include="Fakes\Microsoft.Research.DataOnboarding.Utilities01.fakes" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

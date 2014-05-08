@@ -1,0 +1,100 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model Microsoft.Research.DataOnboarding.WebApplication.ViewModels.QualityCheckViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="body" class="admin">
+
+    <section class="rightPanel">
+        <div class="container">
+
+        @if (Model.QualityCheckRules == null || !Model.QualityCheckRules.Any())
+        {
+            <div class="title" id="divNoRules">
+                <h4>@Messages.NoQCRulesDefined</h4>
+
+                <nav>
+                    <div class="optionLinks">
+                        <ul>
+                            <li class="add"><a href="@Url.Action("AddEditRule", new { qcRuleId = 0 })" title="@Information.AddQCRuleText">@Information.AddQCRuleText</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        }
+        else
+        {
+            <div class="title">
+                <h2>@Information.ManageQCRuLesHeader</h2>
+
+                <nav>
+                    <div class="optionLinks">
+                        <ul>
+                            <li class="add"><a href="@Url.Action("AddEditRule", new { qcRuleId = 0 })" title="@Information.AddQCRuleText">@Information.AddQCRuleText</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="list">
+                <div>
+                    <span id="errRuleMessage" style="color: red;"></span>
+                </div>
+                <input type="hidden" id="hdnRuleCount" value="@Model.QualityCheckRules.Count" />
+                <table id="tabQCRules" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th width="120" title="@Information.RuleNameLabel">@Information.RuleNameLabel</th>
+                            <th title="@Information.DescriptionLabel">@Information.DescriptionLabel</th>
+                            <th width="80" title="@Information.VisibilityHeader">@Information.VisibilityHeader</th>
+                            <th width="240" title="@Information.CreatedDateHeader">@Information.CreatedDateHeader</th>
+                            <th width="100" title="@Information.CreatedByHeader">@Information.CreatedByHeader</th>
+                            <th width="80" title="@Information.ActionsHeader">@Information.ActionsHeader</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var qcRule in Model.QualityCheckRules)
+                        {
+                            <tr id="@qcRule.QCRuleId">
+                                <td class="ruleName" title="@qcRule.QCRuleName">@qcRule.QCRuleName</td>
+                                <td class="description" title="@qcRule.QCRuleDescription">@qcRule.QCRuleDescription</td>
+                                <td class="visibility">
+                                    @if (@qcRule.IsVisibleToAll)
+                                    {
+                                        @Html.Raw(@Information.VisibleToAll)
+                                    }
+                                    else
+                                    {
+                                        @Html.Raw(@Information.VisibleToAdmin)
+                                    }
+                                </td>
+                                <td class="dateCreated">@qcRule.CreatedDate</td>
+                                <td class="createdBy">@qcRule.CreatedUser</td>
+                                <td class="actions">
+                                    <ul>
+                                        <li class="edit"><a href="@Url.Action("AddEditRule", new { qcRuleId = @qcRule.QCRuleId })" title="@Information.EditText">@Information.EditText</a></li>
+                                        <li class="delete"><a href="#" id="ancDelRule" qcId="@qcRule.QCRuleId" title="@Information.DeleteText">@Information.DeleteText</a></li>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        
+        }</div>
+
+    
+
+    </section>
+
+</div>

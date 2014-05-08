@@ -1,0 +1,6 @@
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.IMessageHandler: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.IMessageHandlerFactory: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.IMessageRouter: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.IPublishQueueService: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.IQueueRepository: type is an interface.
+C:\DataOnboarding\Tests\API\WebApi.Tests\Fakes\QueueService.fakes : warning : Cannot generate shim for Microsoft.Research.DataOnboarding.QueueService.QueueRepository+<>c__DisplayClass2: type is not supported because of internal limitations.

@@ -1,0 +1,55 @@
+﻿.optionLinks ul li {
+    padding-left: 20px;
+}
+
+    .optionLinks ul li a {
+        color: #00bcf2;
+        display: block;
+        float: left;
+        margin-right: 10px;
+        background: url(images/download.png) no-repeat 0 -39px;
+        background-size: 24px auto;
+        font-family: SegoeUI;
+        padding-bottom: 1px;
+        padding-left: 32px;
+        padding-top: 2px;
+    }
+
+        .optionLinks ul li a:hover, .optionLinks ul li:hover a {
+            color: #00b294;
+            background-position-y: -81px;
+        }
+
+.paramtrTableContainer td .dropdownElementsHolder {
+    position: absolute;
+    z-index: 2px;
+}
+
+    .paramtrTableContainer td .dropdownElementsHolder input[type="text"] {
+        border-right: none;
+    }
+
+        .paramtrTableContainer td .dropdownElementsHolder input[type="text"], .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.enabled, .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.valid {
+            visibility: hidden;
+            margin: 0;
+            height: 22px;
+        }
+
+            .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText {
+                visibility: visible;
+            }
+
+                .paramtrTableContainer td .dropdownElementsHolder input[type="text"].unitsText.disable {
+                    visibility: hidden;
+                }
+
+
+.paramtrTableContainer td select {
+    width: 140px;
+    padding: 5px;
+    margin: 0;
+}
+
+input.entityDescription {
+    width: 95%;
+}

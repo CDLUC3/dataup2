@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* Common */
+
+header {
+    z-index:11;
+}
+header nav ul li ul {
+    z-index:11;
+}
+.leftPanel {
+    width:100%;
+    height:95px;
+    z-index:10;
+    padding:0;
+}
+    .leftPanel .or, .leftPanel .drop {
+        display:none;
+    }
+    .leftPanel .dragndrop {
+        padding:15px;
+    }
+        .leftPanel label a {
+            text-transform:capitalize;
+            text-align:center;
+        }
+        .leftPanel label a:before {
+            content:"To upload your data please "
+        }
+        .leftPanel label a:after {
+            content:" here"
+        }
+.rightPanel {
+    margin-left:0;
+    margin-top:140px;
+}
+.anonymous#body {
+    padding-top:50px;
+    background:red !important;
+}
+.post .leftPanel {
+    width:100%;
+    padding:20px 0px 0 0px;
+    border-bottom:5px solid #7FBA00;
+    position:fixed;
+    height:inherit;
+}
+.post .leftPanel .title {
+    float:left;
+    padding:0 20px 20px 20px;
+}
+    .post .leftPanel .title h2 {
+        float:left;
+    }
+.post .leftPanel .repository {
+    float:right;
+    padding:10px 20px 20px 20px;
+    margin:0;
+}
+.post .leftPanel nav {
+    padding:0;
+    clear:both;
+    margin-top:190px;
+    overflow:hidden;
+    margin-left:20px;
+}
+.leftPanel nav ul {
+    border:none;
+}
+.leftPanel nav ul li {
+    float:left;
+    margin:0 2px 0 0;
+}
+.post .leftPanel nav ul li a, .post .leftPanel nav ul li.active a, .post .leftPanel nav ul li.active a {
+    padding-right:20px;
+    background-position-x:15px;
+}
+.leftPanel .guideline {
+    padding:0 0 0 20px;
+    position:absolute;
+    top:70px;
+    width:400px;
+}
+.leftPanel .endStripe {
+    position:absolute;
+    top:90px;
+    right:10px;
+    background:none;
+    height:100px;
+    padding:0;
+}
+.post .rightPanel {
+    margin-left:0;
+    margin-top:300px;
+}
+.admin .rightPanel {
+    margin-top:40px;
+}
+    .admin .rightPanel .list {
+        overflow-x:auto;
+    }
+.admin footer nav, .admin footer .powered {
+    float:none;
+}
+    .admin footer nav ul {
+        text-align:center;
+    }
+        .admin footer nav ul li {
+            display:inline;
+        }
+.admin footer .powered {
+    width:470px;
+    margin:0 auto;
+}
+.addRule#body .list select {
+    width:140px;
+}
+.addRule#body .list td.headerName input {
+    width:140px;
+}

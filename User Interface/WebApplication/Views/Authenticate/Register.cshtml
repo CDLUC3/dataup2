@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = @Microsoft.Research.DataOnboarding.WebApplication.Resource.Information.Title;
+}
+<div id="body" class="anonymous registration">
+    <h2>Submit Your Information</h2>
+    <p style="font-size: 14px; line-height: 18px; font-family: SegoeUI; padding: 0 0 10px; text-align: left;">Note: You only need to do this once. We will not send you unwanted emails or sell your information.</p>
+    <section class="registration">
+        <div class="container">
+            <form method="post">
+                <div class="row">
+                    <label>First Name<span class="mandatory">*</span></label>
+                    <input type="text" id="txtFirstName" />
+                    <span class="error" id="spanFirstName"></span>
+                </div>
+                <div class="row">
+                    <label>Middle Name</label>
+                    <input type="text" id="txtMiddleName" />
+                    <span class="error" id="spanMiddleName"></span>
+                </div>
+                <div class="row">
+                    <label>Last Name<span class="mandatory">*</span></label>
+                    <input type="text" id="txtLastName" />
+                    <span class="error" id="spanLastName"></span>
+                </div>
+                <div class="row">
+                    <label>Email<span class="mandatory">*</span></label>
+                    <input type="text" id="txtEmail" />
+                    <span class="error" id="spanEmail"></span>
+                </div>
+                <div class="row last">
+                    <label>Organization<span class="mandatory">*</span></label>
+                    <input type="text" id="txtOrganization" />
+                    <span class="error" id="spanOrganization"></span>
+                </div>
+                <div class="endStripe">
+                    <input type="button" id="Exit" value="Exit" title="Exit" class="button l0 logout" />
+                    <input type="button" id="Register" value="Submit" title="Submit" class="button l0 next" />
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+  @{
+        Html.RenderPartial("Footer");
+  }

@@ -1,0 +1,88 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Helpers;
+@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+@using Microsoft.Research.DataOnboarding.WebApplication.ViewModels;
+
+@model  FileListViewModel
+@{
+    ViewBag.Title = Information.FilesDeletionAlertListViewName;
+    var noFilesClass = "hide";
+    if (Model == null || Model.FilesToBeDeletedList == null || !Model.FilesToBeDeletedList.Any())
+    {
+        noFilesClass = "";
+    }
+
+    var fileDeletionAlertCheckpoints = Constants.FileDeletionAlertCheckpoints;
+}
+
+@if (Model != null && Model.FilesToBeDeletedList != null && Model.FilesToBeDeletedList.Any())
+{
+    <table id="filesDeletionAlertTable" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <thead>
+            <tr>
+                <th><a href="javascript:void(0)" title="@Information.FileNameHeader">@Information.FileNameHeader</a></th>
+                <th width="70"><a href="javascript:void(0)" title="@Information.LifelineStatusHeader">@Information.LifelineStatusHeader</a></th>
+                <th width="60"><a href="javascript:void(0)" title="@Information.FileTypeHeader">@Information.FileTypeHeader</a></th>
+                <th width="200"><a href="javascript:void(0)" title="@Information.UploadedDateHeader">@Information.UploadedDateHeader</a></th>
+                <th width="80"><a href="javascript:void(0)" title="@Information.SizeHeader">@Information.SizeHeader</a></th>
+                <th width="130" title="@Information.ActionsHeader">@Information.ActionsHeader</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.FilesToBeDeletedList)
+            {
+                <tr fileId="@file.FileId">
+                    <td class="fileName"><span>@file.FileName</span></td>
+                    <td class="lifelineStatus">
+                        @if (file.LifelineInHours <= fileDeletionAlertCheckpoints[0])
+                        {
+                            <span style="font-weight: bold; color: red">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                        }
+                        else if (file.LifelineInHours <= fileDeletionAlertCheckpoints[1])
+                        {
+                            <span style="font-weight: bold; color: orange">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                        }
+                        else if (file.LifelineInHours <= fileDeletionAlertCheckpoints[2])
+                        {
+                            <span style="color: black">@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                        }
+                        else
+                        {
+                            <span>@(file.LifelineInHours.ToString() + @Information.Hours)</span>
+                        }
+                    </td>
+                    <td class="fileType">@file.FileType</td>
+                    <td class="dateandtime">@file.UploadedDateTime</td>
+                    <td class="fileSize">@file.Size</td>
+                    <td class="actions">
+                        <ul>
+                            <li id="liDownLoadUpload" class="download" fileId="@file.FileId"><a href="@Url.Action("DownloadFile", "Home", new { fileId = @file.FileId, mimeType = @file.MimeType, fileName = @file.FileName })" title="@Information.DownloadTitle">@Information.DownloadTitle</a></li>
+
+                            @if (file.RepositoryList != null && file.RepositoryList.Any())
+                            {
+                                <li class="upload" id="btnPostFile" fileId="@file.FileId">
+                                    <a id="ancPost" title="@Information.PostTitle">@Information.PostTitle</a>
+                                    <ul id="ulRepositories"  fileId="@file.FileId">
+                                        @foreach (var repository in file.RepositoryList)
+                                        {
+                                            var repName = repository.RepositoryName.Length > 13 ? repository.RepositoryName.Substring(0, 10) + "..." : repository.RepositoryName;
+                                            <li><a href="javascript:void(0)" onclick="CheckUserAuthTokenStatus(@file.FileId, @repository.RepositoryId, '@repository.RepositoryName')" title="@repository.RepositoryName">@repName</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="upload disable"><a href="javascript:void(0)" title="@Information.NoRepositoryMessage">Post</a></li>
+                            }
+
+                            <li class="delete" id="delDocument" fileId="@file.FileId"><a href="javascript:void(0)" title="@Information.DeleteTitle">@Information.DeleteTitle</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+

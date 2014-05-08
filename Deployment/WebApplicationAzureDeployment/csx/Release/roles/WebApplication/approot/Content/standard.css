@@ -1,0 +1,388 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* Common */
+
+body {
+    font-size: 14px;
+}
+
+p {
+    line-height: 18px;
+}
+
+table th, table td {
+    padding: 5px;
+}
+
+    table td.fileName .alertIndication {
+        width: 17px;
+        height: 17px;
+        background-size: 17px auto;
+        margin-top: 5px;
+    }
+
+    table td.actions ul li a {
+        width: 20px;
+        height: 20px;
+        background-size: 20px auto;
+        margin-top: 5px;
+    }
+
+        table td.actions ul li a:hover {
+            background-position-y: -35px;
+        }
+
+    table td.actions ul li.delete a:hover {
+        background-position-y: bottom;
+    }
+
+    table td.actions ul li.upload ul, .repository .repositoryList ul {
+        padding: 0 5px;
+        margin-left: -100px;
+        overflow-x: hidden;
+    }
+
+        table td.actions ul li.upload ul li, .repository .repositoryList ul li {
+            padding: 3px 0px;
+        }
+
+            table td.actions ul li.upload ul li a, .repository .repositoryList ul li a {
+                font-size: 12px;
+            }
+
+    table td.fileName {
+        width: 300px;
+    }
+
+/* Header */
+
+header {
+    height: inherit;
+}
+
+.logo {
+    padding: 0px 15px;
+}
+
+    .logo img {
+        margin-top: 5px;
+    }
+
+header nav ul li a {
+    line-height: 45px;
+}
+
+header nav ul li ul li a {
+    font-size: 14px;
+}
+
+header nav.primary ul li a {
+    font-size: 16px;
+    background-size: 20px auto;
+    background-position-y: -97px;
+    padding-left: 43px;
+}
+
+header nav.secondary {
+    padding-right: 8px;
+}
+
+    header nav.secondary ul li.settings a {
+        background-position-y: 8px;
+    }
+
+    header nav.secondary ul li.settings ul {
+        margin-left: -190px;
+    }
+
+        header nav.secondary ul li.settings ul li a {
+            font-size: 14px;
+            width: 200px;
+        }
+
+    header nav.secondary ul li.accountLinks .userName {
+        font-size: 16px;
+    }
+
+header nav ul li.accountLinks ul {
+    /*width:136px;*/
+}
+
+/* Left Panel */
+
+.leftPanel {
+    padding: 20px 15px;
+    top: 45px;
+}
+
+/* Right Panel */
+
+.rightPanel {
+    padding: 20px 15px 40px;
+    margin-left: 240px;
+    margin-top: 45px;
+}
+
+    .rightPanel nav {
+        border-width: 5px;
+    }
+
+        .rightPanel nav .tabNavigation ul li a {
+            font-size: 16px;
+            padding: 10px 25px 11px;
+        }
+
+    .rightPanel .onlyTabs .optionLinks {
+        padding-top: 4px;
+        padding-bottom: 0;
+    }
+
+    .rightPanel nav .optionLinks ul li.deletion a {
+        background-size: 20px auto;
+        margin-top: 5px;
+    }
+
+        .rightPanel nav .optionLinks ul li.deletion a:hover, .rightPanel nav .optionLinks ul li.deletion:hover a {
+            background-position-y: -68px;
+        }
+
+    .rightPanel nav .optionLinks ul li.deletion .filter {
+        font-size: 13px;
+    }
+
+    .rightPanel .container {
+        min-height: 500px;
+    }
+
+.deletionAlert {
+    padding: 5px 10px;
+}
+
+    .deletionAlert a.button {
+        font-size: 12px;
+        background-size: 15px auto;
+        background-position-y: -78px;
+        padding: 0 0 1px 20px;
+    }
+
+/* Footer */
+
+footer .copyright {
+    right: 15px;
+    padding-top: 8px;
+}
+
+.rightPanel footer nav {
+    float: none;
+}
+
+footer nav ul {
+    text-align: center;
+}
+
+    footer nav ul li {
+        display: inline;
+        float: none;
+    }
+
+footer .powered {
+    margin: 0 auto;
+    width: 470px;
+    float: none;
+}
+
+.post .leftPanel {
+    width: 300px;
+}
+
+.post footer .powered {
+    width: 440px;
+}
+
+.post .leftPanel nav ul li a, .post .leftPanel nav ul li.active a, .post .leftPanel nav ul li.active a {
+    padding: 10px 10px 10px 50px;
+    font-size: 18px;
+    background-size: 25px auto;
+    background-position: 10px -120px;
+    padding-left: 50px;
+}
+
+.button.l0.back {
+    width: 35px;
+    height: 35px;
+    background-size: 35px auto;
+}
+
+.title .back {
+    padding-right: 10px;
+}
+
+.post .leftPanel .title h2 {
+    font-size: 24px;
+}
+
+.post .repository .repositoryList ul {
+    margin-left: -50px;
+}
+
+.post .leftPanel .repository {
+    margin-bottom: 10px;
+}
+
+.post .leftPanel nav {
+    padding-bottom: 20px;
+}
+
+.leftPanel .guideline {
+    padding: 0 10px;
+}
+
+.post .leftPanel .userCredential {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.leftPanel .userCredential input {
+    width: 240px;
+}
+
+.leftPanel .endStripe {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 265px;
+}
+
+.button.l1 {
+    padding-right: 15px;
+}
+
+.post .rightPanel {
+    margin-left: 300px;
+}
+
+.post .rightPanel .container {
+    min-height: 490px;
+}
+
+.post .rightPanel nav .tabNavigation ul li a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.rightPanel .optionLinks ul li a {
+    background-size: 20px auto;
+    background-position: 0 -34px;
+    padding-left: 25px;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.admin .rightPanel .optionLinks {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.admin .title h2 {
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.rightPanel .optionLinks ul li a:hover, .rightPanel .optionLinks ul li:hover a {
+    background-position-y: -69px;
+}
+
+.admin footer {
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+    .admin footer nav {
+        float: left;
+    }
+
+        .admin footer nav ul {
+            text-align: inherit;
+        }
+
+    .admin footer .powered {
+        float: right;
+        width: inherit;
+        margin: 0;
+    }
+
+.admin .rightPanel {
+    padding-bottom: 10px;
+}
+
+.paginationStripe {
+    margin-top: 20px;
+}
+
+.admin .rightPanel .container {
+    min-height: 520px;
+}
+
+.addRepository#body td.type select, .field input[type="text"], .range input[type="text"] {
+    width: 90%;
+}
+
+table td {
+    line-height: 18px;
+}
+
+.notification {
+    font-size: 12px;
+}
+
+.admin table td.actions {
+    min-width: 60px;
+}
+
+.admin .button.l0.back {
+    margin-top: 7px;
+}
+
+.button.l0.back:hover {
+    background-position-y: -184px;
+}
+
+.admin .rightPanel .container .container {
+    min-height: inherit;
+}
+
+.validate table td select {
+    width: 250px;
+}
+
+ul.dropDown {
+    width: 250px;
+}
+
+    ul.dropDown li span {
+        background-position-x: 220px;
+    }
+
+.button.l2 {
+    padding: 9px 15px 8px 44px;
+}
+
+    .button.l2.validate {
+        margin: 0;
+    }
+
+.common .rightPanel h2 {
+    padding-top: 0;
+    line-height: 48px;
+}
+
+ul.dropDown li ul {
+    top: 40px;
+}
+
+.addRepository#body .list label {
+    padding-bottom: 11px;
+}

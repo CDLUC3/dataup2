@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Research.DataOnboarding.RepositoriesService.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryNotFoundException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.#ctor(Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryNotFoundException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.Constructor">
+            <summary>Sets the shim of RepositoryNotFoundException.RepositoryNotFoundException()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of RepositoryNotFoundException.RepositoryNotFoundException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.ConstructorString">
+            <summary>Sets the shim of RepositoryNotFoundException.RepositoryNotFoundException(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.ConstructorStringException">
+            <summary>Sets the shim of RepositoryNotFoundException.RepositoryNotFoundException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.ConstructorStringInt32StringICollectionOfString">
+            <summary>Sets the shim of RepositoryNotFoundException.RepositoryNotFoundException(String message, Int32 repositoryId, String repositoryName, ICollection`1&lt;String&gt; errors)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.GetHttpErrorString">
+            <summary>Sets the shim of RepositoryNotFoundException.GetHttpError(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.NameGet">
+            <summary>Sets the shim of RepositoryNotFoundException.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.NameSetString">
+            <summary>Sets the shim of RepositoryNotFoundException.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.RepositoryIdGet">
+            <summary>Sets the shim of RepositoryNotFoundException.get_RepositoryId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.RepositoryIdSetInt32">
+            <summary>Sets the shim of RepositoryNotFoundException.set_RepositoryId(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances.GetHttpErrorString">
+            <summary>Sets the shim of RepositoryNotFoundException.GetHttpError(String message)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances.NameGet">
+            <summary>Sets the shim of RepositoryNotFoundException.get_Name()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances.NameSetString">
+            <summary>Sets the shim of RepositoryNotFoundException.set_Name(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances.RepositoryIdGet">
+            <summary>Sets the shim of RepositoryNotFoundException.get_RepositoryId()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryNotFoundException.AllInstances.RepositoryIdSetInt32">
+            <summary>Sets the shim of RepositoryNotFoundException.set_RepositoryId(Int32 value)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService">
+            <summary>Shim type of Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.#ctor(Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.Bind(Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AddUpdateRepositoryRepository">
+            <summary>Sets the shim of RepositoryService.AddUpdateRepository(Repository repositoryData)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.CheckRepositoryExistsString">
+            <summary>Sets the shim of RepositoryService.CheckRepositoryExists(String repositoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.ConstructorIRepositoryDetailsIUnitOfWorkIUserRepositoryIFileRepository">
+            <summary>Sets the shim of RepositoryService.RepositoryService(IRepositoryDetails repositoryDetails, IUnitOfWork unitOfWork, IUserRepository userRepository, IFileRepository fileRepository)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.DeleteRepositoryInt32">
+            <summary>Sets the shim of RepositoryService.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.DeleteRepositoryMetaDataFieldsInt32String">
+            <summary>Sets the shim of RepositoryService.DeleteRepositoryMetaDataFields(Int32 repositoryId, String repositoryMetaDataFields)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.GetMetadataTypes">
+            <summary>Sets the shim of RepositoryService.GetMetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.GetRepositoriesByRoleAndFileExtensionBooleanString">
+            <summary>Sets the shim of RepositoryService.GetRepositoriesByRoleAndFileExtension(Boolean isAdmin, String fileExtension)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.GetRepositoryByIdInt32">
+            <summary>Sets the shim of RepositoryService.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.GetRepositoryByNameString">
+            <summary>Sets the shim of RepositoryService.GetRepositoryByName(String name)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.GetRepositoryWithOutChildDetailsRepository">
+            <summary>Sets the shim of RepositoryService.GetRepositoryWithOutChildDetails(Repository repsoitory)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.RetrieveRepositoriesBoolean">
+            <summary>Sets the shim of RepositoryService.RetrieveRepositories(Boolean includeAdminRepositories)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.RetrieveRepositoryTypes">
+            <summary>Sets the shim of RepositoryService.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.SetRepositoryMetaDataRepositoryRepositoryRepositoryMetadata">
+            <summary>Sets the shim of RepositoryService.SetRepositoryMetaData(Repository repositoryData, Repository updatedRepositoryData, RepositoryMetadata savedRepositoryMetaData)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.SetRepositoryValuesRepository">
+            <summary>Sets the shim of RepositoryService.SetRepositoryValues(Repository repositoryDetails)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.AddUpdateRepositoryRepository">
+            <summary>Sets the shim of RepositoryService.AddUpdateRepository(Repository repositoryData)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.CheckRepositoryExistsString">
+            <summary>Sets the shim of RepositoryService.CheckRepositoryExists(String repositoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.DeleteRepositoryInt32">
+            <summary>Sets the shim of RepositoryService.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.DeleteRepositoryMetaDataFieldsInt32String">
+            <summary>Sets the shim of RepositoryService.DeleteRepositoryMetaDataFields(Int32 repositoryId, String repositoryMetaDataFields)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.GetMetadataTypes">
+            <summary>Sets the shim of RepositoryService.GetMetadataTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.GetRepositoriesByRoleAndFileExtensionBooleanString">
+            <summary>Sets the shim of RepositoryService.GetRepositoriesByRoleAndFileExtension(Boolean isAdmin, String fileExtension)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.GetRepositoryByIdInt32">
+            <summary>Sets the shim of RepositoryService.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.GetRepositoryByNameString">
+            <summary>Sets the shim of RepositoryService.GetRepositoryByName(String name)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.GetRepositoryWithOutChildDetailsRepository">
+            <summary>Sets the shim of RepositoryService.GetRepositoryWithOutChildDetails(Repository repsoitory)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.RetrieveRepositoriesBoolean">
+            <summary>Sets the shim of RepositoryService.RetrieveRepositories(Boolean includeAdminRepositories)</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.RetrieveRepositoryTypes">
+            <summary>Sets the shim of RepositoryService.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.ShimRepositoryService.AllInstances.SetRepositoryMetaDataRepositoryRepositoryRepositoryMetadata">
+            <summary>Sets the shim of RepositoryService.SetRepositoryMetaData(Repository repositoryData, Repository updatedRepositoryData, RepositoryMetadata savedRepositoryMetaData)</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryNotFoundException</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.#ctor(System.String,System.Int32,System.String,System.Collections.Generic.ICollection{System.String})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubRepositoryNotFoundException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubRepositoryNotFoundException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of BaseException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of BaseException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryNotFoundException</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryNotFoundException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoriesService.RepositoryService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService.#ctor(Microsoft.Research.DataOnboarding.DataAccessService.IRepositoryDetails,Microsoft.Research.DataOnboarding.DataAccessService.IUnitOfWork,Microsoft.Research.DataOnboarding.DataAccessService.IUserRepository,Microsoft.Research.DataOnboarding.DataAccessService.IFileRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService.InitializeStub">
+            <summary>Initializes a new instance of type StubRepositoryService</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Research.DataOnboarding.RepositoriesService.Fakes.StubRepositoryService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService">
+            <summary>Stub type of Microsoft.Research.DataOnboarding.RepositoriesService.Interface.IRepositoryService</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.#ctor">
+            <summary>Initializes a new instance of type StubIRepositoryService</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.AddUpdateRepositoryRepository">
+            <summary>Sets the stub of IRepositoryService.AddUpdateRepository(Repository repositoryDetails)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.CheckRepositoryExistsString">
+            <summary>Sets the stub of IRepositoryService.CheckRepositoryExists(String repositoryName)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.DeleteRepositoryInt32">
+            <summary>Sets the stub of IRepositoryService.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.DeleteRepositoryMetaDataFieldsInt32String">
+            <summary>Sets the stub of IRepositoryService.DeleteRepositoryMetaDataFields(Int32 repositoryId, String repositoryMetaDataFields)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.GetMetadataTypes">
+            <summary>Sets the stub of IRepositoryService.GetMetadataTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.GetRepositoriesByRoleAndFileExtensionBooleanString">
+            <summary>Sets the stub of IRepositoryService.GetRepositoriesByRoleAndFileExtension(Boolean isAdmin, String fileExtension)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.GetRepositoryByIdInt32">
+            <summary>Sets the stub of IRepositoryService.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.GetRepositoryByNameString">
+            <summary>Sets the stub of IRepositoryService.GetRepositoryByName(String name)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#AddUpdateRepository(Microsoft.Research.DataOnboarding.DomainModel.Repository)">
+            <summary>Sets the stub of IRepositoryService.AddUpdateRepository(Repository repositoryDetails)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#CheckRepositoryExists(System.String)">
+            <summary>Sets the stub of IRepositoryService.CheckRepositoryExists(String repositoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#DeleteRepository(System.Int32)">
+            <summary>Sets the stub of IRepositoryService.DeleteRepository(Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#DeleteRepositoryMetaDataFields(System.Int32,System.String)">
+            <summary>Sets the stub of IRepositoryService.DeleteRepositoryMetaDataFields(Int32 repositoryId, String repositoryMetaDataFields)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#GetMetadataTypes">
+            <summary>Sets the stub of IRepositoryService.GetMetadataTypes()</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#GetRepositoriesByRoleAndFileExtension(System.Boolean,System.String)">
+            <summary>Sets the stub of IRepositoryService.GetRepositoriesByRoleAndFileExtension(Boolean isAdmin, String fileExtension)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#GetRepositoryById(System.Int32)">
+            <summary>Sets the stub of IRepositoryService.GetRepositoryById(Int32 repositoryId)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#GetRepositoryByName(System.String)">
+            <summary>Sets the stub of IRepositoryService.GetRepositoryByName(String name)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#RetrieveRepositories(System.Boolean)">
+            <summary>Sets the stub of IRepositoryService.RetrieveRepositories(Boolean includeAdminRepositories)</summary>
+        </member>
+        <member name="M:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.mrdors::Microsoft#Research#DataOnboarding#RepositoriesService#Interface#IRepositoryService#RetrieveRepositoryTypes">
+            <summary>Sets the stub of IRepositoryService.RetrieveRepositoryTypes()</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.RetrieveRepositoriesBoolean">
+            <summary>Sets the stub of IRepositoryService.RetrieveRepositories(Boolean includeAdminRepositories)</summary>
+        </member>
+        <member name="F:Microsoft.Research.DataOnboarding.RepositoriesService.Interface.Fakes.StubIRepositoryService.RetrieveRepositoryTypes">
+            <summary>Sets the stub of IRepositoryService.RetrieveRepositoryTypes()</summary>
+        </member>
+    </members>
+</doc>

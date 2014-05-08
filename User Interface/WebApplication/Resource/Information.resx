@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionsHeader" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="CitationHeader" xml:space="preserve">
+    <value>Citation</value>
+  </data>
+  <data name="DataOnBoardingCopyRight" xml:space="preserve">
+    <value>Copyright © 2013 DataUp</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DownloadTitle" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>Edit Profile</value>
+  </data>
+  <data name="ExtensionHeader" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="FileNameHeader" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="FileTypeHeader" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="HomePageAboutDataOnBoarding1" xml:space="preserve">
+    <value>Data Onboarding tool helps you to create Metadata,
+perform a Best Practices Check, and
+Post your Data Files to Repository.</value>
+  </data>
+  <data name="HomePageAboutDataOnBoarding2" xml:space="preserve">
+    <value>Data Onboarding tool helps you to post your tabular data to different repository</value>
+  </data>
+  <data name="HomePageArchiving" xml:space="preserve">
+    <value>Archiving</value>
+  </data>
+  <data name="HomePageDocumenting" xml:space="preserve">
+    <value>Documenting</value>
+  </data>
+  <data name="HomePageFacebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="HomePageLiveID" xml:space="preserve">
+    <value>Live ID</value>
+  </data>
+  <data name="HomePageLoginWith" xml:space="preserve">
+    <value>Login With</value>
+  </data>
+  <data name="HomePageSharing" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="HomePageViewDemo" xml:space="preserve">
+    <value>View  Demo</value>
+  </data>
+  <data name="HomePageWelcomeMsg" xml:space="preserve">
+    <value>Welcome to Data Onboarding</value>
+  </data>
+  <data name="IdentifierHeader" xml:space="preserve">
+    <value>Identifier</value>
+  </data>
+  <data name="ManageQualityCheckRules" xml:space="preserve">
+    <value>Quality Checks</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>Manage Users</value>
+  </data>
+  <data name="ManageRepository" xml:space="preserve">
+    <value>Repositories</value>
+  </data>
+  <data name="NoPublishedFilesInfo" xml:space="preserve">
+    <value>There are currently no data files published</value>
+  </data>
+  <data name="NoUploadedFilesInfo" xml:space="preserve">
+    <value>There are currently no data files uploaded</value>
+  </data>
+  <data name="PublishedDateHeader" xml:space="preserve">
+    <value>Published Date</value>
+  </data>
+  <data name="PublishedFileListViewName" xml:space="preserve">
+    <value>PublishedFileList</value>
+  </data>
+  <data name="PublishedFiles" xml:space="preserve">
+    <value>Published Data Files</value>
+  </data>
+  <data name="RepositoryHeader" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="SizeHeader" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Welcome | DataUp</value>
+  </data>
+  <data name="UploadedDateHeader" xml:space="preserve">
+    <value>Date Uploaded</value>
+  </data>
+  <data name="UploadedFileListViewName" xml:space="preserve">
+    <value>UploadedFileList</value>
+  </data>
+  <data name="UploadedFiles" xml:space="preserve">
+    <value>Uploaded Data Files</value>
+  </data>
+  <data name="UploadTitle" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="ViewAdminUsersList" xml:space="preserve">
+    <value>View Admin Users List</value>
+  </data>
+  <data name="ViewUsageReports" xml:space="preserve">
+    <value>View Usage Reports</value>
+  </data>
+  <data name="PostTitle" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="NoRepositoryMessage" xml:space="preserve">
+    <value>Currently no repository supports this file type.</value>
+  </data>
+  <data name="BackTitle" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BestPracticesCheckTitle" xml:space="preserve">
+    <value>Best Practices Check</value>
+  </data>
+  <data name="CancelHeader" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangeText" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="MetedataTitle" xml:space="preserve">
+    <value>Metadata</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="QualityCheckTitle" xml:space="preserve">
+    <value>Quality Check</value>
+  </data>
+  <data name="RepositoryChangeTitle" xml:space="preserve">
+    <value>Change Repository</value>
+  </data>
+  <data name="TermsAndConditionsText" xml:space="preserve">
+    <value>I have read the Terms and Conditions</value>
+  </data>
+  <data name="UserNameLabel" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="SavedText" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="AddQCRuleText" xml:space="preserve">
+    <value>Add New Rule</value>
+  </data>
+  <data name="ManageQCRuLesHeader" xml:space="preserve">
+    <value>Manage Quality Check Rules</value>
+  </data>
+  <data name="ConsiderheadersorderText" xml:space="preserve">
+    <value>Consider headers order</value>
+  </data>
+  <data name="CreatedByHeader" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="CreatedDateHeader" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ErrorMessageHeader" xml:space="preserve">
+    <value>Message shown to user</value>
+  </data>
+  <data name="HeaderNameHeader" xml:space="preserve">
+    <value>Header Name</value>
+  </data>
+  <data name="HeaderNamesLabel" xml:space="preserve">
+    <value>Header Names</value>
+  </data>
+  <data name="MandatoryHeader" xml:space="preserve">
+    <value>Mandatory</value>
+  </data>
+  <data name="Max300CharNotification" xml:space="preserve">
+    <value>Maximum 300 characters.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OrderedHeader" xml:space="preserve">
+    <value>Ordered</value>
+  </data>
+  <data name="RuleNameLabel" xml:space="preserve">
+    <value>Rule Name</value>
+  </data>
+  <data name="TypeHeader" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="VisibilityHeader" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="VisibleToAdmin" xml:space="preserve">
+    <value>&lt;img src="../Content/images/visible-admin-icon.png" alt="Admin Only"/&gt;</value>
+  </data>
+  <data name="VisibleToAll" xml:space="preserve">
+    <value>&lt;img src="../Content/images/visible-all-icon.png" alt="Everyone"/&gt;</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="SelectSheetHeader" xml:space="preserve">
+    <value>Select Sheets</value>
+  </data>
+  <data name="SheetNameHeader" xml:space="preserve">
+    <value>Sheet Name</value>
+  </data>
+  <data name="ErrorDescriptionHeader" xml:space="preserve">
+    <value>Error Description</value>
+  </data>
+  <data name="StatusHeader" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="NoResultsText" xml:space="preserve">
+    <value>No Results.</value>
+  </data>
+  <data name="FailedText" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="PassedText" xml:space="preserve">
+    <value>Passed</value>
+  </data>
+  <data name="DownText" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="UpText" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="AuthenticationModeHeader" xml:space="preserve">
+    <value>Authentication Mode</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="RepositoryNameHeader" xml:space="preserve">
+    <value>Repository Name</value>
+  </data>
+  <data name="AddRepositoryText" xml:space="preserve">
+    <value>Add Repository</value>
+  </data>
+  <data name="DeleteFileURLHeader" xml:space="preserve">
+    <value>Delete File URL</value>
+  </data>
+  <data name="DownloadFileURLHeader" xml:space="preserve">
+    <value>Download File URL</value>
+  </data>
+  <data name="GetIdentifierURLHeader" xml:space="preserve">
+    <value>Get Identifier URL</value>
+  </data>
+  <data name="PostFileURLHeader" xml:space="preserve">
+    <value>Post File URL</value>
+  </data>
+  <data name="RepositoryTypeheader" xml:space="preserve">
+    <value>Repository Type</value>
+  </data>
+  <data name="UserAgreementHeader" xml:space="preserve">
+    <value>User Agreement</value>
+  </data>
+  <data name="RangeEndHeader" xml:space="preserve">
+    <value>Range End</value>
+  </data>
+  <data name="RangeStartHeader" xml:space="preserve">
+    <value>Range Start</value>
+  </data>
+  <data name="EditQCRuleText" xml:space="preserve">
+    <value>Edit Rule</value>
+  </data>
+  <data name="EditRepositoryText" xml:space="preserve">
+    <value>Edit Repository</value>
+  </data>
+  <data name="MetaDataLoadedFromFile" xml:space="preserve">
+    <value>MetaData and column desc is loaded from file, please 'Save' the data</value>
+  </data>
+  <data name="NoMetaDataFound" xml:space="preserve">
+    <value>No metadata associated with this repository.</value>
+  </data>
+  <data name="FilesDeletionAlert" xml:space="preserve">
+    <value>Files Deletion Alert</value>
+  </data>
+  <data name="FilesDeletionAlertListViewName" xml:space="preserve">
+    <value>FilesDeletionAlert</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>hrs</value>
+  </data>
+  <data name="LifelineStatusHeader" xml:space="preserve">
+    <value>Lifeline Status</value>
+  </data>
+  <data name="BestPracticesHeader1" xml:space="preserve">
+    <value>Completed checks to identify potential issues that might make your data less understandable to others. Some of the issues are related to {0} compatibility, and others are simply best practices for data management and organization.</value>
+  </data>
+  <data name="BestPracticesHeader2" xml:space="preserve">
+    <value>Some of the potential issues listed here must be manually altered to comply with best practices.</value>
+  </data>
+  <data name="BestPracticesHeader3" xml:space="preserve">
+    <value>modified files to fix errors. You can Ignore these errors and continue posting.</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="NoErrorsFound" xml:space="preserve">
+    <value>No errors found.</value>
+  </data>
+  <data name="NoErrorsInThisFileMessage" xml:space="preserve">
+    <value>There are no errors in this file.</value>
+  </data>
+  <data name="PotentialProblem" xml:space="preserve">
+    <value>Potential Problem</value>
+  </data>
+  <data name="RemoveSelected" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="SuggestedRemedy" xml:space="preserve">
+    <value>Suggested Remedy</value>
+  </data>
+  <data name="WhyThisMayBeAProblem" xml:space="preserve">
+    <value>Why this may be a problem</value>
+  </data>
+  <data name="ManageFiles" xml:space="preserve">
+    <value>Manage Files</value>
+  </data>
+  <data name="HomePageGoogle" xml:space="preserve">
+    <value>Google</value>
+  </data>
+</root>

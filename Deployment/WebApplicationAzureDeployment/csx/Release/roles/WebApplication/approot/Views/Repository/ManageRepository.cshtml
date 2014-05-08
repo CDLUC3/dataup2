@@ -1,0 +1,150 @@
+﻿@using Microsoft.Research.DataOnboarding.WebApplication.Resource;
+
+@model Microsoft.Research.DataOnboarding.WebApplication.ViewModels.ManageReopsitoryViewModel
+@{
+    ViewBag.Title = "ManageRepository";
+    var urlClass = "hide";
+    var requiredClass = "hide";
+
+    object disabledUserName = new { id = "txtImpUserName", maxlength = 100, @disabled = "disabled" };
+    object disabledPassword = new { id = "txtImpPassword", maxlength = 100, @disabled = "disabled" };
+
+    if (Model.BaseRepositoryId <= 1)
+    {
+        urlClass = "";
+
+        if (Model.IsImpersonate)
+        {
+            requiredClass = "";
+            disabledUserName = new { id = "txtImpUserName", maxlength = 100, required = true };
+            disabledPassword = new { id = "txtImpPassword", maxlength = 100, required = true };
+        }
+    }
+}
+
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Repository.css")" />
+<script type="text/javascript">
+    $(function () {
+        var addEditRepository = $("#addEditRepository");
+        addEditRepository.removeData("validator")
+        addEditRepository.removeData("unobtrusiveValidation");
+        addEditRepository.validate({});
+
+        if ($("#ddlRepositoyType option:selected").val() == 1) {
+            $('#txtGetIdentifierURL').attr('required', true);
+            $('#txtPostFileURL').attr('required', true);
+        }
+    });
+</script>
+
+<div id="body" class="admin addRepository">
+
+    @using (Html.BeginForm("SaveRepository", "Repository", FormMethod.Post, new { id = "addEditRepository", postUrl = Url.Action("SaveRepository", "Repository") }))
+    { 
+        <input type="hidden" id="hdnRepositoryWebApi" value="" />
+        @Html.HiddenFor(m => m.RepositoryId, new { id = "hdnRepositoryId" }) 
+        @Html.HiddenFor(m => m.CreatedDate, new { id = "repCreatedDate" })
+        @Html.HiddenFor(m => m.CreatedBy, new { id = "repCreatedBy" })
+        @Html.HiddenFor(m => m.DeletedMetaDataFieldIds, new { id = "DeletedMetaDataFieldIds" })
+        @Html.HiddenFor(m => m.AccessToken, new { id = "accessToken", name = "accessToken" });
+        @Html.HiddenFor(m => m.RefreshToken, new { id = "refreshToken", name = "refreshToken" });
+        @Html.HiddenFor(m => m.TokenExpiresOn, new { id = "tokenExpireson", name = "tokenExpireson" });
+        
+        <section class="rightPanel">
+            <div class="container">
+                <div style="padding-top: 20px;">
+                    <span id="errRepSaveMessage" style="color: red;">@ViewBag.ErrorMessage</span>
+                    <span id="errduplicateRepository" style="color: red;"></span>
+                </div>
+                <div class="title">
+                    @if (Model.RepositoryId > 0)
+                    {
+                        <a href="@Url.Action("Index")" class="button l0 back" title="Back">Back</a><h2>@Information.EditRepositoryText </h2>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Index")" class="button l0 back" title="Back">Back</a><h2>@Information.AddRepositoryText </h2>
+                    }
+                </div>
+
+                <div class="list">
+                    <div class="row">
+                        <label class="label">@Information.RepositoryNameHeader<span class="mandatory">*</span></label>
+                        @Html.TextBoxFor(m => m.RepositoryName, new { id = "txtRepName", maxlength = 100, required = true })
+                    </div>
+                    <div class="row">
+                        <label class="label">@Information.RepositoryTypeheader</label>
+                        @Html.DropDownListFor(m => m.BaseRepositoryId, Model.RepositoryTypes, new { id = "ddlRepositoyType" })
+                    </div>
+                    <fieldset id="credintialsBlock">
+                        <legend>
+                            @Html.CheckBoxFor(m => m.IsImpersonate, new { id = "chkIsImpersonate" })<span>Impersonate</span>
+                        </legend>
+                        <div id="credentialInputFields">
+                            <div class="row">
+                                <label class="label">@Information.UserNameLabel<span id="spnReqUserName" class="mandatory @requiredClass">*</span></label>
+                                @Html.TextBoxFor(m => m.ImpersonateUserName, disabledUserName)
+                            </div>
+                            <div class="row">
+                                <label class="label">@Information.PasswordLabel<span id="spnReqPassword" class="mandatory @requiredClass">*</span></label>
+                                @Html.TextBoxFor(m => m.ImpersonatePassword, disabledPassword)
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="urlBlock" class="@urlClass">
+                        <div class="row">
+                            <label class="label">@Information.GetIdentifierURLHeader<span class="mandatory">*</span></label>
+                            @Html.TextBoxFor(m => m.GetIdentifierURL, new { id = "txtGetIdentifierURL", maxlength = 250, url = true })
+                        </div>
+                        <div class="row">
+                            <label class="label">@Information.PostFileURLHeader<span class="mandatory">*</span></label>
+                            @Html.TextBoxFor(m => m.PostFileURL, new { id = "txtPostFileURL", maxlength = 250, url = true })
+                        </div>
+                        <div class="row">
+                            <label class="label">@Information.DeleteFileURLHeader</label>
+                            @Html.TextBoxFor(m => m.DeleteFielURL, new { id = "txtDeleteFielURL", maxlength = 250, url = true })
+                        </div>
+                        <div class="row">
+                            <label class="label">@Information.DownloadFileURLHeader</label>
+                            @Html.TextBoxFor(m => m.DownloadFileURL, new { id = "txtDownloadFileURL", maxlength = 250, url = true })
+                        </div>
+                    </fieldset>
+                    <div class="row">
+                        <label class="label">@Information.UserAgreementHeader</label>
+                        @Html.TextAreaFor(m => m.UserAgreement, new { id = "txtUserAgreement", maxlength = 2048 })
+                    </div>
+                    <div class="row">
+                        <label class="label">@Information.FileTypeHeader</label>
+                        @Html.TextBoxFor(m => m.AllowedFileTypes, new { id = "txtAllowedFileTypes", maxlength = 250, placeholder = Messages.FileTypeHint })
+                    </div>
+                    <div class="row">
+                        <label class="label">@Information.VisibilityHeader</label>
+                        @Html.DropDownListFor(m => m.VisibilityOption, Model.VisibilityOptions, new { id = "repositoryVisibility" })
+                    </div>
+                    <div id="managemetadata">
+                        @{
+                    Html.RenderPartial("ManageFileMetaData", this.Model);
+                        }
+                    </div>
+                    <div class="endStripe">
+                        <input id="btnAddRepository" type="button" class="button l2 done" value="Submit" title="Submit" />
+                        <a href="@Url.Action("Index")" class="button l2 cancel" title="@Information.CancelHeader">@Information.CancelHeader</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+    $(document).ready(ManageRepository_Onload());
+
+
+</script>

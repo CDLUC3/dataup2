@@ -1,0 +1,10 @@
+﻿.notification {
+    font-size: 14px;
+    color: #bbb;
+    display: block;
+}
+
+.mandatory {
+    color: red;
+    margin-left: 5px;
+}

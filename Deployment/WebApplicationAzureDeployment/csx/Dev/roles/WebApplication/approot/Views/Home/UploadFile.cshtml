@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "UploadFile";
+}
+
+<script src="~/Scripts/DragAndDrop.js"></script>
+
+<section class="leftPanel">
+    <div class="dragndrop">
+        <label>
+            <a id="ancSelectFile" class="button l0 folder" title="Select file">Select file<input style="display: none;" type="file" id="addContent" name="addContent"  multiple=""/></a>
+        </label>
+        <span class="or">(or)</span>
+        <div class="drop" id="dragDropBox" />
+    </div>
+</section>

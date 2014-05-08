@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WebApplicationAzureDeployment" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WebApplication">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="--AZURE_DIAGNOSTICS_CONNECTION_STRING--" />
+      <Setting name="FileDeletionAlertCheckpoints" value="32,24,8" />
+      <Setting name="FileDeletionAlertDisplayThreshold" value="24" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="dataup2cert" thumbprint="--THUMBPRINT--" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
